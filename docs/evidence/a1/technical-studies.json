@@ -1,0 +1,122 @@
+{
+  "scope": "Original diagnostic fixtures only; not final art, MPFB export, G1 scene or hardware benchmark",
+  "tools": {
+    "gltfTransform": "4.5.1",
+    "validator": "2.0.0-dev.3.10",
+    "meshoptimizer": "1.2.0"
+  },
+  "fixtures": {
+    "architecture": {
+      "measurements": {
+        "segments": 48,
+        "curveRadiusMeters": 8,
+        "arcDegrees": 60,
+        "maxChordDeviationMeters": 0.00047595999880201134,
+        "rampRise": 0.15,
+        "rampRun": 1.8,
+        "rampSlope": 0.08333333333333333,
+        "fixtureOnly": true
+      },
+      "bytes": 75028,
+      "sha256": "da9672d5eed8ac47c6c2bf5351344b9180fbad0bd36a420a563dac73e85545b3",
+      "repeatSha256": "da9672d5eed8ac47c6c2bf5351344b9180fbad0bd36a420a563dac73e85545b3",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 20,
+      "meshes": 20,
+      "materials": 4,
+      "triangles": 834,
+      "optimizedBytes": 21764,
+      "optimizedSha256": "48d83e1cea45f9f504d3fd6ecb54a4ee9f8c9f01a67f587c59428b8ab8c4b4b2",
+      "optimizedErrors": 0,
+      "optimizedWarnings": 0,
+      "optimizedInfos": 2,
+      "optimizedExtensions": [
+        "EXT_meshopt_compression",
+        "KHR_mesh_quantization"
+      ]
+    },
+    "foliage": {
+      "measurements": {
+        "originalTexture": [128, 128],
+        "alphaMode": "MASK",
+        "alphaCutoff": 0.5,
+        "doubleSided": true,
+        "notBotanicalArt": true
+      },
+      "bytes": 3760,
+      "sha256": "3b688198206a00b5ef9cc8aa17a667c3f146401edd674730686e954bb0fa7f1a",
+      "repeatSha256": "3b688198206a00b5ef9cc8aa17a667c3f146401edd674730686e954bb0fa7f1a",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "meshes": 1,
+      "materials": 1,
+      "triangles": 4,
+      "optimizedBytes": 4656,
+      "optimizedSha256": "d05123075cbe10ae43aa520ff28708ed205930ae7356c367ada8c489625049c6",
+      "optimizedErrors": 0,
+      "optimizedWarnings": 0,
+      "optimizedInfos": 1,
+      "optimizedExtensions": [
+        "EXT_meshopt_compression",
+        "KHR_mesh_quantization"
+      ]
+    },
+    "skin": {
+      "measurements": {
+        "joints": 2,
+        "clips": ["diagnostic-bend"],
+        "durationSeconds": 1,
+        "notRetargetingProof": true
+      },
+      "bytes": 3040,
+      "sha256": "d06f72c5c33fa4632bafc31f822e209d768fe2cf6774f5b1e8a98391d90114b9",
+      "repeatSha256": "d06f72c5c33fa4632bafc31f822e209d768fe2cf6774f5b1e8a98391d90114b9",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 1,
+      "meshes": 1,
+      "materials": 1,
+      "triangles": 8,
+      "optimizedBytes": 4328,
+      "optimizedSha256": "172a96720b5bff979e81b73dee5f6610cd7f8a98dc850c6d51a04950e2c3554b",
+      "optimizedErrors": 0,
+      "optimizedWarnings": 0,
+      "optimizedInfos": 2,
+      "optimizedExtensions": [
+        "EXT_meshopt_compression",
+        "KHR_mesh_quantization"
+      ]
+    }
+  },
+  "checks": {
+    "invalidBytesRejected": {
+      "rejection": "Invalid data: could not detect glTF format."
+    },
+    "curveTolerance": {
+      "fineChordErrorBelowMillimeter": true,
+      "coarseChordErrorAboveMillimeter": true
+    },
+    "rampSlopeExactlyOneInTwelve": true
+  },
+  "lodStudy": {
+    "segments": 12,
+    "curveRadiusMeters": 8,
+    "arcDegrees": 60,
+    "maxChordDeviationMeters": 0.007614227345137614,
+    "rampRise": 0.15,
+    "rampRun": 1.8,
+    "rampSlope": 0.08333333333333333,
+    "fixtureOnly": true
+  },
+  "notTested": [
+    "Blender export",
+    "MPFB generation/deformation/retarget",
+    "source trees and source materials",
+    "LOD visual acceptance",
+    "KTX2",
+    "physical GPU performance",
+    "finished art quality"
+  ]
+}

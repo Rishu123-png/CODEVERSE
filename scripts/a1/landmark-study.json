@@ -1,0 +1,61 @@
+{
+  "purpose": "Original full-exterior construction study, NOT accepted production art or G1",
+  "units": "meters",
+  "building": {
+    "frontRadius": 22,
+    "frontArcDegrees": 90,
+    "frontBays": 16,
+    "arcSegments": 96,
+    "rearZ": -24,
+    "groundHeight": 4.8,
+    "upperFloorHeight": 3.8,
+    "upperFloors": 5,
+    "parapetHeight": 1,
+    "entranceRecess": 1.2,
+    "entranceHalfAngleDegrees": 11.25
+  },
+  "site": {
+    "coreWidth": 42,
+    "forecourtDepth": 12,
+    "pavingModule": 1.5,
+    "pavingJoint": 0.015,
+    "linkLength": 12,
+    "linkWidth": 4.2,
+    "rampClearWidth": 1.8,
+    "rampRun": 1.8,
+    "roadDrop": 0.15,
+    "roadLength": 28,
+    "roadWidth": 8
+  },
+  "cameraStudy": {
+    "verticalFovDegrees": 55,
+    "views": ["front", "rear", "site"]
+  },
+  "plantingSockets": [
+    {
+      "position": [-17.5, 0, 3],
+      "role": "shade-tree",
+      "source": "UNRESOLVED; no placeholder tree rendered"
+    },
+    {
+      "position": [17.5, 0, 3],
+      "role": "shade-tree",
+      "source": "UNRESOLVED; no placeholder tree rendered"
+    },
+    {
+      "position": [12, 0, 8.5],
+      "role": "flowering-accent",
+      "source": "UNRESOLVED; original production path still required"
+    }
+  ],
+  "excluded": [
+    "interiors",
+    "NPCs",
+    "vehicles",
+    "traffic",
+    "final textures",
+    "final signs/fonts/logos",
+    "accepted hero",
+    "G1 benchmark"
+  ]
+}

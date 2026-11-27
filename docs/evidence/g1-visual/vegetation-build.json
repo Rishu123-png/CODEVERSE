@@ -1,0 +1,311 @@
+[
+  {
+    "name": "canopy",
+    "bytes": 1461676,
+    "triangles": 22080,
+    "validationErrors": 0,
+    "validationWarnings": 0,
+    "config": {
+      "seed": 33021,
+      "type": "deciduous",
+      "bark": {
+        "type": "Bark001",
+        "tint": 13552830,
+        "flatShading": false,
+        "textured": false,
+        "textureScale": {
+          "x": 0.5,
+          "y": 5
+        }
+      },
+      "branch": {
+        "levels": 3,
+        "angle": {
+          "1": 62,
+          "2": 75,
+          "3": 60
+        },
+        "children": {
+          "0": 9,
+          "1": 5,
+          "2": 3
+        },
+        "force": {
+          "direction": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "strength": 0.01
+        },
+        "gnarliness": {
+          "0": 0.03,
+          "1": 0.25,
+          "2": 0.2,
+          "3": 0.09
+        },
+        "length": {
+          "0": 43.47,
+          "1": 28.497000000000003,
+          "2": 9.51,
+          "3": 4.6
+        },
+        "radius": {
+          "0": 2,
+          "1": 0.63,
+          "2": 0.76,
+          "3": 0.7
+        },
+        "sections": {
+          "0": 12,
+          "1": 8,
+          "2": 6,
+          "3": 4
+        },
+        "segments": {
+          "0": 12,
+          "1": 6,
+          "2": 4,
+          "3": 3
+        },
+        "start": {
+          "1": 0.5,
+          "2": 0.33,
+          "3": 0
+        },
+        "taper": {
+          "0": 0.7,
+          "1": 0.7,
+          "2": 0.7,
+          "3": 0.7
+        },
+        "twist": {
+          "0": 0.09,
+          "1": -0.07,
+          "2": 0,
+          "3": 0
+        }
+      },
+      "leaves": {
+        "type": "ash",
+        "billboard": "double",
+        "angle": 55,
+        "count": 22,
+        "start": 0.18,
+        "size": 4.2,
+        "sizeVariance": 0.32,
+        "tint": 16777215,
+        "alphaTest": 0.5
+      },
+      "trellis": {
+        "enabled": false
+      }
+    }
+  },
+  {
+    "name": "blossom",
+    "bytes": 1392876,
+    "triangles": 20160,
+    "validationErrors": 0,
+    "validationWarnings": 0,
+    "config": {
+      "seed": 67211,
+      "type": "deciduous",
+      "bark": {
+        "type": "Bark001",
+        "tint": 13552830,
+        "flatShading": false,
+        "textured": false,
+        "textureScale": {
+          "x": 0.5,
+          "y": 5
+        }
+      },
+      "branch": {
+        "levels": 3,
+        "angle": {
+          "1": 62,
+          "2": 75,
+          "3": 60
+        },
+        "children": {
+          "0": 9,
+          "1": 5,
+          "2": 3
+        },
+        "force": {
+          "direction": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "strength": 0.01
+        },
+        "gnarliness": {
+          "0": 0.03,
+          "1": 0.25,
+          "2": 0.2,
+          "3": 0.09
+        },
+        "length": {
+          "0": 43.47,
+          "1": 28.497000000000003,
+          "2": 9.51,
+          "3": 4.6
+        },
+        "radius": {
+          "0": 2,
+          "1": 0.63,
+          "2": 0.76,
+          "3": 0.7
+        },
+        "sections": {
+          "0": 12,
+          "1": 8,
+          "2": 6,
+          "3": 4
+        },
+        "segments": {
+          "0": 12,
+          "1": 6,
+          "2": 4,
+          "3": 3
+        },
+        "start": {
+          "1": 0.5,
+          "2": 0.33,
+          "3": 0
+        },
+        "taper": {
+          "0": 0.7,
+          "1": 0.7,
+          "2": 0.7,
+          "3": 0.7
+        },
+        "twist": {
+          "0": 0.09,
+          "1": -0.07,
+          "2": 0,
+          "3": 0
+        }
+      },
+      "leaves": {
+        "type": "ash",
+        "billboard": "double",
+        "angle": 55,
+        "count": 18,
+        "start": 0.18,
+        "size": 4.3,
+        "sizeVariance": 0.32,
+        "tint": 16777215,
+        "alphaTest": 0.5
+      },
+      "trellis": {
+        "enabled": false
+      }
+    }
+  },
+  {
+    "name": "underplanting",
+    "bytes": 402292,
+    "triangles": 3732,
+    "validationErrors": 0,
+    "validationWarnings": 0,
+    "config": {
+      "seed": 311,
+      "type": "deciduous",
+      "bark": {
+        "type": "Bark001",
+        "tint": 13552830,
+        "flatShading": false,
+        "textured": false,
+        "textureScale": {
+          "x": 0.5,
+          "y": 5
+        }
+      },
+      "branch": {
+        "levels": 2,
+        "angle": {
+          "1": 21.521739130434785,
+          "2": 62.608695652173914,
+          "3": 60
+        },
+        "children": {
+          "0": 7,
+          "1": 4,
+          "2": 3
+        },
+        "force": {
+          "direction": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "strength": 0
+        },
+        "gnarliness": {
+          "0": 0.11,
+          "1": 0.09,
+          "2": 0.05,
+          "3": 0.09
+        },
+        "length": {
+          "0": 0.1,
+          "1": 15.302173913043479,
+          "2": 5.59,
+          "3": 4.6
+        },
+        "radius": {
+          "0": 0.5793478260869566,
+          "1": 0.9521739130434783,
+          "2": 0.76,
+          "3": 0.7
+        },
+        "sections": {
+          "0": 6,
+          "1": 6,
+          "2": 10,
+          "3": 10
+        },
+        "segments": {
+          "0": 4,
+          "1": 4,
+          "2": 4,
+          "3": 3
+        },
+        "start": {
+          "1": 0.53,
+          "2": 0.33,
+          "3": 0
+        },
+        "taper": {
+          "0": 0.7,
+          "1": 0.7,
+          "2": 0.7,
+          "3": 0.7
+        },
+        "twist": {
+          "0": 0.3,
+          "1": -0.07,
+          "2": 0,
+          "3": 0
+        }
+      },
+      "leaves": {
+        "type": "ash",
+        "billboard": "double",
+        "angle": 55,
+        "count": 14,
+        "start": 0,
+        "size": 4.2,
+        "sizeVariance": 0.3,
+        "tint": 14745557,
+        "alphaTest": 0.5
+      },
+      "trellis": {
+        "enabled": false
+      }
+    }
+  }
+]

@@ -1,0 +1,274 @@
+{
+  "scope": "Acquired source/texture and static GLB/LOD vegetation path, NOT accepted premium vegetation",
+  "source": {
+    "repository": "https://github.com/dgreenheck/ez-tree",
+    "commit": "dcf309bd86bd521083d9c70f01f2de45fdc7c457",
+    "archive": {
+      "bytes": 4443039,
+      "sha256": "6e7d5caf103a00cfcaddf801ce0448f3879e00c2582fbd017e6e3238f0ecd109"
+    },
+    "npmVersion": "1.1.0",
+    "npmArchive": {
+      "bytes": 19478340,
+      "sha256": "4147b49d22b01f09c9d7f3c3c34f788ad37841103a758da25e399af3cbce2f98"
+    },
+    "three": "0.167.1"
+  },
+  "rights": {
+    "codeAndLeafTextures": "MIT; retain Daniel Greenheck notice",
+    "bark": "Latest source notice identifies ambientCG CC0; bark not used in these generated GLBs",
+    "decision": "Viable no-account offline source path; conditional art/LOD acceptance, not a CC0 label for entire pack"
+  },
+  "textures": [
+    {
+      "name": "ash",
+      "bytes": 181423,
+      "sha256": "5ec987db3829a839856c32c79b18a33a78f209e911cad55c65abfb77f30e2d29",
+      "githubLfsOid": "5ec987db3829a839856c32c79b18a33a78f209e911cad55c65abfb77f30e2d29",
+      "exactOidMatch": true,
+      "width": 1024,
+      "height": 1024,
+      "hasAlpha": true,
+      "alphaPixels": {
+        "transparent": 872491,
+        "opaque": 154127,
+        "partial": 21958
+      }
+    },
+    {
+      "name": "aspen",
+      "bytes": 142116,
+      "sha256": "6c8cbfa3eda0f070df6ebb3c8ec6899400f3c966d1658fcfd9ae518347c2dcb9",
+      "githubLfsOid": "6c8cbfa3eda0f070df6ebb3c8ec6899400f3c966d1658fcfd9ae518347c2dcb9",
+      "exactOidMatch": true,
+      "width": 1024,
+      "height": 1024,
+      "hasAlpha": true,
+      "alphaPixels": {
+        "transparent": 847286,
+        "opaque": 85267,
+        "partial": 116023
+      }
+    },
+    {
+      "name": "oak",
+      "bytes": 238115,
+      "sha256": "24451223cf396d22910a4932b8bb996a7274e63d81e24128c96a430ab67822b1",
+      "githubLfsOid": "24451223cf396d22910a4932b8bb996a7274e63d81e24128c96a430ab67822b1",
+      "exactOidMatch": true,
+      "width": 1024,
+      "height": 1024,
+      "hasAlpha": true,
+      "alphaPixels": {
+        "transparent": 760293,
+        "opaque": 149197,
+        "partial": 139086
+      }
+    },
+    {
+      "name": "pine",
+      "bytes": 303684,
+      "sha256": "88be36a2387554ac4b7c7d1549eae454a37ad896e8e33a7d6ae5956bd169ab08",
+      "githubLfsOid": "88be36a2387554ac4b7c7d1549eae454a37ad896e8e33a7d6ae5956bd169ab08",
+      "exactOidMatch": true,
+      "width": 1024,
+      "height": 1024,
+      "hasAlpha": true,
+      "alphaPixels": {
+        "transparent": 750211,
+        "opaque": 139247,
+        "partial": 159118
+      }
+    }
+  ],
+  "variants": [
+    {
+      "preset": "ash_medium",
+      "level": 0,
+      "detail": {},
+      "targetFullHeightMeters": 8,
+      "sourcePresetSha256": "4fbda008f54a1421c67bdff3022d64aba1d497253bc45dc7f186e3a4f78a9edd",
+      "uniformScale": 0.09559067656884519,
+      "file": "ash_medium-lod0.glb",
+      "bytes": 1332708,
+      "sha256": "f7ac509da330cd7af07120e2340fad64fd5e4e36dd1094dd986f31853f378300",
+      "geometry": {
+        "branches": {
+          "vertices": 6639,
+          "triangles": 9120
+        },
+        "leaves": {
+          "vertices": 21760,
+          "triangles": 10880
+        }
+      },
+      "triangles": 20000,
+      "validation": {
+        "errors": 0,
+        "warnings": 0,
+        "infos": 1
+      }
+    },
+    {
+      "preset": "ash_medium",
+      "level": 1,
+      "detail": {
+        "sectionStride": 2,
+        "segmentFactor": 0.65,
+        "leafStride": 2
+      },
+      "targetFullHeightMeters": 8,
+      "sourcePresetSha256": "4fbda008f54a1421c67bdff3022d64aba1d497253bc45dc7f186e3a4f78a9edd",
+      "uniformScale": 0.09559067656884519,
+      "file": "ash_medium-lod1.glb",
+      "bytes": 744868,
+      "sha256": "00cd3d08da812deb7c321090a09f5a834a86c3262e1a4425b63e46bc04d8333f",
+      "geometry": {
+        "branches": {
+          "vertices": 3241,
+          "triangles": 3648
+        },
+        "leaves": {
+          "vertices": 10880,
+          "triangles": 5440
+        }
+      },
+      "triangles": 9088,
+      "validation": {
+        "errors": 0,
+        "warnings": 0,
+        "infos": 1
+      }
+    },
+    {
+      "preset": "ash_medium",
+      "level": 2,
+      "detail": {
+        "sectionStride": 3,
+        "segmentFactor": 0.45,
+        "leafStride": 4
+      },
+      "targetFullHeightMeters": 8,
+      "sourcePresetSha256": "4fbda008f54a1421c67bdff3022d64aba1d497253bc45dc7f186e3a4f78a9edd",
+      "uniformScale": 0.09559067656884519,
+      "file": "ash_medium-lod2.glb",
+      "bytes": 508852,
+      "sha256": "391e1f521a7acd95f0ceace2111f91826a1ab232a9f5d1f6a1daeabb0cdb12b9",
+      "geometry": {
+        "branches": {
+          "vertices": 2664,
+          "triangles": 2746
+        },
+        "leaves": {
+          "vertices": 5440,
+          "triangles": 2720
+        }
+      },
+      "triangles": 5466,
+      "validation": {
+        "errors": 0,
+        "warnings": 0,
+        "infos": 1
+      }
+    },
+    {
+      "preset": "bush_1",
+      "level": 0,
+      "detail": {},
+      "targetFullHeightMeters": 1.2,
+      "sourcePresetSha256": "c15a079777169edbc8e7d99ddfde1f70b332049a1ca4b2469fb2987dfc195a4b",
+      "uniformScale": 0.04242542700430525,
+      "file": "bush_1-lod0.glb",
+      "bytes": 872496,
+      "sha256": "aeccc51232dfe5f929eb5f1a0ccf8546ce150c063a60c72442fc14194597daad",
+      "geometry": {
+        "branches": {
+          "vertices": 6331,
+          "triangles": 8880
+        },
+        "leaves": {
+          "vertices": 9984,
+          "triangles": 4992
+        }
+      },
+      "triangles": 13872,
+      "validation": {
+        "errors": 0,
+        "warnings": 0,
+        "infos": 1
+      }
+    },
+    {
+      "preset": "bush_1",
+      "level": 1,
+      "detail": {
+        "sectionStride": 2,
+        "segmentFactor": 0.65,
+        "leafStride": 2
+      },
+      "targetFullHeightMeters": 1.2,
+      "sourcePresetSha256": "c15a079777169edbc8e7d99ddfde1f70b332049a1ca4b2469fb2987dfc195a4b",
+      "uniformScale": 0.04242542700430525,
+      "file": "bush_1-lod1.glb",
+      "bytes": 518196,
+      "sha256": "3fb25e1af2aeb06a958a44966212ec3c26eab45eae18077dc632e007d113e103",
+      "geometry": {
+        "branches": {
+          "vertices": 3088,
+          "triangles": 3810
+        },
+        "leaves": {
+          "vertices": 4992,
+          "triangles": 2496
+        }
+      },
+      "triangles": 6306,
+      "validation": {
+        "errors": 0,
+        "warnings": 0,
+        "infos": 1
+      }
+    },
+    {
+      "preset": "bush_1",
+      "level": 2,
+      "detail": {
+        "sectionStride": 3,
+        "segmentFactor": 0.45,
+        "leafStride": 4
+      },
+      "targetFullHeightMeters": 1.2,
+      "sourcePresetSha256": "c15a079777169edbc8e7d99ddfde1f70b332049a1ca4b2469fb2987dfc195a4b",
+      "uniformScale": 0.04242542700430525,
+      "file": "bush_1-lod2.glb",
+      "bytes": 395948,
+      "sha256": "fb918a319531c60874f79f2fbe618ada80b03cecec4eb0c41399f58de8df74c4",
+      "geometry": {
+        "branches": {
+          "vertices": 2540,
+          "triangles": 2988
+        },
+        "leaves": {
+          "vertices": 2496,
+          "triangles": 1248
+        }
+      },
+      "triangles": 4236,
+      "validation": {
+        "errors": 0,
+        "warnings": 0,
+        "infos": 1
+      }
+    }
+  ],
+  "notVerified": [
+    "Botanical/urban art acceptance",
+    "flowering accent",
+    "final bark/PBR",
+    "wind transfer: Three onBeforeCompile is NOT glTF animation",
+    "cross-LOD visual continuity",
+    "Babylon alpha sorting/overdraw/performance",
+    "physical GPU workload",
+    "final species/height approval"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "radius": 5.634971331416903,
+  "actual": 5.634971331416902,
+  "alpha": 2.5045551310510312,
+  "player": {
+    "x": -29.065644352754205,
+    "z": -16.03016023401361,
+    "speed": 0,
+    "near": false,
+    "interacting": false,
+    "paused": false,
+    "motion": "Idle",
+    "playerY": -0.15,
+    "cameraAlpha": 2.5045551310510312,
+    "cameraRadius": 5.634971331416903,
+    "meshes": 961,
+    "skeletons": 1,
+    "animationGroups": 3,
+    "triangles": 1871640
+  }
+}

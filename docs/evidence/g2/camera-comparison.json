@@ -1,0 +1,129 @@
+{
+  "metric": "Absolute disagreement in metres between camera.radius and distance(camera.position,camera.target) after drawing. Tests state-lifecycle coherence, not a perceptual jitter score, temporal aliasing score, latency/FPS benchmark or every obstacle/input condition.",
+  "captureLimitations": "Software rendering; sparse native automated input; latest captures pause render scheduling for framebuffer readback, resuming between samples. Frame sequences are explicitly retimed, not uninterrupted video. Follow-up WebGPU capture precedes later visual/layout and analytic trunk-volume refinements; camera integration unchanged.",
+  "recordings": [
+    {
+      "recording": "before-camera",
+      "backend": "webgpu",
+      "pageErrors": [],
+      "renderedFrames": 237,
+      "maxPostRenderArmPositionDisagreement": 1.0357262045402473,
+      "phases": {
+        "stationary-slow": {
+          "renderedFrames": 46,
+          "minimumArm": 5.8,
+          "maximumArm": 5.8,
+          "maxPostRenderArmPositionDisagreement": 3.552713678800501e-15
+        },
+        "stationary-fast": {
+          "renderedFrames": 49,
+          "minimumArm": 5.8,
+          "maximumArm": 5.8,
+          "maxPostRenderArmPositionDisagreement": 3.552713678800501e-15
+        },
+        "walking": {
+          "renderedFrames": 49,
+          "minimumArm": 5.8,
+          "maximumArm": 5.8,
+          "maxPostRenderArmPositionDisagreement": 2.6645352591003757e-15
+        },
+        "running": {
+          "renderedFrames": 49,
+          "minimumArm": 5.8,
+          "maximumArm": 5.8,
+          "maxPostRenderArmPositionDisagreement": 2.6645352591003757e-15
+        },
+        "zoom": {
+          "renderedFrames": 44,
+          "minimumArm": 5.799998616568249,
+          "maximumArm": 8.299980404347975,
+          "maxPostRenderArmPositionDisagreement": 1.0357262045402473
+        }
+      }
+    },
+    {
+      "recording": "after-camera-webgpu",
+      "backend": "webgpu",
+      "pageErrors": [],
+      "renderedFrames": 107,
+      "maxPostRenderArmPositionDisagreement": 2.6645352591003757e-15,
+      "phases": {
+        "stationary-slow": {
+          "renderedFrames": 18,
+          "minimumArm": 7.399999999999997,
+          "maximumArm": 7.3999999999999995,
+          "maxPostRenderArmPositionDisagreement": 1.7763568394002505e-15
+        },
+        "stationary-fast": {
+          "renderedFrames": 23,
+          "minimumArm": 7.399999999999997,
+          "maximumArm": 7.3999999999999995,
+          "maxPostRenderArmPositionDisagreement": 2.6645352591003757e-15
+        },
+        "walking": {
+          "renderedFrames": 18,
+          "minimumArm": 7.399999999999998,
+          "maximumArm": 7.399999999999999,
+          "maxPostRenderArmPositionDisagreement": 1.7763568394002505e-15
+        },
+        "running": {
+          "renderedFrames": 20,
+          "minimumArm": 7.399999999999998,
+          "maximumArm": 7.399999999999999,
+          "maxPostRenderArmPositionDisagreement": 8.881784197001252e-16
+        },
+        "zoom": {
+          "renderedFrames": 28,
+          "minimumArm": 7.399999999999999,
+          "maximumArm": 10.288932994794001,
+          "maxPostRenderArmPositionDisagreement": 1.7763568394002505e-15
+        }
+      }
+    },
+    {
+      "recording": "after-camera-webgl2",
+      "backend": "webgl2",
+      "pageErrors": [],
+      "renderedFrames": 140,
+      "maxPostRenderArmPositionDisagreement": 2.6645352591003757e-15,
+      "phases": {
+        "settle": {
+          "renderedFrames": 1,
+          "minimumArm": 7.3999999999999995,
+          "maximumArm": 7.3999999999999995,
+          "maxPostRenderArmPositionDisagreement": 0
+        },
+        "stationary-slow": {
+          "renderedFrames": 32,
+          "minimumArm": 7.399999999999998,
+          "maximumArm": 7.3999999999999995,
+          "maxPostRenderArmPositionDisagreement": 2.6645352591003757e-15
+        },
+        "stationary-fast": {
+          "renderedFrames": 28,
+          "minimumArm": 7.399999999999999,
+          "maximumArm": 7.3999999999999995,
+          "maxPostRenderArmPositionDisagreement": 1.7763568394002505e-15
+        },
+        "walking": {
+          "renderedFrames": 25,
+          "minimumArm": 7.399999999999999,
+          "maximumArm": 7.3999999999999995,
+          "maxPostRenderArmPositionDisagreement": 1.7763568394002505e-15
+        },
+        "running": {
+          "renderedFrames": 30,
+          "minimumArm": 7.399999999999999,
+          "maximumArm": 7.3999999999999995,
+          "maxPostRenderArmPositionDisagreement": 1.7763568394002505e-15
+        },
+        "zoom": {
+          "renderedFrames": 24,
+          "minimumArm": 7.399999999999999,
+          "maximumArm": 8.859408487101396,
+          "maxPostRenderArmPositionDisagreement": 1.7763568394002505e-15
+        }
+      }
+    }
+  ]
+}

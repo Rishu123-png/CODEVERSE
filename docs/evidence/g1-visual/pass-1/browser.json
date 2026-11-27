@@ -1,0 +1,3947 @@
+{
+  "browser": "158.0.8127.0",
+  "backend": "WebGPU",
+  "environment": "Software Vulkan/SwiftShader WebGPU; not physical laptop/FPS acceptance",
+  "logs": [
+    {
+      "type": "log",
+      "text": "BJS - [15:23:48]: Babylon.js v9.38.0 - WebGPU1 engine"
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "audit": {
+    "ready": true,
+    "engine": "AbstractEngine",
+    "imageProcessing": {
+      "exposure": 1.15,
+      "contrast": 1.05,
+      "toneMapping": true
+    },
+    "lights": [
+      {
+        "name": "daylight sky",
+        "enabled": true,
+        "intensity": 0.85,
+        "diffuse": [
+          1,
+          1,
+          1
+        ],
+        "excluded": 0
+      },
+      {
+        "name": "afternoon sun",
+        "enabled": true,
+        "intensity": 2.8,
+        "diffuse": [
+          1,
+          0.92,
+          0.8
+        ],
+        "excluded": 0
+      }
+    ],
+    "environment": {
+      "name": "original procedural sky reflection",
+      "ready": true,
+      "gammaSpace": true,
+      "irradiance": false,
+      "intensity": 0.65
+    },
+    "materials": [
+      {
+        "name": "original architectural edge",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.6470588235294118,
+          0.6549019607843137,
+          0.6431372549019608
+        ],
+        "metallic": 0,
+        "roughness": 0.8,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "CodeVerse blue",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.0784313725490196,
+          0.42745098039215684,
+          0.8666666666666667
+        ],
+        "metallic": 0.25,
+        "roughness": 0.4,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "default material",
+        "type": "StandardMaterial",
+        "backFaceCulling": true
+      },
+      {
+        "name": "original planted verge",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.2627450980392157,
+          0.3254901960784314,
+          0.26666666666666666
+        ],
+        "metallic": 0,
+        "roughness": 0.8,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "original pale architectural bands",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.48,
+          0.52,
+          0.55
+        ],
+        "metallic": 0,
+        "roughness": 0.7,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "opaque blue-neutral glazing STUDY",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.07,
+          0.16,
+          0.22
+        ],
+        "metallic": 0.45,
+        "roughness": 0.25,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "neutral structural metal",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.1,
+          0.14,
+          0.18
+        ],
+        "metallic": 0.7,
+        "roughness": 0.4,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "blue accent study",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.02,
+          0.24,
+          0.65
+        ],
+        "metallic": 0.2,
+        "roughness": 0.4,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "original pale slab scalar study",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.38,
+          0.41,
+          0.43
+        ],
+        "metallic": 0,
+        "roughness": 0.7,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "original asphalt scalar study",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.075,
+          0.085,
+          0.09
+        ],
+        "metallic": 0,
+        "roughness": 0.93,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "road marking scalar study",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.65,
+          0.65,
+          0.6
+        ],
+        "metallic": 0,
+        "roughness": 0.7,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "bench wood scalar study",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.26,
+          0.14,
+          0.075
+        ],
+        "metallic": 0,
+        "roughness": 0.7,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "soil scalar study",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.075,
+          0.055,
+          0.04
+        ],
+        "metallic": 0,
+        "roughness": 0.7,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "honed limestone coping",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.7011018919329731,
+          0.6583748172794486,
+          0.5711248294648731
+        ],
+        "metallic": 0,
+        "roughness": 0.8,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "graphite anodised framing",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.018500220128379697,
+          0.03433980680868217,
+          0.05126945837404324
+        ],
+        "metallic": 0.55,
+        "roughness": 0.48,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "recessed facade shadow box",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.009134058702220787,
+          0.02315336617811041,
+          0.03954623527673283
+        ],
+        "metallic": 0,
+        "roughness": 0.8,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "reflective blue glass panel 0",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.08865558628577294,
+          0.21952619972926923,
+          0.3277780980565422
+        ],
+        "metallic": 0.58,
+        "roughness": 0.17,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "brushed champagne mullions",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.33716361504833037,
+          0.33716361504833037,
+          0.2874408377269175
+        ],
+        "metallic": 0.65,
+        "roughness": 0.34,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "reflective blue glass panel 3",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.0382043715953465,
+          0.14702726649759498,
+          0.24620132670783548
+        ],
+        "metallic": 0.58,
+        "roughness": 0.21500000000000002,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "reflective blue glass panel 6",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.1714411007328226,
+          0.2961382707983211,
+          0.3564001441459435
+        ],
+        "metallic": 0.58,
+        "roughness": 0.26,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "reflective blue glass panel 2",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.10702310297826761,
+          0.25415209433082675,
+          0.35153259950043936
+        ],
+        "metallic": 0.58,
+        "roughness": 0.2,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "reflective blue glass panel 5",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.0595112381629812,
+          0.18116424424986022,
+          0.27467731206038465
+        ],
+        "metallic": 0.58,
+        "roughness": 0.245,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "reflective blue glass panel 1",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.05448027644244237,
+          0.15292615199615017,
+          0.24228112246555486
+        ],
+        "metallic": 0.58,
+        "roughness": 0.185,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "reflective blue glass panel 4",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.12743768043564743,
+          0.24620132670783548,
+          0.3005437944157765
+        ],
+        "metallic": 0.58,
+        "roughness": 0.23,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "recessed blue light channel",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.009134058702220787,
+          0.20155625379439707,
+          0.7605245046752924
+        ],
+        "metallic": 0.25,
+        "roughness": 0.3,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "oiled timber slats",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          1,
+          1,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "oiled timber slats (Base Color)"
+      },
+      {
+        "name": "warm soffit light",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          1,
+          0.7156935005064807,
+          0.341914424908661
+        ],
+        "metallic": 0,
+        "roughness": 0.5,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "limestone paving batch 0",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.7912979403326302,
+          0.7454042095403874,
+          0.6514056374198242
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "limestone paving batch 0 (Base Color)"
+      },
+      {
+        "name": "limestone paving batch 4",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.5457244613701866,
+          0.4851499400560704,
+          0.386429433787049
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "limestone paving batch 4 (Base Color)"
+      },
+      {
+        "name": "limestone paving batch 8",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.5394794890121071,
+          0.5775804404296506,
+          0.5840784178911641
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "limestone paving batch 8 (Base Color)"
+      },
+      {
+        "name": "limestone paving batch 3",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.7835377915261935,
+          0.7379104087727308,
+          0.6514056374198242
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "limestone paving batch 3 (Base Color)"
+      },
+      {
+        "name": "limestone paving batch 7",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.7304607400903537,
+          0.6724431569576875,
+          0.5711248294648731
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "limestone paving batch 7 (Base Color)"
+      },
+      {
+        "name": "limestone paving batch 2",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.5457244613701866,
+          0.5332764040105052,
+          0.4910208498478356
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "limestone paving batch 2 (Base Color)"
+      },
+      {
+        "name": "limestone paving batch 6",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.5840784178911641,
+          0.5711248294648731,
+          0.5209955732043543
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "limestone paving batch 6 (Base Color)"
+      },
+      {
+        "name": "limestone paving batch 1",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.6514056374198242,
+          0.6239603916750761,
+          0.5583403896342679
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "limestone paving batch 1 (Base Color)"
+      },
+      {
+        "name": "limestone paving batch 5",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.7230551289219693,
+          0.6866853124353134,
+          0.5972017883637634
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "limestone paving batch 5 (Base Color)"
+      },
+      {
+        "name": "sawn basalt bands",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          1,
+          1,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "sawn basalt bands (Base Color)"
+      },
+      {
+        "name": "limestone stair risers",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.4793201831008268,
+          0.45078578283822346,
+          0.39157247774972326
+        ],
+        "metallic": 0,
+        "roughness": 0.8,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "rich planting soil",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.08650046203654976,
+          0.06301001765316767,
+          0.03954623527673283
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "aggregate asphalt",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          1,
+          1,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "aggregate asphalt (Base Color)"
+      },
+      {
+        "name": "thermoplastic road markings",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.7912979403326302,
+          0.7681511472475071,
+          0.665387298282272
+        ],
+        "metallic": 0,
+        "roughness": 0.85,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "drain and bollard steel",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.07818742180518633,
+          0.11697066775851084,
+          0.14702726649759498
+        ],
+        "metallic": 0.65,
+        "roughness": 0.4,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "landscape groundcover",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          1,
+          1,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "landscape groundcover (Base Color)"
+      },
+      {
+        "name": "original CodeVerse wordmark",
+        "type": "StandardMaterial",
+        "backFaceCulling": false
+      },
+      {
+        "name": "learning city sign",
+        "type": "StandardMaterial",
+        "backFaceCulling": false
+      },
+      {
+        "name": "entrance wayfinding",
+        "type": "StandardMaterial",
+        "backFaceCulling": false
+      },
+      {
+        "name": "original scalar trunk STUDY",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.18,
+          0.12,
+          0.07
+        ],
+        "metallic": 0,
+        "roughness": 0.95,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "MIT leaf cutout; static no wind",
+        "type": "PBRMaterial",
+        "backFaceCulling": false,
+        "albedo": [
+          1,
+          1,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 0.9,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "MIT leaf cutout; static no wind (Base Color)"
+      },
+      {
+        "name": "original blossom petal study",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.8549019607843137,
+          0.5450980392156862,
+          0.6627450980392157
+        ],
+        "metallic": 0,
+        "roughness": 0.8,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "original scalar trunk STUDY",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.18,
+          0.12,
+          0.07
+        ],
+        "metallic": 0,
+        "roughness": 0.95,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "MIT leaf cutout; static no wind",
+        "type": "PBRMaterial",
+        "backFaceCulling": false,
+        "albedo": [
+          1,
+          1,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 0.9,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "MIT leaf cutout; static no wind (Base Color)"
+      },
+      {
+        "name": "skin warm neutral",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.5,
+          0.29,
+          0.19
+        ],
+        "metallic": 0,
+        "roughness": 0.8,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "original ivory shirt",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.83,
+          0.84,
+          0.8
+        ],
+        "metallic": 0,
+        "roughness": 0.8,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "original midnight jacket",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.025,
+          0.039,
+          0.065
+        ],
+        "metallic": 0,
+        "roughness": 0.8,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "original graphite cargo",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.045,
+          0.055,
+          0.068
+        ],
+        "metallic": 0,
+        "roughness": 0.8,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "original blue sneakers",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.025,
+          0.17,
+          0.48
+        ],
+        "metallic": 0,
+        "roughness": 0.5,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "sneaker soles",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.8,
+          0.85,
+          0.89
+        ],
+        "metallic": 0,
+        "roughness": 0.8,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "original swept hair",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.024,
+          0.017,
+          0.014
+        ],
+        "metallic": 0,
+        "roughness": 0.8,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "sunglass frame",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.05,
+          0.055,
+          0.06
+        ],
+        "metallic": 0.65,
+        "roughness": 0.3,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "sunglass lenses",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.009,
+          0.016,
+          0.025
+        ],
+        "metallic": 0.5,
+        "roughness": 0.1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "original electric blue seam",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.02,
+          0.27,
+          0.8
+        ],
+        "metallic": 0.2,
+        "roughness": 0.4,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "information marker glyph",
+        "type": "StandardMaterial",
+        "backFaceCulling": false
+      }
+    ],
+    "textures": [
+      {
+        "name": "afternoon sun_shadowMap",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 1024,
+          "height": 1024
+        }
+      },
+      {
+        "name": "original procedural sky reflection",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "name": "data:EnvironmentBRDFTexture0",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 256,
+          "height": 256
+        }
+      },
+      {
+        "name": "oiled timber slats (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "oiled timber slats (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "oiled timber slats (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 0 (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 0 (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 0 (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 4 (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 4 (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 4 (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 8 (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 8 (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 8 (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 3 (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 3 (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 3 (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 7 (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 7 (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 7 (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 2 (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 2 (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 2 (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 6 (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 6 (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 6 (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 1 (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 1 (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 1 (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 5 (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 5 (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 5 (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "sawn basalt bands (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "sawn basalt bands (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "sawn basalt bands (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "aggregate asphalt (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "aggregate asphalt (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "aggregate asphalt (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "landscape groundcover (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "landscape groundcover (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "landscape groundcover (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "original CodeVerse wordmark",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 1024,
+          "height": 256
+        }
+      },
+      {
+        "name": "learning city sign",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 1024,
+          "height": 256
+        }
+      },
+      {
+        "name": "entrance wayfinding",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 1024,
+          "height": 256
+        }
+      },
+      {
+        "name": "MIT leaf cutout; static no wind (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 1024,
+          "height": 1024
+        }
+      },
+      {
+        "name": "MIT leaf cutout; static no wind (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 1024,
+          "height": 1024
+        }
+      },
+      {
+        "name": "",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 216,
+          "height": 1
+        }
+      },
+      {
+        "name": "information marker glyph",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 1024,
+          "height": 256
+        }
+      }
+    ],
+    "meshes": [
+      {
+        "name": "constructed site plinth",
+        "material": "original architectural edge",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "rear verge",
+        "material": "original planted verge",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "bounded site landscape context",
+        "material": "original planted verge",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "site coping -23.5",
+        "material": "original architectural edge",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "site coping 23.5",
+        "material": "original architectural edge",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "front:stone",
+        "material": "original pale architectural bands",
+        "vertices": 9216,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "left:stone",
+        "material": "original pale architectural bands",
+        "vertices": 312,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "right:stone",
+        "material": "original pale architectural bands",
+        "vertices": 312,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "rear:stone",
+        "material": "original pale architectural bands",
+        "vertices": 168,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "front:glass",
+        "material": "opaque blue-neutral glazing STUDY",
+        "vertices": 2208,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "front:metal",
+        "material": "neutral structural metal",
+        "vertices": 2376,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "left:glass",
+        "material": "opaque blue-neutral glazing STUDY",
+        "vertices": 1296,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "left:metal",
+        "material": "neutral structural metal",
+        "vertices": 1296,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "right:glass",
+        "material": "opaque blue-neutral glazing STUDY",
+        "vertices": 1296,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "right:metal",
+        "material": "neutral structural metal",
+        "vertices": 1296,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "rear:glass",
+        "material": "opaque blue-neutral glazing STUDY",
+        "vertices": 1728,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "rear:metal",
+        "material": "neutral structural metal",
+        "vertices": 1752,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "entry:stone",
+        "material": "original pale architectural bands",
+        "vertices": 72,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "entry:glass",
+        "material": "opaque blue-neutral glazing STUDY",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "entry:metal",
+        "material": "neutral structural metal",
+        "vertices": 120,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "entry:blue",
+        "material": "blue accent study",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "roof:stone",
+        "material": "original pale architectural bands",
+        "vertices": 468,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "roof:metal",
+        "material": "neutral structural metal",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "plaza:paving",
+        "material": "original pale slab scalar study",
+        "vertices": 9024,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "link:paving",
+        "material": "original pale slab scalar study",
+        "vertices": 508,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "road:asphalt",
+        "material": "original asphalt scalar study",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "road:stone",
+        "material": "original pale architectural bands",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "road:marking",
+        "material": "road marking scalar study",
+        "vertices": 144,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "props:wood",
+        "material": "bench wood scalar study",
+        "vertices": 576,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "props:metal",
+        "material": "neutral structural metal",
+        "vertices": 432,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "props:stone",
+        "material": "original pale architectural bands",
+        "vertices": 360,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "props:soil",
+        "material": "soil scalar study",
+        "vertices": 72,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "continuous cantilever floor edge",
+        "material": "honed limestone coping",
+        "vertices": 9216,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "underside shadow reveal",
+        "material": "graphite anodised framing",
+        "vertices": 9216,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "recessed panel backs",
+        "material": "recessed facade shadow box",
+        "vertices": 736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "individual glazing cassettes",
+        "material": "reflective blue glass panel 0",
+        "vertices": 108,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "panel sill extrusion",
+        "material": "brushed champagne mullions",
+        "vertices": 282624,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "individual glazing cassettes",
+        "material": "reflective blue glass panel 3",
+        "vertices": 108,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "individual glazing cassettes",
+        "material": "reflective blue glass panel 6",
+        "vertices": 108,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "individual glazing cassettes",
+        "material": "reflective blue glass panel 2",
+        "vertices": 104,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "individual glazing cassettes",
+        "material": "reflective blue glass panel 5",
+        "vertices": 104,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "individual glazing cassettes",
+        "material": "reflective blue glass panel 1",
+        "vertices": 100,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "individual glazing cassettes",
+        "material": "reflective blue glass panel 4",
+        "vertices": 104,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "spandrel opaque band",
+        "material": "graphite anodised framing",
+        "vertices": 245760,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "projecting facade fins",
+        "material": "honed limestone coping",
+        "vertices": 120,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "projecting facade fins",
+        "material": "brushed champagne mullions",
+        "vertices": 288,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "floating roof cornice",
+        "material": "honed limestone coping",
+        "vertices": 1536,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "roof blue architectural reveal",
+        "material": "recessed blue light channel",
+        "vertices": 1536,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "upper parapet cap",
+        "material": "honed limestone coping",
+        "vertices": 1536,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "entrance stone portal",
+        "material": "honed limestone coping",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "dark entrance recess",
+        "material": "recessed facade shadow box",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "entrance glazed door leaves",
+        "material": "reflective blue glass panel 2",
+        "vertices": 96,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "door mullions",
+        "material": "graphite anodised framing",
+        "vertices": 192,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "door top rail",
+        "material": "brushed champagne mullions",
+        "vertices": 96,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "door handles",
+        "material": "brushed champagne mullions",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "entrance floating canopy",
+        "material": "graphite anodised framing",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "canopy stone top",
+        "material": "honed limestone coping",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "soffit timber ribs",
+        "material": "oiled timber slats",
+        "vertices": 1032,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "entrance columns",
+        "material": "brushed champagne mullions",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "canopy warm light lines",
+        "material": "warm soffit light",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "landmark media facade shadow box",
+        "material": "graphite anodised framing",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "media facade raised border",
+        "material": "brushed champagne mullions",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "media facade blue underline",
+        "material": "recessed blue light channel",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "original illuminated open C emblem",
+        "material": "recessed blue light channel",
+        "vertices": 40,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "plaza staggered stone units",
+        "material": "limestone paving batch 0",
+        "vertices": 1080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "plaza staggered stone units",
+        "material": "limestone paving batch 4",
+        "vertices": 1080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "plaza staggered stone units",
+        "material": "limestone paving batch 8",
+        "vertices": 1080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "plaza staggered stone units",
+        "material": "limestone paving batch 3",
+        "vertices": 1080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "plaza staggered stone units",
+        "material": "limestone paving batch 7",
+        "vertices": 1056,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "plaza staggered stone units",
+        "material": "limestone paving batch 2",
+        "vertices": 1056,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "plaza staggered stone units",
+        "material": "limestone paving batch 6",
+        "vertices": 1056,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "plaza staggered stone units",
+        "material": "limestone paving batch 1",
+        "vertices": 1056,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "plaza staggered stone units",
+        "material": "limestone paving batch 5",
+        "vertices": 1056,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "wide basalt route borders",
+        "material": "sawn basalt bands",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "approach stone coursing",
+        "material": "limestone paving batch 4",
+        "vertices": 144,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "approach stone coursing",
+        "material": "limestone paving batch 6",
+        "vertices": 264,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "approach stone coursing",
+        "material": "limestone paving batch 8",
+        "vertices": 144,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "approach stone coursing",
+        "material": "limestone paving batch 0",
+        "vertices": 264,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "approach stone coursing",
+        "material": "limestone paving batch 1",
+        "vertices": 120,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "approach stone coursing",
+        "material": "limestone paving batch 3",
+        "vertices": 240,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "approach stone coursing",
+        "material": "limestone paving batch 5",
+        "vertices": 120,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "approach stone coursing",
+        "material": "limestone paving batch 7",
+        "vertices": 120,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "approach stone coursing",
+        "material": "limestone paving batch 2",
+        "vertices": 120,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "pedestrian link stone edging",
+        "material": "honed limestone coping",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "side entrance terrace steps",
+        "material": "limestone stair risers",
+        "vertices": 124,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "terrace upper coping",
+        "material": "honed limestone coping",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "raised limestone planters",
+        "material": "limestone stair risers",
+        "vertices": 216,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "planter cap lip",
+        "material": "honed limestone coping",
+        "vertices": 216,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "inset planter soil",
+        "material": "rich planting soil",
+        "vertices": 216,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "planter dark recessed base",
+        "material": "graphite anodised framing",
+        "vertices": 216,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "cast bench supports",
+        "material": "graphite anodised framing",
+        "vertices": 144,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "bench support feet",
+        "material": "brushed champagne mullions",
+        "vertices": 144,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "rounded timber seat slats",
+        "material": "oiled timber slats",
+        "vertices": 360,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "timber back slats",
+        "material": "oiled timber slats",
+        "vertices": 216,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "perimeter retaining wall",
+        "material": "limestone stair risers",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "perimeter coping",
+        "material": "honed limestone coping",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "bollard metal body",
+        "material": "graphite anodised framing",
+        "vertices": 1020,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "bollard light collar",
+        "material": "warm soffit light",
+        "vertices": 1020,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "pergola steel uprights",
+        "material": "graphite anodised framing",
+        "vertices": 192,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "pergola timber roof",
+        "material": "oiled timber slats",
+        "vertices": 1152,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "aggregate road wearing course",
+        "material": "aggregate asphalt",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "individual road curb units",
+        "material": "honed limestone coping",
+        "vertices": 1368,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "north sidewalk fields",
+        "material": "limestone paving batch 2",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "south sidewalk",
+        "material": "limestone paving batch 2",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "road centre dashes",
+        "material": "thermoplastic road markings",
+        "vertices": 144,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "pedestrian crossing bars",
+        "material": "thermoplastic road markings",
+        "vertices": 216,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "storm drain recess",
+        "material": "graphite anodised framing",
+        "vertices": 96,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "drain slots",
+        "material": "drain and bollard steel",
+        "vertices": 768,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "road boundary bollards",
+        "material": "graphite anodised framing",
+        "vertices": 816,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "road bollard reflector",
+        "material": "thermoplastic road markings",
+        "vertices": 816,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "contoured landscape context",
+        "material": "landscape groundcover",
+        "vertices": 10000,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "original CodeVerse wordmark",
+        "material": "original CodeVerse wordmark",
+        "vertices": 8,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "learning city sign",
+        "material": "learning city sign",
+        "vertices": 8,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "entrance wayfinding",
+        "material": "entrance wayfinding",
+        "vertices": 8,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "entry left accent",
+        "material": "CodeVerse blue",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "entry right accent",
+        "material": "CodeVerse blue",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "front plaza inlay -4.25",
+        "material": "CodeVerse blue",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "front plaza inlay 4.25",
+        "material": "CodeVerse blue",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches",
+        "material": "original scalar trunk STUDY",
+        "vertices": 6639,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves",
+        "material": "MIT leaf cutout; static no wind",
+        "vertices": 21760,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-east",
+        "material": "original scalar trunk STUDY",
+        "vertices": 6639,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-east",
+        "material": "MIT leaf cutout; static no wind",
+        "vertices": 21760,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-accent",
+        "material": "original scalar trunk STUDY",
+        "vertices": 6639,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-accent",
+        "material": "MIT leaf cutout; static no wind",
+        "vertices": 21760,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "original blossom cluster",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-0",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-1",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-2",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-3",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-4",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-5",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-6",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-7",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-8",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-9",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-10",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-11",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-12",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-13",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-14",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-15",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-16",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-17",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-18",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-19",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-20",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-21",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-22",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-23",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-24",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-25",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-26",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-27",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-28",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-29",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-30",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-31",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-32",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-33",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-34",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-35",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-36",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-37",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-38",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-39",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-40",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-41",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-42",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-43",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-44",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-45",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-46",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-47",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-48",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-49",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-50",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-51",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-52",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-53",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-54",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-55",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-56",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-57",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-58",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-59",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-60",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-61",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-62",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-63",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-64",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-65",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-66",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-67",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-68",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-69",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-70",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-71",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-72",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-73",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-74",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-75",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-76",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-77",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-78",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-79",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-80",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-81",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-82",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-83",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-84",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-85",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-86",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-87",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-88",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-89",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-90",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-91",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-92",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-93",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-94",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-95",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-96",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-97",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-98",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-99",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-100",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-101",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-102",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-103",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-104",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-105",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-106",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-107",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-108",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-109",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-110",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-111",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-112",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-113",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-114",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-115",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-116",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-117",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-118",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-119",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-120",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-121",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-122",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-123",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-124",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-125",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-126",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-127",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-128",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-129",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-130",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-131",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-132",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-133",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-134",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-135",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-136",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-137",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-138",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-139",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-140",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-141",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-142",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-143",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-144",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-145",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-146",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-147",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-148",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "petal-cluster-149",
+        "material": "original blossom petal study",
+        "vertices": 91,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches",
+        "material": "original scalar trunk STUDY",
+        "vertices": 6331,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves",
+        "material": "MIT leaf cutout; static no wind",
+        "vertices": 9984,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-0",
+        "material": "original scalar trunk STUDY",
+        "vertices": 6331,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-0",
+        "material": "MIT leaf cutout; static no wind",
+        "vertices": 9984,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-1",
+        "material": "original scalar trunk STUDY",
+        "vertices": 6331,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-1",
+        "material": "MIT leaf cutout; static no wind",
+        "vertices": 9984,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive0",
+        "material": "skin warm neutral",
+        "vertices": 7470,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive1",
+        "material": "original ivory shirt",
+        "vertices": 493,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive2",
+        "material": "original midnight jacket",
+        "vertices": 2078,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive3",
+        "material": "original graphite cargo",
+        "vertices": 1399,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive4",
+        "material": "original blue sneakers",
+        "vertices": 374,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive5",
+        "material": "sneaker soles",
+        "vertices": 1948,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive6",
+        "material": "original swept hair",
+        "vertices": 173,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive7",
+        "material": "original swept hair",
+        "vertices": 181,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive8",
+        "material": "original swept hair",
+        "vertices": 164,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive9",
+        "material": "original swept hair",
+        "vertices": 164,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive10",
+        "material": "original swept hair",
+        "vertices": 164,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive11",
+        "material": "original swept hair",
+        "vertices": 164,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive12",
+        "material": "original swept hair",
+        "vertices": 164,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive13",
+        "material": "original swept hair",
+        "vertices": 164,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive14",
+        "material": "original swept hair",
+        "vertices": 164,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive15",
+        "material": "sunglass frame",
+        "vertices": 164,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive16",
+        "material": "sunglass lenses",
+        "vertices": 164,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive17",
+        "material": "sunglass frame",
+        "vertices": 164,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive18",
+        "material": "sunglass lenses",
+        "vertices": 164,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive19",
+        "material": "sunglass frame",
+        "vertices": 173,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive20",
+        "material": "original midnight jacket",
+        "vertices": 115,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive21",
+        "material": "original ivory shirt",
+        "vertices": 15,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive22",
+        "material": "original graphite cargo",
+        "vertices": 72,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive23",
+        "material": "original midnight jacket",
+        "vertices": 54,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive24",
+        "material": "original blue sneakers",
+        "vertices": 164,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive25",
+        "material": "sneaker soles",
+        "vertices": 164,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive26",
+        "material": "original graphite cargo",
+        "vertices": 72,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive27",
+        "material": "original midnight jacket",
+        "vertices": 54,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive28",
+        "material": "original blue sneakers",
+        "vertices": 164,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive29",
+        "material": "sneaker soles",
+        "vertices": 164,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive30",
+        "material": "original graphite cargo",
+        "vertices": 164,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive31",
+        "material": "original electric blue seam",
+        "vertices": 164,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive32",
+        "material": "original electric blue seam",
+        "vertices": 164,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive33",
+        "material": "original graphite cargo",
+        "vertices": 164,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive34",
+        "material": "original electric blue seam",
+        "vertices": 164,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "CodeVerse original hero / early fitted-shell iteration_primitive35",
+        "material": "original electric blue seam",
+        "vertices": 164,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "entrance information marker",
+        "material": "CodeVerse blue",
+        "vertices": 2401,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "information marker glyph",
+        "material": "information marker glyph",
+        "vertices": 8,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      }
+    ]
+  }
+}

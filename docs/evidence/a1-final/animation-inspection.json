@@ -1,0 +1,805 @@
+{
+  "scope": "Exact archived animation data inspection; NOT MPFB retarget/deformation/native runtime acceptance",
+  "source": {
+    "repository": "https://github.com/J-Ponzo/gltf-universal-animation-library",
+    "commit": "e24c23cf2a1323488a3faa226ea7ea21f644b73e",
+    "mirrorClaimsOriginalDownloadDate": "2025-06-10",
+    "archive": {
+      "bytes": 3488915,
+      "sha256": "dfa421236bf699868703652cdb0966ad47e269567d82afad92d22edb66c1c62e"
+    },
+    "gltf": {
+      "bytes": 2459987,
+      "sha256": "0ff075c7ad6855c5c2c37a171592ee8f0d6ab2f58259e2be77a9b63dd8027765"
+    },
+    "bin": {
+      "bytes": 1587224,
+      "sha256": "6e65377d81558333c4093dbb144a48fd19019343d82b1a3a7992a98ec0e0543c"
+    },
+    "readme": {
+      "bytes": 1051,
+      "sha256": "370e6ff244ef43b269f936be7d630a77a3eb7ed8bbc3315ffcae5b327b814fcb"
+    },
+    "license": {
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    "asset": {
+      "generator": "Khronos glTF Blender I/O v4.3.47",
+      "version": "2.0"
+    }
+  },
+  "rights": {
+    "mirrorFile": "CC0 1.0 text present; README names Quaternius and states Standard/free archive provenance",
+    "limitations": "Third-party mirror, no publisher signature/hash match. README license hyperlink incorrectly points to a different repository. Current publisher page CC0 vs QAL conflict. Hold game adoption; no legal conclusion from mirror alone."
+  },
+  "animationCount": 46,
+  "requiredClips": ["Idle_Loop", "Walk_Loop", "Jog_Fwd_Loop", "Sprint_Loop"],
+  "clips": [
+    {
+      "name": "A_TPose",
+      "startSeconds": 0,
+      "endSeconds": 0.1666666716337204,
+      "durationSeconds": 0.1666666716337204,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.0000034150945850063755,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0
+    },
+    {
+      "name": "Crouch_Fwd_Loop",
+      "startSeconds": 0,
+      "endSeconds": 2,
+      "durationSeconds": 2,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.0000034150945850063755,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0
+    },
+    {
+      "name": "Crouch_Idle_Loop",
+      "startSeconds": 0,
+      "endSeconds": 2.9166667461395264,
+      "durationSeconds": 2.9166667461395264,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.07066765166555737,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0.00000759572806390446
+    },
+    {
+      "name": "Dance_Loop",
+      "startSeconds": 0,
+      "endSeconds": 1,
+      "durationSeconds": 1,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.0000034150945850063755,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0
+    },
+    {
+      "name": "Death01",
+      "startSeconds": 0,
+      "endSeconds": 2.375,
+      "durationSeconds": 2.375,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 134.33418166073182,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0.9353776500601514
+    },
+    {
+      "name": "Driving_Loop",
+      "startSeconds": 0,
+      "endSeconds": 1.6666666269302368,
+      "durationSeconds": 1.6666666269302368,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.0000034150945850063755,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0
+    },
+    {
+      "name": "Fixing_Kneeling",
+      "startSeconds": 0,
+      "endSeconds": 5.166666507720947,
+      "durationSeconds": 5.166666507720947,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.909366458857643,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0.00030754303744656334
+    },
+    {
+      "name": "Hit_Chest",
+      "startSeconds": 0,
+      "endSeconds": 0.3333333432674408,
+      "durationSeconds": 0.3333333432674408,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 14.32278589791247,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0.034169851557368354
+    },
+    {
+      "name": "Hit_Head",
+      "startSeconds": 0,
+      "endSeconds": 0.4166666567325592,
+      "durationSeconds": 0.4166666567325592,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 13.693106634083406,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0.00036029124550909547
+    },
+    {
+      "name": "Idle_Loop",
+      "startSeconds": 0,
+      "endSeconds": 2.5,
+      "durationSeconds": 2.5,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.3918898871897874,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0.0001175879595349594
+    },
+    {
+      "name": "Idle_Talking_Loop",
+      "startSeconds": 0,
+      "endSeconds": 2.9166667461395264,
+      "durationSeconds": 2.9166667461395264,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.41160692400534044,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0.00003296506650025272
+    },
+    {
+      "name": "Idle_Torch_Loop",
+      "startSeconds": 0,
+      "endSeconds": 1.25,
+      "durationSeconds": 1.25,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.08242215474585786,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0.00006014868090244349
+    },
+    {
+      "name": "Interact",
+      "startSeconds": 0,
+      "endSeconds": 2,
+      "durationSeconds": 2,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.0000034150945850063755,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0
+    },
+    {
+      "name": "Jog_Fwd_Loop",
+      "startSeconds": 0,
+      "endSeconds": 0.9166666865348816,
+      "durationSeconds": 0.9166666865348816,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 3.145268837394364,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0.02303650483723305
+    },
+    {
+      "name": "Jump_Land",
+      "startSeconds": 0,
+      "endSeconds": 1.25,
+      "durationSeconds": 1.25,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 95.59756398525516,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0.05784082169183779
+    },
+    {
+      "name": "Jump_Loop",
+      "startSeconds": 0,
+      "endSeconds": 2.5,
+      "durationSeconds": 2.5,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.0000024148365394514667,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0
+    },
+    {
+      "name": "Jump_Start",
+      "startSeconds": 0,
+      "endSeconds": 1.3333333730697632,
+      "durationSeconds": 1.3333333730697632,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 95.59748298027861,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0.3555572641406525
+    },
+    {
+      "name": "PickUp_Table",
+      "startSeconds": 0,
+      "endSeconds": 0.8333333134651184,
+      "durationSeconds": 0.8333333134651184,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.0000034150945850063755,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0
+    },
+    {
+      "name": "Pistol_Aim_Down",
+      "startSeconds": 0,
+      "endSeconds": 0.1666666716337204,
+      "durationSeconds": 0.1666666716337204,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.0000029575586669421963,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0
+    },
+    {
+      "name": "Pistol_Aim_Neutral",
+      "startSeconds": 0,
+      "endSeconds": 0.1666666716337204,
+      "durationSeconds": 0.1666666716337204,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.0000029575586669421963,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0
+    },
+    {
+      "name": "Pistol_Aim_Up",
+      "startSeconds": 0,
+      "endSeconds": 0.1666666716337204,
+      "durationSeconds": 0.1666666716337204,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.0000029575586669421963,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0
+    },
+    {
+      "name": "Pistol_Idle_Loop",
+      "startSeconds": 0,
+      "endSeconds": 1.6666666269302368,
+      "durationSeconds": 1.6666666269302368,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.0000029575586669421963,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0
+    },
+    {
+      "name": "Pistol_Reload",
+      "startSeconds": 0,
+      "endSeconds": 1.6666666269302368,
+      "durationSeconds": 1.6666666269302368,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.0000029575586669421963,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0
+    },
+    {
+      "name": "Pistol_Shoot",
+      "startSeconds": 0,
+      "endSeconds": 0.625,
+      "durationSeconds": 0.625,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.04970401277597772,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 3.152517880512842e-7
+    },
+    {
+      "name": "Punch_Cross",
+      "startSeconds": 0,
+      "endSeconds": 1,
+      "durationSeconds": 1,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.0000029575586669421963,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0
+    },
+    {
+      "name": "Punch_Enter",
+      "startSeconds": 0,
+      "endSeconds": 0.8333333134651184,
+      "durationSeconds": 0.8333333134651184,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 99.7150078146134,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0.08384219742081421
+    },
+    {
+      "name": "Punch_Jab",
+      "startSeconds": 0,
+      "endSeconds": 0.8333333134651184,
+      "durationSeconds": 0.8333333134651184,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.5606004178168584,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0.0007111692490156496
+    },
+    {
+      "name": "Push_Loop",
+      "startSeconds": 0,
+      "endSeconds": 2.6666667461395264,
+      "durationSeconds": 2.6666667461395264,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.0000034150945850063755,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0
+    },
+    {
+      "name": "Roll",
+      "startSeconds": 0,
+      "endSeconds": 1.4583333730697632,
+      "durationSeconds": 1.4583333730697632,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 104.20452955770473,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0.3805432040629789
+    },
+    {
+      "name": "Roll_RM",
+      "startSeconds": 0,
+      "endSeconds": 1.4583333730697632,
+      "durationSeconds": 1.4583333730697632,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 104.20423092247047,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 4.991431713104248
+    },
+    {
+      "name": "Sitting_Enter",
+      "startSeconds": 0,
+      "endSeconds": 1.2916666269302368,
+      "durationSeconds": 1.2916666269302368,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 98.26034899496162,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0.41553770527042866
+    },
+    {
+      "name": "Sitting_Exit",
+      "startSeconds": 0,
+      "endSeconds": 1,
+      "durationSeconds": 1,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 95.16774666789424,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0.4156730372903858
+    },
+    {
+      "name": "Sitting_Idle_Loop",
+      "startSeconds": 0,
+      "endSeconds": 1.6666666269302368,
+      "durationSeconds": 1.6666666269302368,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.0000034150945850063755,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0
+    },
+    {
+      "name": "Sitting_Talking_Loop",
+      "startSeconds": 0,
+      "endSeconds": 2.9166667461395264,
+      "durationSeconds": 2.9166667461395264,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.3847520179442058,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 2.24130920481284e-7
+    },
+    {
+      "name": "Spell_Simple_Enter",
+      "startSeconds": 0,
+      "endSeconds": 0.5,
+      "durationSeconds": 0.5,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 112.51721735855155,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0.025102976991852977
+    },
+    {
+      "name": "Spell_Simple_Exit",
+      "startSeconds": 0,
+      "endSeconds": 0.4166666567325592,
+      "durationSeconds": 0.4166666567325592,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 115.75843520607881,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0.024750877458939488
+    },
+    {
+      "name": "Spell_Simple_Idle_Loop",
+      "startSeconds": 0,
+      "endSeconds": 2.0833332538604736,
+      "durationSeconds": 2.0833332538604736,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.4147596694248226,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0.000010126109450330844
+    },
+    {
+      "name": "Spell_Simple_Shoot",
+      "startSeconds": 0,
+      "endSeconds": 0.5,
+      "durationSeconds": 0.5,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.0000034150945850063755,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0
+    },
+    {
+      "name": "Sprint_Loop",
+      "startSeconds": 0,
+      "endSeconds": 0.6666666865348816,
+      "durationSeconds": 0.6666666865348816,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.6504921194323454,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 4.6773167141999165e-7
+    },
+    {
+      "name": "Swim_Fwd_Loop",
+      "startSeconds": 0,
+      "endSeconds": 1.3333333730697632,
+      "durationSeconds": 1.3333333730697632,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.0000024148365394514667,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0
+    },
+    {
+      "name": "Swim_Idle_Loop",
+      "startSeconds": 0,
+      "endSeconds": 3.3333332538604736,
+      "durationSeconds": 3.3333332538604736,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.0000034150945850063755,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0
+    },
+    {
+      "name": "Sword_Attack",
+      "startSeconds": 0,
+      "endSeconds": 1.5,
+      "durationSeconds": 1.5,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.2077366145845434,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0.000019737801601359923
+    },
+    {
+      "name": "Sword_Attack_RM",
+      "startSeconds": 0,
+      "endSeconds": 1.5,
+      "durationSeconds": 1.5,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.2077366145845434,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 1.5005056858062744
+    },
+    {
+      "name": "Sword_Idle",
+      "startSeconds": 0,
+      "endSeconds": 1.6666666269302368,
+      "durationSeconds": 1.6666666269302368,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.00006952884322115481,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 2.3995790009402393e-7
+    },
+    {
+      "name": "Walk_Formal_Loop",
+      "startSeconds": 0,
+      "endSeconds": 1.3333333730697632,
+      "durationSeconds": 1.3333333730697632,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 1.1996957688760967,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 3.0952549361563684e-7
+    },
+    {
+      "name": "Walk_Loop",
+      "startSeconds": 0,
+      "endSeconds": 1.3333333730697632,
+      "durationSeconds": 1.3333333730697632,
+      "channels": 159,
+      "paths": {
+        "translation": 53,
+        "rotation": 53,
+        "scale": 53
+      },
+      "targetCount": 53,
+      "maxLocalRotationEndpointDifferenceDegrees": 0.0000034150945850063755,
+      "maxLocalTranslationEndpointDifferenceSourceUnits": 0
+    }
+  ],
+  "rig": {
+    "sourceJointCount": 53,
+    "sourceJointNames": [
+      "root",
+      "DEF-hips",
+      "DEF-spine.001",
+      "DEF-spine.002",
+      "DEF-spine.003",
+      "DEF-neck",
+      "DEF-head",
+      "DEF-shoulder.L",
+      "DEF-upper_arm.L",
+      "DEF-forearm.L",
+      "DEF-hand.L",
+      "DEF-f_index.01.L",
+      "DEF-f_index.02.L",
+      "DEF-f_index.03.L",
+      "DEF-f_middle.01.L",
+      "DEF-f_middle.02.L",
+      "DEF-f_middle.03.L",
+      "DEF-f_pinky.01.L",
+      "DEF-f_pinky.02.L",
+      "DEF-f_pinky.03.L",
+      "DEF-f_ring.01.L",
+      "DEF-f_ring.02.L",
+      "DEF-f_ring.03.L",
+      "DEF-thumb.01.L",
+      "DEF-thumb.02.L",
+      "DEF-thumb.03.L",
+      "DEF-shoulder.R",
+      "DEF-upper_arm.R",
+      "DEF-forearm.R",
+      "DEF-hand.R",
+      "DEF-f_index.01.R",
+      "DEF-f_index.02.R",
+      "DEF-f_index.03.R",
+      "DEF-f_middle.01.R",
+      "DEF-f_middle.02.R",
+      "DEF-f_middle.03.R",
+      "DEF-f_pinky.01.R",
+      "DEF-f_pinky.02.R",
+      "DEF-f_pinky.03.R",
+      "DEF-f_ring.01.R",
+      "DEF-f_ring.02.R",
+      "DEF-f_ring.03.R",
+      "DEF-thumb.01.R",
+      "DEF-thumb.02.R",
+      "DEF-thumb.03.R",
+      "DEF-thigh.L",
+      "DEF-shin.L",
+      "DEF-foot.L",
+      "DEF-toe.L",
+      "DEF-thigh.R",
+      "DEF-shin.R",
+      "DEF-foot.R",
+      "DEF-toe.R"
+    ],
+    "mpfbSourceBoneCount": 53,
+    "exactNameIntersection": [],
+    "decision": "Equal joint counts are not skeleton compatibility. Explicit rest-space mapping and actual retarget/deformation test required; name-only track reassignment insufficient."
+  },
+  "validation": {
+    "errors": 0,
+    "warnings": 1,
+    "infos": 4
+  },
+  "notVerified": [
+    "Original publisher archive identity",
+    "Current 2026 tier/root-motion coverage",
+    "MPFB rest-axis mapping",
+    "target foot contact and garment clipping",
+    "in-place displacement policy",
+    "runtime blending/start-stop/turn",
+    "finished hero motion quality"
+  ]
+}

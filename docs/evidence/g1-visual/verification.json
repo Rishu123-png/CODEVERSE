@@ -1,0 +1,141 @@
+{
+  "date": "2026-11-27",
+  "status": "Visual revision implemented and technically tested; owner visual review pending. Not premium art or physical-hardware acceptance.",
+  "scope": "Existing G1 visual overhaul only; accepted initial-frame renderer fix preserved, no new gameplay system.",
+  "checks": {
+    "code": "npm run check: passed formatting, lint, TypeScript, 32 unit tests and production build; see code-check.log",
+    "browserSuite": "9/9 passed, 14.9 minutes software run; see browser-suite.log. Includes actual keyboard/mouse traversal, interaction, pause/reset, collision/ramp/boundary and policy/lifecycle checks. Duration is not an FPS benchmark.",
+    "glbValidation": "All six active GLBs: 0 errors, 0 warnings; glb-validation.json",
+    "visualCapture": "pass-5 completed seven production 1280x800 WebGPU views. All seven visually inspected, zero browser warnings/errors/failed requests, all textures ready.",
+    "backendMatrix": [
+      {
+        "report": "backend/production-webgpu.json",
+        "backend": "WebGPU",
+        "liveRenderLoop": true,
+        "pavingPixels": {
+          "meanLuminance": 119.78589611214946,
+          "blackFraction": 0
+        },
+        "pageErrors": 0,
+        "failedRequests": 0,
+        "httpErrors": 0,
+        "warningsOrErrors": [],
+        "shaderFailures": [],
+        "unreadyTextures": 0,
+        "developmentTelemetry": false,
+        "reloadResizeAudit": true
+      },
+      {
+        "report": "backend/production-auto.json",
+        "backend": "WebGPU",
+        "liveRenderLoop": true,
+        "pavingPixels": {
+          "meanLuminance": 119.78589611214946,
+          "blackFraction": 0
+        },
+        "pageErrors": 0,
+        "failedRequests": 0,
+        "httpErrors": 0,
+        "warningsOrErrors": [],
+        "shaderFailures": [],
+        "unreadyTextures": 0,
+        "developmentTelemetry": false,
+        "reloadResizeAudit": false
+      },
+      {
+        "report": "backend-webgl/production-webgl2.json",
+        "backend": "WebGL2",
+        "liveRenderLoop": true,
+        "pavingPixels": {
+          "meanLuminance": 117.0572255797874,
+          "blackFraction": 0
+        },
+        "pageErrors": 0,
+        "failedRequests": 0,
+        "httpErrors": 0,
+        "warningsOrErrors": [],
+        "shaderFailures": [],
+        "unreadyTextures": 0,
+        "developmentTelemetry": false,
+        "reloadResizeAudit": false
+      },
+      {
+        "report": "backend-webgl/development-webgl2.json",
+        "backend": "WebGL2",
+        "liveRenderLoop": true,
+        "pavingPixels": {
+          "meanLuminance": 117.0572255797874,
+          "blackFraction": 0
+        },
+        "pageErrors": 0,
+        "failedRequests": 0,
+        "httpErrors": 0,
+        "warningsOrErrors": [],
+        "shaderFailures": [],
+        "unreadyTextures": 0,
+        "developmentTelemetry": true,
+        "reloadResizeAudit": false
+      },
+      {
+        "report": "backend-webgpu-dev/development-webgpu.json",
+        "backend": "WebGPU",
+        "liveRenderLoop": true,
+        "pavingPixels": {
+          "meanLuminance": 117.21926899566667,
+          "blackFraction": 0
+        },
+        "pageErrors": 0,
+        "failedRequests": 0,
+        "httpErrors": 0,
+        "warningsOrErrors": [],
+        "shaderFailures": [],
+        "unreadyTextures": 0,
+        "developmentTelemetry": true,
+        "reloadResizeAudit": false
+      }
+    ],
+    "acceptedBlackFixRegression": "0% black pixels in defined paving sample for all five current live paths. Production WebGPU reload/resize also passed. This is not a visual-quality score.",
+    "gitWhitespace": "git diff --check passed"
+  },
+  "iterations": {
+    "before": "before-spawn.png, before-overview.png, hero-before-validation.json retained",
+    "complete": [
+      "pass-1",
+      "pass-3",
+      "pass-5"
+    ],
+    "incomplete": [
+      "pass-2: screenshot timeout; sky smearing corrected subsequently",
+      "pass-4: shadow-acne regression and screenshot timeout; corrected subsequently",
+      "backend: production WebGPU and Auto passed; subsequent mixed-configuration WebGL2 screenshot timed out",
+      "backend-small: WebGL2 readback timeout at 640x480",
+      "backend-verified: single-capture follow-up still timed out; folder name is not a pass claim",
+      "backend-static: paused-scheduling diagnostic still timed out; not a pass"
+    ],
+    "successfulBackendFollowUp": "Explicit ANGLE without Vulkan launch for WebGL2, separate software Vulkan for WebGPU. Actual completed live reports above, no static-capture result counted. No assertion threshold weakened. The exact cause of failed mixed-configuration readbacks is not established."
+  },
+  "environment": {
+    "browser": "Chromium 158.0.8127.0 on Linux",
+    "rendering": "Software SwiftShader; Vulkan for successful WebGPU checks, explicit ANGLE WebGL2 for successful WebGL checks",
+    "productionPort": 4173,
+    "browserCaptureSizes": "1280x800 visual tour; 960x600 matrix WebGPU/Auto, 1000x640 reload/resize; 640x480 remaining matrix; browser suite varies viewport as documented in test.",
+    "notMeasured": [
+      "Owner Windows laptop / HP Victus",
+      "Physical GPU compatibility, sustained FPS, memory or adaptive quality"
+    ]
+  },
+  "assets": {
+    "manifest": "runtime-assets.json",
+    "sources": "public/assets/g1/VISUAL-SOURCES.md",
+    "runtimeBytes": 14558052,
+    "acquisition": "Original authoring and already-approved cached CC0/MIT inputs; no paid or new marketplace acquisition"
+  },
+  "remainingQualityGap": [
+    "Still stylized/flat compared with approved cinematic concept; not premium acceptance",
+    "Character face/hands, tailoring/deformation and gait require specialist refinement",
+    "Opaque reflective glazing has no finished interior; background towers are repeated scenery, not a finished city",
+    "Procedural planting/materials, light integration and environmental density remain below reference",
+    "Large Babylon bundle warning remains; no measured physical-GPU performance acceptance"
+  ],
+  "review": "docs/g1-visual-overhaul.md"
+}

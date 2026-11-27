@@ -1,0 +1,10 @@
+{
+  "url": "http://localhost:4173/?renderer=webgl2",
+  "browser": "158.0.8127.0",
+  "environment": "SwiftShader software WebGL2, not laptop/GPU/FPS proof",
+  "backend": "WebGL2",
+  "telemetryPresent": false,
+  "errors": [],
+  "failed": [],
+  "httpErrors": []
+}

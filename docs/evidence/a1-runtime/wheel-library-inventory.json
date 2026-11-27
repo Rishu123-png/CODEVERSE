@@ -1,0 +1,26 @@
+{
+  "panda3d": {
+    "version": "1.10.16",
+    "file": "panda3d-1.10.16-cp311-cp311-manylinux2014_x86_64.whl",
+    "centralDirectoryEntriesInspected": 754,
+    "matchingLibraries": [],
+    "inspectionOnly": true
+  },
+  "opencv-python": {
+    "version": "5.1.0.95",
+    "file": "opencv_python-5.1.0.95-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "centralDirectoryEntriesInspected": 134,
+    "matchingLibraries": [
+      "opencv_python.libs/libxkbcommon-71ae2972.so.0.0.0",
+      "opencv_python.libs/libxkbcommon-x11-c65ed502.so.0.0.0"
+    ],
+    "inspectionOnly": true
+  },
+  "PySide6-Essentials": {
+    "version": "6.12.0",
+    "file": "pyside6_essentials-6.12.0-cp310-abi3-manylinux_2_34_x86_64.whl",
+    "centralDirectoryEntriesInspected": 2471,
+    "matchingLibraries": [],
+    "inspectionOnly": true
+  }
+}

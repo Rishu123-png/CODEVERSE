@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CodeVerse • A1 exterior construction study</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #111c27;
+        color: #e3edf4;
+        font: 14px system-ui;
+      }
+      header {
+        padding: 16px 24px;
+      }
+      h1 {
+        font-size: 21px;
+        margin: 0 0 7px;
+      }
+      p {
+        margin: 6px 0;
+        color: #b3c4d0;
+      }
+      .warning {
+        color: #ffd48a;
+      }
+      button {
+        background: #253c50;
+        color: #fff;
+        border: 1px solid #526b80;
+        padding: 8px 16px;
+        cursor: pointer;
+        margin: 5px;
+      }
+      canvas {
+        display: block;
+        width: 100%;
+        height: calc(100vh - 182px);
+        min-height: 500px;
+        touch-action: none;
+      }
+      #status {
+        position: absolute;
+        bottom: 12px;
+        left: 18px;
+        background: #122230dc;
+        padding: 9px;
+      }
+      header span {
+        float: right;
+        color: #88c5f1;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <span>A1 OPEN · G1 NOT STARTED</span>
+      <h1>CodeVerse / original landmark + plaza</h1>
+      <p class="warning">
+        Full-exterior construction study — not finished production art. No hero,
+        vegetation, final PBR textures, interiors or gameplay.
+      </p>
+      <p>
+        Original scripted geometry · scalar materials · procedural daylight ·
+        WebGL2 explicitly required · orbit / zoom to inspect
+      </p>
+      <nav>
+        <button data-view="front">Entrance / plaza</button
+        ><button data-view="rear">Rear / roof</button
+        ><button data-view="site">Whole site</button>
+      </nav>
+    </header>
+    <canvas id="view"></canvas>
+    <div id="status">Loading actual compressed GLB…</div>
+    <script type="module">
+      import * as B from '/tools/node_modules/@babylonjs/core/index.js';
+      import '/tools/node_modules/@babylonjs/loaders/glTF/index.js';
+      const canvas = document.querySelector('#view');
+      const engine = new B.Engine(canvas, true, {
+        preserveDrawingBuffer: true,
+        stencil: true,
+      });
+      if (engine.webGLVersion !== 2)
+        throw new Error('WebGL2 required: no silent backend fallback');
+      B.MeshoptCompression.Configuration.decoder.url = '/meshopt-decoder.js';
+      const scene = new B.Scene(engine);
+      scene.useRightHandedSystem = true;
+      scene.clearColor = new B.Color4(0.36, 0.46, 0.55, 1);
+      scene.imageProcessingConfiguration.toneMappingEnabled = true;
+      scene.imageProcessingConfiguration.toneMappingType =
+        B.ImageProcessingConfiguration.TONEMAPPING_ACES;
+      scene.imageProcessingConfiguration.exposure = 1.1;
+      const camera = new B.ArcRotateCamera(
+        'inspection',
+        Math.PI / 2,
+        1.15,
+        68,
+        new B.Vector3(0, 10, -6),
+        scene,
+      );
+      camera.fov = (55 * Math.PI) / 180;
+      camera.minZ = 0.1;
+      camera.maxZ = 350;
+      camera.lowerRadiusLimit = 8;
+      camera.upperRadiusLimit = 140;
+      camera.attachControl(canvas, true);
+      camera.wheelPrecision = 8;
+      new B.HemisphericLight('sky', new B.Vector3(0, 1, 0), scene).intensity =
+        0.8;
+      const sun = new B.DirectionalLight(
+        'sun',
+        new B.Vector3(-0.5, -1, -0.3),
+        scene,
+      );
+      sun.position = new B.Vector3(28, 55, 24);
+      sun.intensity = 2.4;
+      const shadows = new B.ShadowGenerator(2048, sun);
+      shadows.usePercentageCloserFiltering = true;
+      shadows.bias = 0.0008;
+      shadows.normalBias = 0.025;
+      const load = (file) =>
+        B.LoadAssetContainerAsync('/runtime-generated/' + file, scene);
+      const c = await load('landmark-study.meshopt.glb'),
+        original = await load('landmark-study.glb');
+      const metrics = (c) => ({
+        meshes: c.meshes.filter((m) => m.getTotalVertices() > 0).length,
+        triangles: c.meshes.reduce((s, m) => s + m.getTotalIndices() / 3, 0),
+        materials: c.materials.length,
+        skeletons: c.skeletons.length,
+        animations: c.animationGroups.length,
+      });
+      const compressed = metrics(c),
+        uncompressed = metrics(original);
+      if (JSON.stringify(compressed) !== JSON.stringify(uncompressed))
+        throw new Error('Original/compressed structure differs');
+      original.dispose();
+      c.addAllToScene();
+      for (const mesh of c.meshes)
+        if (mesh.getTotalVertices()) {
+          mesh.receiveShadows = true;
+          shadows.addShadowCaster(mesh);
+        }
+      const boundMeshes = c.meshes.filter((m) => m.getTotalVertices());
+      const bounds = {
+        min: [Infinity, Infinity, Infinity],
+        max: [-Infinity, -Infinity, -Infinity],
+      };
+      for (const m of boundMeshes) {
+        m.computeWorldMatrix(true);
+        const b = m.getBoundingInfo().boundingBox;
+        ['x', 'y', 'z'].forEach((a, i) => {
+          bounds.min[i] = Math.min(bounds.min[i], b.minimumWorld[a]);
+          bounds.max[i] = Math.max(bounds.max[i], b.maximumWorld[a]);
+        });
+      }
+      const presets = {
+        front: {
+          alpha: Math.PI / 2 + 0.25,
+          beta: 1.23,
+          radius: 66,
+          target: [0, 9, -4],
+        },
+        rear: {
+          alpha: -Math.PI / 2 - 0.42,
+          beta: 0.96,
+          radius: 67,
+          target: [0, 11, -10],
+        },
+        site: {
+          alpha: Math.PI / 2 + 0.55,
+          beta: 0.67,
+          radius: 91,
+          target: [0, 3, 0],
+        },
+      };
+      window.landmarkView = (name) => {
+        const p = presets[name];
+        if (!p) throw new Error('Unknown view');
+        camera.setTarget(new B.Vector3(...p.target));
+        camera.alpha = p.alpha;
+        camera.beta = p.beta;
+        camera.radius = p.radius;
+        camera.getViewMatrix(true);
+        scene.render();
+        return {
+          position: camera.position.asArray(),
+          alpha: camera.alpha,
+          beta: camera.beta,
+          target: camera.target.asArray(),
+        };
+      };
+      for (const button of document.querySelectorAll('button'))
+        button.onclick = () => window.landmarkView(button.dataset.view);
+      window.landmarkView('front');
+      const lifecycle = [];
+      for (let i = 0; i < 3; i++) {
+        const before = {
+          meshes: scene.meshes.length,
+          materials: scene.materials.length,
+          textures: scene.textures.length,
+        };
+        const extra = await load('landmark-study.meshopt.glb');
+        extra.addAllToScene();
+        extra.removeAllFromScene();
+        extra.dispose();
+        const after = {
+          meshes: scene.meshes.length,
+          materials: scene.materials.length,
+          textures: scene.textures.length,
+        };
+        if (JSON.stringify(before) !== JSON.stringify(after))
+          throw new Error('Container lifecycle count mismatch');
+        lifecycle.push({ before, after });
+      }
+      engine.runRenderLoop(() => scene.render());
+      window.addEventListener('resize', () => engine.resize());
+      window.landmarkEvidence = {
+        scope:
+          'A1 full exterior construction only; not art acceptance, physical GPU performance, Windows or WebGPU',
+        backend: 'WebGL2',
+        babylon: B.Engine.Version,
+        compressed,
+        uncompressed,
+        bounds,
+        lifecycle,
+        dimensionsInMeters: true,
+        scalarMaterialsOnly: true,
+        noExternalTextures: true,
+        unresolved: [
+          'hero',
+          'vegetation',
+          'final PBR',
+          'collision/navigation',
+          'production art review',
+        ],
+      };
+      document.querySelector('#status').textContent =
+        `${compressed.meshes} batches · ${compressed.triangles.toLocaleString()} triangles · ${compressed.materials} scalar materials · actual meshopt GLB`;
+      window.landmarkDispose = () => {
+        shadows.dispose();
+        scene.dispose();
+        engine.dispose();
+        return {
+          sceneDisposed: scene.isDisposed,
+          engineScenes: engine.scenes.length,
+        };
+      };
+      window.landmarkReady = true;
+    </script>
+  </body>
+</html>

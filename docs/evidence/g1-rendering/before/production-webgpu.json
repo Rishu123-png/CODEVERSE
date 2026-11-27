@@ -1,0 +1,41 @@
+{
+  "url": "http://localhost:4173/?renderer=webgpu",
+  "browser": "158.0.8127.0",
+  "state": {
+    "error": "UNABLE TO ENTER THE WORLDLet's get you back.Failed to execute 'copyExternalImageToTexture' on 'GPUQueue': Failed to copy content from external image.Use current Chrome or Edge with hardware acceleration. WebGPU needs HTTPS or localhost. Check your GPU driver, network and required asset files.Retry initialization ↗Forced renderer modes never fall back to another backend.",
+    "shaders": [],
+    "adapter": {
+      "vendor": "google",
+      "architecture": "swiftshader",
+      "device": "",
+      "description": ""
+    },
+    "canvas": false
+  },
+  "logs": [
+    {
+      "type": "log",
+      "text": "BJS - [14:28:18]: Babylon.js v9.38.0 - WebGPU1 engine"
+    },
+    {
+      "type": "warning",
+      "text": "A valid external Instance reference no longer exists."
+    },
+    {
+      "type": "warning",
+      "text": "BJS - [14:28:19]: WebGPU context lost. [object GPUDeviceLostInfo]"
+    },
+    {
+      "type": "error",
+      "text": "BJS - [14:28:19]: A fatal error occurred during WebGPU creation/initialization."
+    },
+    {
+      "type": "error",
+      "text": "BJS - [14:28:19]: WebGPU: context restoration failed: The rendering canvas has not been set!"
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "httpErrors": [],
+  "environment": "Linux Chromium software SwiftShader; not owner laptop or physical GPU"
+}

@@ -1,0 +1,7 @@
+{
+  "entry": "src/game/movement.ts",
+  "sampleSpacingMetres": 0.5,
+  "reachableSamples": 41141,
+  "reachableWalkableSquareMetres": 10285.25,
+  "method": "Four-neighbour flood fill from spawn through collision-free 0.5m samples. Estimate of reachable controller space, not surveyed surface area; excludes blocked architecture, beds and furniture. Does not itself prove visual completeness."
+}

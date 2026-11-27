@@ -1,0 +1,7 @@
+{
+  "entry": "scripts/g2/baselines/movement-before.ts",
+  "sampleSpacingMetres": 0.5,
+  "reachableSamples": 4745,
+  "reachableWalkableSquareMetres": 1186.25,
+  "method": "Four-neighbour flood fill from spawn through collision-free 0.5m samples. Estimate of reachable controller space, not surveyed surface area; excludes blocked architecture, beds and furniture. Does not itself prove visual completeness."
+}

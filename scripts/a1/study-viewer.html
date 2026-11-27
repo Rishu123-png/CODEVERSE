@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="data:," />
+    <title>A1 technical studies — not game art</title>
+    <style>
+      body {
+        margin: 0;
+        background: #101925;
+        color: #e2e9f1;
+        font: 15px system-ui;
+      }
+      header {
+        padding: 20px 28px;
+        border-bottom: 1px solid #34475c;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 23px;
+      }
+      p {
+        margin: 5px 0;
+        color: #b8cadb;
+      }
+      canvas {
+        display: block;
+        width: 100%;
+        height: 660px;
+      }
+      #status {
+        padding: 12px 28px;
+        white-space: pre-wrap;
+        font: 13px monospace;
+        color: #a8d1ef;
+      }
+      strong {
+        color: #ffcf78;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CodeVerse · A1 export / loader laboratory</h1>
+      <p>
+        <strong
+          >Technical fixtures only — NOT the landmark, protagonist, final
+          vegetation or G1 visual target.</strong
+        >
+      </p>
+      <p>
+        Curved construction junction · original alpha-card material · synthetic
+        two-joint animation. Self-hosted decoder. No game code modified.
+      </p>
+    </header>
+    <canvas id="view"></canvas>
+    <div id="status">Loading isolated diagnostics…</div>
+    <script type="module">
+      import * as B from '/tools/node_modules/@babylonjs/core/index.js';
+      import '/tools/node_modules/@babylonjs/loaders/glTF/index.js';
+      const canvas = document.querySelector('#view');
+      const engine = new B.Engine(canvas, true, {
+        preserveDrawingBuffer: true,
+        stencil: true,
+        disableWebGL2Support: false,
+      });
+      if (engine.webGLVersion !== 2)
+        throw new Error(
+          'This study explicitly requires WebGL2; no silent fallback',
+        );
+      B.MeshoptCompression.Configuration.decoder.url = '/meshopt-decoder.js';
+      const scene = new B.Scene(engine);
+      scene.useRightHandedSystem = true;
+      scene.clearColor = new B.Color4(0.055, 0.075, 0.11, 1);
+      const camera = new B.ArcRotateCamera(
+        'study-camera',
+        Math.PI / 2 + 0.28,
+        1.13,
+        15,
+        new B.Vector3(0, 1.1, 0.1),
+        scene,
+      );
+      camera.attachControl(canvas, true);
+      camera.lowerRadiusLimit = 5;
+      camera.upperRadiusLimit = 25;
+      new B.HemisphericLight(
+        'sky',
+        new B.Vector3(0.1, 1, 0.4),
+        scene,
+      ).intensity = 1.2;
+      const sun = new B.DirectionalLight(
+        'sun',
+        new B.Vector3(-0.3, -1, -0.5),
+        scene,
+      );
+      sun.intensity = 2;
+      const all = [];
+      const observations = {
+        backend: 'WebGL2',
+        babylon: B.Engine.Version,
+        softwareRenderingNotHardwareEvidence: true,
+        imports: [],
+        cycles: [],
+      };
+      async function container(file) {
+        const c = await B.LoadAssetContainerAsync('/generated/' + file, scene);
+        return c;
+      }
+      for (const name of ['architecture', 'foliage', 'skin']) {
+        const c = await container(name + '.meshopt.glb');
+        const original = await container(name + '.glb');
+        const triangles = (x) =>
+          x.meshes.reduce((s, m) => s + m.getTotalIndices() / 3, 0);
+        if (
+          triangles(c) !== triangles(original) ||
+          c.skeletons.length !== original.skeletons.length ||
+          c.animationGroups.length !== original.animationGroups.length
+        )
+          throw new Error('Compressed structure mismatch: ' + name);
+        original.dispose();
+        c.addAllToScene();
+        if (name === 'foliage') {
+          const material = c.materials[0];
+          observations.foliageMaterial = {
+            alphaCutOff: material.alphaCutOff,
+            transparencyMode: material.transparencyMode,
+            backFaceCulling: material.backFaceCulling,
+            hasAlpha: material.albedoTexture.hasAlpha,
+          };
+          if (
+            material.alphaCutOff !== 0.5 ||
+            material.backFaceCulling !== false ||
+            !material.albedoTexture.hasAlpha
+          )
+            throw new Error('Foliage material contract mismatch');
+        }
+        const root = c.meshes.find((m) => !m.parent);
+        if (name === 'foliage') root.position.set(-3, 0.15, 2);
+        if (name === 'skin') root.position.set(3.4, 0.2, 2.3);
+        if (name === 'architecture') {
+          for (const m of c.meshes)
+            if (m.name.startsWith('COLLIDER-')) m.setEnabled(false);
+        }
+        observations.imports.push({
+          name,
+          compressedStructureMatchesOriginal: true,
+          triangles: triangles(c),
+          meshes: c.meshes.length,
+          materials: c.materials.length,
+          textures: c.textures.length,
+          skeletons: c.skeletons.length,
+          animationGroups: c.animationGroups.length,
+          vertices: c.meshes.reduce((s, m) => s + m.getTotalVertices(), 0),
+        });
+        all.push(c);
+      }
+      await scene.whenReadyAsync();
+      // Verify the imported animation updates an actual bone/transform, not only its name.
+      const skin = all[2];
+      const group = skin.animationGroups[0];
+      if (!group) throw new Error('Missing skin animation');
+      const tip = skin.skeletons[0].bones.find(
+        (b) => b.name === 'diagnostic-tip',
+      );
+      if (!tip) throw new Error('Missing tip bone');
+      group.start(false, 1, 0, group.to);
+      group.pause();
+      group.goToFrame(0);
+      scene.render();
+      const q0 = tip.getTransformNode().rotationQuaternion.asArray();
+      group.goToFrame(group.to / 2);
+      scene.render();
+      const q1 = tip.getTransformNode().rotationQuaternion.asArray();
+      observations.animation = {
+        clip: group.name,
+        from: group.from,
+        to: group.to,
+        q0,
+        q1,
+        changed: q0.some((v, i) => Math.abs(v - q1[i]) > 1e-4),
+      };
+      if (!observations.animation.changed)
+        throw new Error('Animation did not change joint transform');
+      group.stop();
+      group.start(true);
+      const baseline = () => ({
+        meshes: scene.meshes.length,
+        materials: scene.materials.length,
+        textures: scene.textures.length,
+        skeletons: scene.skeletons.length,
+        animationGroups: scene.animationGroups.length,
+        transformNodes: scene.transformNodes.length,
+      });
+      const stable = baseline();
+      observations.baseline = stable;
+      for (let i = 0; i < 3; i++) {
+        const c = await container('skin.meshopt.glb');
+        c.addAllToScene();
+        await scene.whenReadyAsync();
+        scene.render();
+        c.removeAllFromScene();
+        c.dispose();
+        const after = baseline();
+        observations.cycles.push(after);
+        if (JSON.stringify(after) !== JSON.stringify(stable))
+          throw new Error('Scene resource counts did not return to baseline');
+      }
+      try {
+        await container('does-not-exist.glb');
+        throw new Error('Missing file unexpectedly loaded');
+      } catch (e) {
+        if (String(e).includes('unexpectedly loaded')) throw e;
+        observations.missingFileRejected = true;
+      }
+      observations.gpu = engine.getGlInfo();
+      window.a1Evidence = observations;
+      document.querySelector('#status').textContent =
+        'PASS · 3 compressed fixtures loaded · joint animation changes · 3 dispose cycles stable · missing file rejected\nWebGL2 software-rendered compatibility evidence only. No FPS or visual acceptance claim.';
+      engine.runRenderLoop(() => scene.render());
+      window.addEventListener('resize', () => engine.resize());
+      window.a1Ready = true;
+      window.a1Dispose = () => {
+        for (const c of all) {
+          c.removeAllFromScene();
+          c.dispose();
+        }
+        scene.dispose();
+        engine.dispose();
+        return {
+          sceneDisposed: scene.isDisposed,
+          engineScenes: engine.scenes.length,
+        };
+      };
+    </script>
+  </body>
+</html>

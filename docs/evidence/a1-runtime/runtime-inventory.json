@@ -1,0 +1,23 @@
+{
+  "scope": "local bpy 4.5.3 dynamic-library inventory, not proof Blender is universally unavailable",
+  "command": "ldd .cache/a1/python/bpy/__init__.so",
+  "exitCode": 0,
+  "missingLibraries": [
+    "libXrender.so.1",
+    "libXfixes.so.3",
+    "libXi.so.6",
+    "libxkbcommon.so.0",
+    "libSM.so.6",
+    "libICE.so.6",
+    "libGL.so.1"
+  ],
+  "runtimeAttempt": "mpfb-execution.json",
+  "alternativeChecks": {
+    "blenderGithubLatestRelease": "gh api repos/blender/blender/releases/latest returned HTTP 404; not a claim that no official Blender distribution exists",
+    "bpy-headless": "pip index versions: no matching distribution",
+    "containerRuntimes": "docker/podman not found in executable search",
+    "wheelInspection": "wheel-library-inventory.json; central-directory range reads only; no unrelated package installed",
+    "blockedHosts": "No repeated attempts on previously blocked asset/download hosts"
+  },
+  "decision": "Stop speculative dependency downloads. Require supported Blender installation with genuine OS dependencies, locally or on an explicitly authorized compatible runner. No fake libraries, paid cloud or account assumed."
+}

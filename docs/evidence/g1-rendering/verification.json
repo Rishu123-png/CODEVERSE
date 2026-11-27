@@ -1,0 +1,81 @@
+{
+  "date": "2026-11-27",
+  "scope": "Rendering defect only; no feature expansion",
+  "reproduction": "Actual production WebGPU nearly black; WebGL2 coloured. Same asset files and light/exposure values.",
+  "fix": "Bracket the initial manual scene.render with engine.beginFrame and engine.endFrame before the managed loop.",
+  "beforeConsole": "Destroyed texture ... used in a submit; command buffers include UploadEncoder and RenderEncoder.",
+  "matrix": [
+    {
+      "case": "development-webgl2",
+      "backend": "WebGL2",
+      "pavingPixels": {
+        "meanLuminance": 192.7439204492378,
+        "blackFraction": 0
+      },
+      "pageErrors": 0,
+      "failedRequests": 0,
+      "httpErrors": 0,
+      "consoleErrorsOrGPUValidation": 0
+    },
+    {
+      "case": "development-webgpu",
+      "backend": "WebGPU",
+      "pavingPixels": {
+        "meanLuminance": 192.92649490209993,
+        "blackFraction": 0
+      },
+      "pageErrors": 0,
+      "failedRequests": 0,
+      "httpErrors": 0,
+      "consoleErrorsOrGPUValidation": 0
+    },
+    {
+      "case": "production-auto",
+      "backend": "WebGPU",
+      "pavingPixels": {
+        "meanLuminance": 192.92649490209993,
+        "blackFraction": 0
+      },
+      "pageErrors": 0,
+      "failedRequests": 0,
+      "httpErrors": 0,
+      "consoleErrorsOrGPUValidation": 0
+    },
+    {
+      "case": "production-webgl2",
+      "backend": "WebGL2",
+      "pavingPixels": {
+        "meanLuminance": 192.7439204492378,
+        "blackFraction": 0
+      },
+      "pageErrors": 0,
+      "failedRequests": 0,
+      "httpErrors": 0,
+      "consoleErrorsOrGPUValidation": 0
+    },
+    {
+      "case": "production-webgpu",
+      "backend": "WebGPU",
+      "pavingPixels": {
+        "meanLuminance": 192.92649490209993,
+        "blackFraction": 0
+      },
+      "pageErrors": 0,
+      "failedRequests": 0,
+      "httpErrors": 0,
+      "consoleErrorsOrGPUValidation": 0
+    }
+  ],
+  "assetBytes": "All SHA-256 values in original G1 runtime-assets.json unchanged.",
+  "unitTests": 31,
+  "visualReview": [
+    "Same-camera WebGPU before/after",
+    "Production overview: building, furniture and road",
+    "Production character front: skin, shirt, clothing and blue shoes",
+    "Production vegetation closeup: green leaves, brown trunk/soil",
+    "Reload and viewport resize"
+  ],
+  "environment": "Chromium 158.0.8127.0, Linux software SwiftShader/Vulkan WebGPU and software WebGL2; not owner laptop or physical-GPU/FPS proof",
+  "remaining": "Premium art and physical laptop acceptance unresolved; feature expansion remains paused",
+  "qualityCheck": "npm run check passed: formatting, lint, TypeScript, 31 unit tests, production build. Existing large-chunk warning remains."
+}

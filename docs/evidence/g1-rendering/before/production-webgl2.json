@@ -1,0 +1,25 @@
+{
+  "url": "http://localhost:4173/?renderer=webgl2",
+  "browser": "158.0.8127.0",
+  "state": {
+    "backend": "WebGL2",
+    "shaders": [],
+    "adapter": {
+      "vendor": "google",
+      "architecture": "swiftshader",
+      "device": "",
+      "description": ""
+    },
+    "canvas": true
+  },
+  "logs": [
+    {
+      "type": "log",
+      "text": "BJS - [14:26:58]: Babylon.js v9.38.0 - WebGL2"
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "httpErrors": [],
+  "environment": "Linux Chromium software SwiftShader; not owner laptop or physical GPU"
+}

@@ -1,0 +1,87 @@
+{
+  "screenshots": [
+    {
+      "file": "docs/evidence/g2/final/architecture.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 256530,
+      "sha256": "df8acda9817aa999bfc06eccbd93a7d08816f21d1e55c24719fb6f3a82705d4e"
+    },
+    {
+      "file": "docs/evidence/g2/final/character.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 285627,
+      "sha256": "619ba90ba5fb00cefc781a53b49b986dc020a4d7f06a6bb55edad7f56bc952e2"
+    },
+    {
+      "file": "docs/evidence/g2/final/depth.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 288454,
+      "sha256": "de1552e6652898cd86cc242c3d4eb1284e27585139fd46e7117c77fef91ad607"
+    },
+    {
+      "file": "docs/evidence/g2/final/expanded.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 275051,
+      "sha256": "9f25e2c0ac16529d27a565df9d141a7fc42c0e6f066382df7f07ad5eaf87cef0"
+    },
+    {
+      "file": "docs/evidence/g2/final/exterior.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 284051,
+      "sha256": "413e3376138bff931ad78013972b3772c3455d4e20e7ff723434df8e2e37b9e8"
+    },
+    {
+      "file": "docs/evidence/g2/final/intersection.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 331272,
+      "sha256": "2da50569c91228e068e4af3bb290a3c5dc6a402a83809f1899418c7e106c7ba5"
+    },
+    {
+      "file": "docs/evidence/g2/final/plaza.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 301110,
+      "sha256": "ab08800671bf1e1788fa3c919e4f4341292bc9fa8b709c2fe6dba730a393f2aa"
+    },
+    {
+      "file": "docs/evidence/g2/final/road.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 291518,
+      "sha256": "3e4c796a5acee2f9280c91169f1f5be530f3d2cf8827f7bc005d9405e2c87947"
+    },
+    {
+      "file": "docs/evidence/g2/final/roofs.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 242863,
+      "sha256": "baa17e2befbd12772aaa20ab4ad2b4d03a770ad09e9c36727b68d31083284417"
+    },
+    {
+      "file": "docs/evidence/g2/final/spawn.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 301175,
+      "sha256": "53ce682444d7a00a69c5338c1039cc5ea559a7d1c6bbf7faee1eb50e1c165b1f"
+    },
+    {
+      "file": "docs/evidence/g2/final/vegetation.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 314541,
+      "sha256": "7f5454b897fc6690951171936d0e2f6075509e2e37dadb7cbedbcf52685a2070"
+    }
+  ],
+  "backend": "WebGPU",
+  "pageErrors": [],
+  "networkFailures": [],
+  "drawableAuditEntries": 763,
+  "textures": 89,
+  "method": "Actual production WebGPU rendered screenshots, all 11 inspected after repeated corrections. Ten requested views plus roof diagnostic. Software rendering; scheduling paused only during framebuffer readback. No visual quality/FPS score implied."
+}

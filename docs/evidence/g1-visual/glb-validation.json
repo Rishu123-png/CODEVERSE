@@ -1,0 +1,44 @@
+[
+  {
+    "file": "landmark-v2.glb",
+    "bytes": 1359360,
+    "errors": 0,
+    "warnings": 0,
+    "infos": 27
+  },
+  {
+    "file": "site-v2.glb",
+    "bytes": 5035608,
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0
+  },
+  {
+    "file": "hero.glb",
+    "bytes": 4513024,
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0
+  },
+  {
+    "file": "canopy-v2.glb",
+    "bytes": 1461676,
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0
+  },
+  {
+    "file": "blossom-v2.glb",
+    "bytes": 1392876,
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0
+  },
+  {
+    "file": "underplanting-v2.glb",
+    "bytes": 402292,
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0
+  }
+]

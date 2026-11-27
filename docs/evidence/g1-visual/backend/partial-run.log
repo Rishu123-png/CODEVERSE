@@ -1,0 +1,22 @@
+production-webgpu {"backend":"WebGPU","pavingPixels":{"meanLuminance":119.78589611214946,"blackFraction":0},"logs":[{"type":"log","text":"BJS - [16:05:04]: Babylon.js v9.38.0 - WebGPU1 engine"},{"type":"log","text":"BJS - [16:06:14]: Babylon.js v9.38.0 - WebGPU1 engine"}],"errors":[],"failed":[],"httpErrors":[]}
+production-auto {"backend":"WebGPU","pavingPixels":{"meanLuminance":119.78589611214946,"blackFraction":0},"logs":[{"type":"log","text":"BJS - [16:06:54]: Babylon.js v9.38.0 - WebGPU1 engine"}],"errors":[],"failed":[],"httpErrors":[]}
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+page.screenshot: Timeout 120000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+    at /home/user/CODEVERSE/scripts/g1/diagnose-rendering.mjs:102:30 {
+  log: [
+    '  - taking page screenshot',
+    '  - waiting for fonts to load...',
+    '  - fonts loaded'
+  ],
+  name: 'TimeoutError'
+}
+
+Node.js v22.22.3

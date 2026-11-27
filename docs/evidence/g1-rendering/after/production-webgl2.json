@@ -1,0 +1,2420 @@
+{
+  "pavingPixels": {
+    "meanLuminance": 192.7439204492378,
+    "blackFraction": 0
+  },
+  "url": "http://localhost:4173/?renderer=webgl2&renderAudit=1",
+  "browser": "158.0.8127.0",
+  "state": {
+    "backend": "WebGL2",
+    "shaders": [],
+    "adapter": {
+      "vendor": "google",
+      "architecture": "swiftshader",
+      "device": "",
+      "description": ""
+    },
+    "render": {
+      "ready": true,
+      "engine": "ThinEngine",
+      "imageProcessing": {
+        "exposure": 1.15,
+        "contrast": 1.05,
+        "toneMapping": true
+      },
+      "lights": [
+        {
+          "name": "daylight sky",
+          "enabled": true,
+          "intensity": 0.85,
+          "diffuse": [1, 1, 1],
+          "excluded": 0
+        },
+        {
+          "name": "afternoon sun",
+          "enabled": true,
+          "intensity": 2.8,
+          "diffuse": [1, 0.92, 0.8],
+          "excluded": 0
+        }
+      ],
+      "environment": {
+        "name": "original procedural sky reflection",
+        "ready": true,
+        "gammaSpace": true,
+        "irradiance": false,
+        "intensity": 0.65
+      },
+      "materials": [
+        {
+          "name": "original architectural edge",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [
+            0.6470588235294118, 0.6549019607843137, 0.6431372549019608
+          ],
+          "metallic": 0,
+          "roughness": 0.8,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1
+        },
+        {
+          "name": "original charcoal metal",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [0.09019607843137255, 0.13725490196078433, 0.2],
+          "metallic": 0.65,
+          "roughness": 0.4,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1
+        },
+        {
+          "name": "CodeVerse blue",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [
+            0.0784313725490196, 0.42745098039215684, 0.8666666666666667
+          ],
+          "metallic": 0.25,
+          "roughness": 0.4,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1
+        },
+        {
+          "name": "original planted verge",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [
+            0.2627450980392157, 0.3254901960784314, 0.26666666666666666
+          ],
+          "metallic": 0,
+          "roughness": 0.8,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1
+        },
+        {
+          "name": "original pale architectural bands",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [0.48, 0.52, 0.55],
+          "metallic": 0,
+          "roughness": 0.7,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1
+        },
+        {
+          "name": "opaque blue-neutral glazing STUDY",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [0.07, 0.16, 0.22],
+          "metallic": 0.45,
+          "roughness": 0.25,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1
+        },
+        {
+          "name": "neutral structural metal",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [0.1, 0.14, 0.18],
+          "metallic": 0.7,
+          "roughness": 0.4,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1
+        },
+        {
+          "name": "blue accent study",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [0.02, 0.24, 0.65],
+          "metallic": 0.2,
+          "roughness": 0.4,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1
+        },
+        {
+          "name": "original pale slab scalar study",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [1, 1, 1],
+          "metallic": 0,
+          "roughness": 0.64,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1,
+          "albedoTexture": "/assets/g1/paving-color.jpg"
+        },
+        {
+          "name": "original asphalt scalar study",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [0.075, 0.085, 0.09],
+          "metallic": 0,
+          "roughness": 0.93,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1
+        },
+        {
+          "name": "road marking scalar study",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [0.65, 0.65, 0.6],
+          "metallic": 0,
+          "roughness": 0.7,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1
+        },
+        {
+          "name": "bench wood scalar study",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [0.26, 0.14, 0.075],
+          "metallic": 0,
+          "roughness": 0.7,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1
+        },
+        {
+          "name": "soil scalar study",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [0.075, 0.055, 0.04],
+          "metallic": 0,
+          "roughness": 0.7,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1
+        },
+        {
+          "name": "original CodeVerse wordmark",
+          "type": "StandardMaterial",
+          "backFaceCulling": false
+        },
+        {
+          "name": "learning city sign",
+          "type": "StandardMaterial",
+          "backFaceCulling": false
+        },
+        {
+          "name": "original scalar trunk STUDY",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [0.18, 0.12, 0.07],
+          "metallic": 0,
+          "roughness": 0.95,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1
+        },
+        {
+          "name": "MIT leaf cutout; static no wind",
+          "type": "PBRMaterial",
+          "backFaceCulling": false,
+          "albedo": [1, 1, 1],
+          "metallic": 0,
+          "roughness": 0.9,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1,
+          "albedoTexture": "MIT leaf cutout; static no wind (Base Color)"
+        },
+        {
+          "name": "original blossom petal study",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [
+            0.8549019607843137, 0.5450980392156862, 0.6627450980392157
+          ],
+          "metallic": 0,
+          "roughness": 0.8,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1
+        },
+        {
+          "name": "original scalar trunk STUDY",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [0.18, 0.12, 0.07],
+          "metallic": 0,
+          "roughness": 0.95,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1
+        },
+        {
+          "name": "MIT leaf cutout; static no wind",
+          "type": "PBRMaterial",
+          "backFaceCulling": false,
+          "albedo": [1, 1, 1],
+          "metallic": 0,
+          "roughness": 0.9,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1,
+          "albedoTexture": "MIT leaf cutout; static no wind (Base Color)"
+        },
+        {
+          "name": "skin warm neutral",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [0.5, 0.29, 0.19],
+          "metallic": 0,
+          "roughness": 0.8,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1
+        },
+        {
+          "name": "original ivory shirt",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [0.83, 0.84, 0.8],
+          "metallic": 0,
+          "roughness": 0.8,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1
+        },
+        {
+          "name": "original midnight jacket",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [0.025, 0.039, 0.065],
+          "metallic": 0,
+          "roughness": 0.8,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1
+        },
+        {
+          "name": "original graphite cargo",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [0.045, 0.055, 0.068],
+          "metallic": 0,
+          "roughness": 0.8,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1
+        },
+        {
+          "name": "original blue sneakers",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [0.025, 0.17, 0.48],
+          "metallic": 0,
+          "roughness": 0.5,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1
+        },
+        {
+          "name": "sneaker soles",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [0.8, 0.85, 0.89],
+          "metallic": 0,
+          "roughness": 0.8,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1
+        },
+        {
+          "name": "original swept hair",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [0.024, 0.017, 0.014],
+          "metallic": 0,
+          "roughness": 0.8,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1
+        },
+        {
+          "name": "sunglass frame",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [0.05, 0.055, 0.06],
+          "metallic": 0.65,
+          "roughness": 0.3,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1
+        },
+        {
+          "name": "sunglass lenses",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [0.009, 0.016, 0.025],
+          "metallic": 0.5,
+          "roughness": 0.1,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1
+        },
+        {
+          "name": "original electric blue seam",
+          "type": "PBRMaterial",
+          "backFaceCulling": true,
+          "albedo": [0.02, 0.27, 0.8],
+          "metallic": 0.2,
+          "roughness": 0.4,
+          "unlit": false,
+          "lightingIntensity": 1,
+          "environmentIntensity": 1
+        },
+        {
+          "name": "information marker glyph",
+          "type": "StandardMaterial",
+          "backFaceCulling": false
+        }
+      ],
+      "textures": [
+        {
+          "name": "afternoon sun_shadowMap",
+          "ready": true,
+          "gammaSpace": true,
+          "size": {
+            "width": 1024,
+            "height": 1024
+          }
+        },
+        {
+          "name": "original procedural sky reflection",
+          "ready": true,
+          "gammaSpace": true,
+          "size": {
+            "width": 32,
+            "height": 32
+          }
+        },
+        {
+          "name": "data:EnvironmentBRDFTexture0",
+          "ready": true,
+          "gammaSpace": true,
+          "size": {
+            "width": 256,
+            "height": 256
+          }
+        },
+        {
+          "name": "/assets/g1/paving-color.jpg",
+          "ready": true,
+          "gammaSpace": true,
+          "size": {
+            "width": 512,
+            "height": 512
+          }
+        },
+        {
+          "name": "/assets/g1/paving-normal.png",
+          "ready": true,
+          "gammaSpace": true,
+          "size": {
+            "width": 512,
+            "height": 512
+          }
+        },
+        {
+          "name": "original CodeVerse wordmark",
+          "ready": true,
+          "gammaSpace": true,
+          "size": {
+            "width": 1024,
+            "height": 256
+          }
+        },
+        {
+          "name": "learning city sign",
+          "ready": true,
+          "gammaSpace": true,
+          "size": {
+            "width": 1024,
+            "height": 256
+          }
+        },
+        {
+          "name": "MIT leaf cutout; static no wind (Base Color)",
+          "ready": true,
+          "gammaSpace": false,
+          "size": {
+            "width": 1024,
+            "height": 1024
+          }
+        },
+        {
+          "name": "MIT leaf cutout; static no wind (Base Color)",
+          "ready": true,
+          "gammaSpace": false,
+          "size": {
+            "width": 1024,
+            "height": 1024
+          }
+        },
+        {
+          "name": "",
+          "ready": true,
+          "gammaSpace": true,
+          "size": {
+            "width": 216,
+            "height": 1
+          }
+        },
+        {
+          "name": "information marker glyph",
+          "ready": true,
+          "gammaSpace": true,
+          "size": {
+            "width": 1024,
+            "height": 256
+          }
+        }
+      ],
+      "meshes": [
+        {
+          "name": "constructed site plinth",
+          "material": "original architectural edge",
+          "vertices": 24,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "rear verge",
+          "material": "original planted verge",
+          "vertices": 24,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "bounded site landscape context",
+          "material": "original planted verge",
+          "vertices": 24,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "site coping -23.5",
+          "material": "original architectural edge",
+          "vertices": 24,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "site coping 23.5",
+          "material": "original architectural edge",
+          "vertices": 24,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "front:stone",
+          "material": "original pale architectural bands",
+          "vertices": 9216,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "left:stone",
+          "material": "original pale architectural bands",
+          "vertices": 312,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "right:stone",
+          "material": "original pale architectural bands",
+          "vertices": 312,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "rear:stone",
+          "material": "original pale architectural bands",
+          "vertices": 168,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "front:glass",
+          "material": "opaque blue-neutral glazing STUDY",
+          "vertices": 2208,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "front:metal",
+          "material": "neutral structural metal",
+          "vertices": 2376,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "left:glass",
+          "material": "opaque blue-neutral glazing STUDY",
+          "vertices": 1296,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "left:metal",
+          "material": "neutral structural metal",
+          "vertices": 1296,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "right:glass",
+          "material": "opaque blue-neutral glazing STUDY",
+          "vertices": 1296,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "right:metal",
+          "material": "neutral structural metal",
+          "vertices": 1296,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "rear:glass",
+          "material": "opaque blue-neutral glazing STUDY",
+          "vertices": 1728,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "rear:metal",
+          "material": "neutral structural metal",
+          "vertices": 1752,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "entry:stone",
+          "material": "original pale architectural bands",
+          "vertices": 72,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "entry:glass",
+          "material": "opaque blue-neutral glazing STUDY",
+          "vertices": 24,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "entry:metal",
+          "material": "neutral structural metal",
+          "vertices": 120,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "entry:blue",
+          "material": "blue accent study",
+          "vertices": 24,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "roof:stone",
+          "material": "original pale architectural bands",
+          "vertices": 468,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "roof:metal",
+          "material": "neutral structural metal",
+          "vertices": 24,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "plaza:paving",
+          "material": "original pale slab scalar study",
+          "vertices": 9024,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "link:paving",
+          "material": "original pale slab scalar study",
+          "vertices": 508,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "road:asphalt",
+          "material": "original asphalt scalar study",
+          "vertices": 24,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "road:stone",
+          "material": "original pale architectural bands",
+          "vertices": 48,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "road:marking",
+          "material": "road marking scalar study",
+          "vertices": 144,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "props:wood",
+          "material": "bench wood scalar study",
+          "vertices": 576,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "props:metal",
+          "material": "neutral structural metal",
+          "vertices": 432,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "props:stone",
+          "material": "original pale architectural bands",
+          "vertices": 360,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "props:soil",
+          "material": "soil scalar study",
+          "vertices": 72,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "entry identity fascia",
+          "material": "original charcoal metal",
+          "vertices": 24,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "original CodeVerse wordmark",
+          "material": "original CodeVerse wordmark",
+          "vertices": 8,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "learning city sign",
+          "material": "learning city sign",
+          "vertices": 8,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "entry left accent",
+          "material": "CodeVerse blue",
+          "vertices": 24,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "entry right accent",
+          "material": "CodeVerse blue",
+          "vertices": 24,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "front plaza inlay -4.25",
+          "material": "CodeVerse blue",
+          "vertices": 24,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "front plaza inlay 4.25",
+          "material": "CodeVerse blue",
+          "vertices": 24,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "branches",
+          "material": "original scalar trunk STUDY",
+          "vertices": 6639,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "leaves",
+          "material": "MIT leaf cutout; static no wind",
+          "vertices": 21760,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "branches-east",
+          "material": "original scalar trunk STUDY",
+          "vertices": 6639,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "leaves-east",
+          "material": "MIT leaf cutout; static no wind",
+          "vertices": 21760,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "branches-accent",
+          "material": "original scalar trunk STUDY",
+          "vertices": 6639,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "leaves-accent",
+          "material": "MIT leaf cutout; static no wind",
+          "vertices": 21760,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "original blossom cluster",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-0",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-1",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-2",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-3",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-4",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-5",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-6",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-7",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-8",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-9",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-10",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-11",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-12",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-13",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-14",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-15",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-16",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-17",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-18",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-19",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-20",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-21",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-22",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-23",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-24",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-25",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-26",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-27",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-28",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-29",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-30",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-31",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-32",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-33",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-34",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-35",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-36",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-37",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-38",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-39",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-40",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-41",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-42",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-43",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-44",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-45",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-46",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-47",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-48",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-49",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-50",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-51",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-52",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-53",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-54",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-55",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-56",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-57",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-58",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-59",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-60",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-61",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-62",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-63",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-64",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-65",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-66",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-67",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-68",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-69",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-70",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-71",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-72",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-73",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-74",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-75",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-76",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-77",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-78",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-79",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-80",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-81",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-82",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-83",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-84",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-85",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-86",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-87",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-88",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-89",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-90",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-91",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-92",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-93",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-94",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-95",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-96",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-97",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-98",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-99",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-100",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-101",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-102",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-103",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-104",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-105",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-106",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-107",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-108",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-109",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-110",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-111",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-112",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-113",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-114",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-115",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-116",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-117",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-118",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-119",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-120",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-121",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-122",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-123",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-124",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-125",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-126",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-127",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-128",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-129",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-130",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-131",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-132",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-133",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-134",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-135",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-136",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-137",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-138",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-139",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-140",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-141",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-142",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-143",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-144",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-145",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-146",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-147",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-148",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "petal-cluster-149",
+          "material": "original blossom petal study",
+          "vertices": 91,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "branches",
+          "material": "original scalar trunk STUDY",
+          "vertices": 6331,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "leaves",
+          "material": "MIT leaf cutout; static no wind",
+          "vertices": 9984,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "branches-0",
+          "material": "original scalar trunk STUDY",
+          "vertices": 6331,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "leaves-0",
+          "material": "MIT leaf cutout; static no wind",
+          "vertices": 9984,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "branches-1",
+          "material": "original scalar trunk STUDY",
+          "vertices": 6331,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "leaves-1",
+          "material": "MIT leaf cutout; static no wind",
+          "vertices": 9984,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive0",
+          "material": "skin warm neutral",
+          "vertices": 7470,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive1",
+          "material": "original ivory shirt",
+          "vertices": 493,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive2",
+          "material": "original midnight jacket",
+          "vertices": 2078,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive3",
+          "material": "original graphite cargo",
+          "vertices": 1399,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive4",
+          "material": "original blue sneakers",
+          "vertices": 374,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive5",
+          "material": "sneaker soles",
+          "vertices": 1948,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive6",
+          "material": "original swept hair",
+          "vertices": 173,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive7",
+          "material": "original swept hair",
+          "vertices": 181,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive8",
+          "material": "original swept hair",
+          "vertices": 164,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive9",
+          "material": "original swept hair",
+          "vertices": 164,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive10",
+          "material": "original swept hair",
+          "vertices": 164,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive11",
+          "material": "original swept hair",
+          "vertices": 164,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive12",
+          "material": "original swept hair",
+          "vertices": 164,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive13",
+          "material": "original swept hair",
+          "vertices": 164,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive14",
+          "material": "original swept hair",
+          "vertices": 164,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive15",
+          "material": "sunglass frame",
+          "vertices": 164,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive16",
+          "material": "sunglass lenses",
+          "vertices": 164,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive17",
+          "material": "sunglass frame",
+          "vertices": 164,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive18",
+          "material": "sunglass lenses",
+          "vertices": 164,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive19",
+          "material": "sunglass frame",
+          "vertices": 173,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive20",
+          "material": "original midnight jacket",
+          "vertices": 115,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive21",
+          "material": "original ivory shirt",
+          "vertices": 15,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive22",
+          "material": "original graphite cargo",
+          "vertices": 72,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive23",
+          "material": "original midnight jacket",
+          "vertices": 54,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive24",
+          "material": "original blue sneakers",
+          "vertices": 164,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive25",
+          "material": "sneaker soles",
+          "vertices": 164,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive26",
+          "material": "original graphite cargo",
+          "vertices": 72,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive27",
+          "material": "original midnight jacket",
+          "vertices": 54,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive28",
+          "material": "original blue sneakers",
+          "vertices": 164,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive29",
+          "material": "sneaker soles",
+          "vertices": 164,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive30",
+          "material": "original graphite cargo",
+          "vertices": 164,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive31",
+          "material": "original electric blue seam",
+          "vertices": 164,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive32",
+          "material": "original electric blue seam",
+          "vertices": 164,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive33",
+          "material": "original graphite cargo",
+          "vertices": 164,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive34",
+          "material": "original electric blue seam",
+          "vertices": 164,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "CodeVerse original hero / early fitted-shell iteration_primitive35",
+          "material": "original electric blue seam",
+          "vertices": 164,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "entrance information marker",
+          "material": "CodeVerse blue",
+          "vertices": 2401,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        },
+        {
+          "name": "information marker glyph",
+          "material": "information marker glyph",
+          "vertices": 8,
+          "normals": true,
+          "ready": true,
+          "effectError": []
+        }
+      ]
+    },
+    "canvas": true
+  },
+  "logs": [
+    {
+      "type": "log",
+      "text": "BJS - [14:35:59]: Babylon.js v9.38.0 - WebGL2"
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "httpErrors": [],
+  "environment": "Linux Chromium software SwiftShader; not owner laptop or physical GPU"
+}

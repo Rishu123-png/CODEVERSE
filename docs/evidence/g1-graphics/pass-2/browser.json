@@ -1,0 +1,4953 @@
+{
+  "browser": "158.0.8127.0",
+  "backend": "WebGPU",
+  "environment": "Software Vulkan/SwiftShader WebGPU; not physical laptop/FPS acceptance",
+  "logs": [
+    {
+      "type": "log",
+      "text": "BJS - [17:10:09]: Babylon.js v9.38.0 - WebGPU1 engine"
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "audit": {
+    "ready": true,
+    "engine": "AbstractEngine",
+    "imageProcessing": {
+      "exposure": 1.05,
+      "contrast": 1.05,
+      "toneMapping": true
+    },
+    "lights": [
+      {
+        "name": "daylight sky",
+        "enabled": true,
+        "intensity": 0.38,
+        "diffuse": [
+          1,
+          1,
+          1
+        ],
+        "excluded": 0
+      },
+      {
+        "name": "afternoon sun",
+        "enabled": true,
+        "intensity": 1.85,
+        "diffuse": [
+          1,
+          0.92,
+          0.8
+        ],
+        "excluded": 0
+      }
+    ],
+    "environment": {
+      "name": "Poly Haven pedestrian overpass CC0 daylight",
+      "ready": true,
+      "gammaSpace": false,
+      "irradiance": true,
+      "intensity": 0.8
+    },
+    "materials": [
+      {
+        "name": "original cloud sky background",
+        "type": "StandardMaterial",
+        "backFaceCulling": false
+      },
+      {
+        "name": "default material",
+        "type": "StandardMaterial",
+        "backFaceCulling": true
+      },
+      {
+        "name": "original architectural edge",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.6470588235294118,
+          0.6549019607843137,
+          0.6431372549019608
+        ],
+        "metallic": 0,
+        "roughness": 0.8,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "CodeVerse blue",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.0784313725490196,
+          0.42745098039215684,
+          0.8666666666666667
+        ],
+        "metallic": 0.25,
+        "roughness": 0.4,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "original planted verge",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.2627450980392157,
+          0.3254901960784314,
+          0.26666666666666666
+        ],
+        "metallic": 0,
+        "roughness": 0.8,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "original pale architectural bands",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.48,
+          0.52,
+          0.55
+        ],
+        "metallic": 0,
+        "roughness": 0.7,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "opaque blue-neutral glazing STUDY",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.07,
+          0.16,
+          0.22
+        ],
+        "metallic": 0.45,
+        "roughness": 0.25,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "neutral structural metal",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.1,
+          0.14,
+          0.18
+        ],
+        "metallic": 0.7,
+        "roughness": 0.4,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "blue accent study",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.02,
+          0.24,
+          0.65
+        ],
+        "metallic": 0.2,
+        "roughness": 0.4,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "original pale slab scalar study",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.38,
+          0.41,
+          0.43
+        ],
+        "metallic": 0,
+        "roughness": 0.7,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "original asphalt scalar study",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.075,
+          0.085,
+          0.09
+        ],
+        "metallic": 0,
+        "roughness": 0.93,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "road marking scalar study",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.65,
+          0.65,
+          0.6
+        ],
+        "metallic": 0,
+        "roughness": 0.7,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "bench wood scalar study",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.26,
+          0.14,
+          0.075
+        ],
+        "metallic": 0,
+        "roughness": 0.7,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "soil scalar study",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.075,
+          0.055,
+          0.04
+        ],
+        "metallic": 0,
+        "roughness": 0.7,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "honed limestone coping",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.7758222183174236,
+          0.7230551289219693,
+          0.6172065624196511
+        ],
+        "metallic": 0,
+        "roughness": 0.73,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "honed limestone coping (Base Color)"
+      },
+      {
+        "name": "brushed bronze mullions",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.17788841598362914,
+          0.13843161503245183,
+          0.08437621154414882
+        ],
+        "metallic": 0.75,
+        "roughness": 0.32,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "oiled timber slats",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          1,
+          1,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "oiled timber slats (Base Color)"
+      },
+      {
+        "name": "interior chalk plaster",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.24620132670783548,
+          0.24228112246555486,
+          0.20863687014525575
+        ],
+        "metallic": 0,
+        "roughness": 0.92,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "recessed interior wall tone 0",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.13843161503245183,
+          0.1559264637078274,
+          0.14702726649759498
+        ],
+        "metallic": 0,
+        "roughness": 0.95,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "neutral low iron glazing 0",
+        "type": "PBRMaterial",
+        "backFaceCulling": false,
+        "albedo": [
+          0.5775804404296506,
+          0.6795424696330938,
+          0.6514056374198242
+        ],
+        "metallic": 0,
+        "roughness": 0.075,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "champagne rainscreen cassettes",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.33245153634617935,
+          0.2581828529215958,
+          0.1559264637078274
+        ],
+        "metallic": 0.7,
+        "roughness": 0.42,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "warm soffit light",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          1,
+          0.7156935005064807,
+          0.341914424908661
+        ],
+        "metallic": 0,
+        "roughness": 0.5,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "recessed interior wall tone 1",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.1714411007328226,
+          0.18116424424986022,
+          0.15292615199615017
+        ],
+        "metallic": 0,
+        "roughness": 0.95,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "neutral low iron glazing 1",
+        "type": "PBRMaterial",
+        "backFaceCulling": false,
+        "albedo": [
+          0.5520114015120001,
+          0.6307571363461468,
+          0.5840784178911641
+        ],
+        "metallic": 0,
+        "roughness": 0.087,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "graphite anodised framing",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.03433980680868217,
+          0.0382043715953465,
+          0.033104766570885055
+        ],
+        "metallic": 0.65,
+        "roughness": 0.4,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "drain and bollard steel",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.07818742180518633,
+          0.11697066775851084,
+          0.14702726649759498
+        ],
+        "metallic": 0.65,
+        "roughness": 0.4,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "recessed interior wall tone 2",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.25415209433082675,
+          0.23074004852434915,
+          0.17788841598362914
+        ],
+        "metallic": 0,
+        "roughness": 0.95,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "neutral low iron glazing 2",
+        "type": "PBRMaterial",
+        "backFaceCulling": false,
+        "albedo": [
+          0.6444796819705821,
+          0.6866853124353134,
+          0.6583748172794486
+        ],
+        "metallic": 0,
+        "roughness": 0.099,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "recessed interior wall tone 3",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.12213877222960187,
+          0.14702726649759498,
+          0.16202937563911096
+        ],
+        "metallic": 0,
+        "roughness": 0.95,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "neutral low iron glazing 3",
+        "type": "PBRMaterial",
+        "backFaceCulling": false,
+        "albedo": [
+          0.4851499400560704,
+          0.6038273388553378,
+          0.5906188409193369
+        ],
+        "metallic": 0,
+        "roughness": 0.111,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "neutral low iron glazing 4",
+        "type": "PBRMaterial",
+        "backFaceCulling": false,
+        "albedo": [
+          0.5972017883637634,
+          0.6375968739940326,
+          0.6239603916750761
+        ],
+        "metallic": 0,
+        "roughness": 0.123,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "interior soft floor",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.184474994500441,
+          0.18116424424986022,
+          0.15292615199615017
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "woven roller shade",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.5583403896342679,
+          0.5088813208549338,
+          0.39157247774972326
+        ],
+        "metallic": 0,
+        "roughness": 0.92,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "sawn basalt bands",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          1,
+          1,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "sawn basalt bands (Base Color)"
+      },
+      {
+        "name": "recessed blue light channel",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.009134058702220787,
+          0.20155625379439707,
+          0.7605245046752924
+        ],
+        "metallic": 0.25,
+        "roughness": 0.3,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "limestone paving batch 0",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.7304607400903537,
+          0.6866853124353134,
+          0.6104955708078648
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "limestone paving batch 0 (Base Color)"
+      },
+      {
+        "name": "limestone paving batch 4",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.6583748172794486,
+          0.6104955708078648,
+          0.5209955732043543
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "limestone paving batch 4 (Base Color)"
+      },
+      {
+        "name": "limestone paving batch 8",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.6104955708078648,
+          0.6375968739940326,
+          0.6104955708078648
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "limestone paving batch 8 (Base Color)"
+      },
+      {
+        "name": "limestone paving batch 3",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.6866853124353134,
+          0.6514056374198242,
+          0.5647115057049292
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "limestone paving batch 3 (Base Color)"
+      },
+      {
+        "name": "limestone paving batch 7",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.7304607400903537,
+          0.6724431569576875,
+          0.5711248294648731
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "limestone paving batch 7 (Base Color)"
+      },
+      {
+        "name": "limestone paving batch 2",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.7011018919329731,
+          0.665387298282272,
+          0.5906188409193369
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "limestone paving batch 2 (Base Color)"
+      },
+      {
+        "name": "limestone paving batch 6",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.6444796819705821,
+          0.6239603916750761,
+          0.5647115057049292
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "limestone paving batch 6 (Base Color)"
+      },
+      {
+        "name": "limestone paving batch 1",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.6375968739940326,
+          0.6038273388553378,
+          0.5457244613701866
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "limestone paving batch 1 (Base Color)"
+      },
+      {
+        "name": "limestone paving batch 5",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.7230551289219693,
+          0.6866853124353134,
+          0.5972017883637634
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "limestone paving batch 5 (Base Color)"
+      },
+      {
+        "name": "limestone stair risers",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.5711248294648731,
+          0.5028864580325687,
+          0.40197777983219574
+        ],
+        "metallic": 0,
+        "roughness": 0.85,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "limestone stair risers (Base Color)"
+      },
+      {
+        "name": "rich planting soil",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.08650046203654976,
+          0.06301001765316767,
+          0.03954623527673283
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "aggregate asphalt",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          1,
+          1,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "aggregate asphalt (Base Color)"
+      },
+      {
+        "name": "thermoplastic road markings",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.7912979403326302,
+          0.7681511472475071,
+          0.665387298282272
+        ],
+        "metallic": 0,
+        "roughness": 0.85,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1
+      },
+      {
+        "name": "warm brick architectural skin",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.32314320911295075,
+          0.16826940018969075,
+          0.08650046203654976
+        ],
+        "metallic": 0,
+        "roughness": 0.9,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "warm brick architectural skin (Base Color)"
+      },
+      {
+        "name": "charcoal stone cladding",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          0.14702726649759498,
+          0.14702726649759498,
+          0.11697066775851084
+        ],
+        "metallic": 0,
+        "roughness": 0.82,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "charcoal stone cladding (Base Color)"
+      },
+      {
+        "name": "landscape groundcover",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          1,
+          1,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 1,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "landscape groundcover (Base Color)"
+      },
+      {
+        "name": "original CodeVerse wordmark",
+        "type": "StandardMaterial",
+        "backFaceCulling": false
+      },
+      {
+        "name": "learning city sign",
+        "type": "StandardMaterial",
+        "backFaceCulling": false
+      },
+      {
+        "name": "entrance wayfinding",
+        "type": "StandardMaterial",
+        "backFaceCulling": false
+      },
+      {
+        "name": "original textured bark",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          1,
+          1,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 0.96,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "original textured bark (Base Color)"
+      },
+      {
+        "name": "canopy foliage cutout",
+        "type": "PBRMaterial",
+        "backFaceCulling": false,
+        "albedo": [
+          1,
+          1,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 0.82,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "canopy foliage cutout (Base Color)"
+      },
+      {
+        "name": "original textured bark",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          1,
+          1,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 0.96,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "original textured bark (Base Color)"
+      },
+      {
+        "name": "oak foliage cutout",
+        "type": "PBRMaterial",
+        "backFaceCulling": false,
+        "albedo": [
+          1,
+          1,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 0.82,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "oak foliage cutout (Base Color)"
+      },
+      {
+        "name": "original textured bark",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          1,
+          1,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 0.96,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "original textured bark (Base Color)"
+      },
+      {
+        "name": "blossom foliage cutout",
+        "type": "PBRMaterial",
+        "backFaceCulling": false,
+        "albedo": [
+          1,
+          1,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 0.82,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "blossom foliage cutout (Base Color)"
+      },
+      {
+        "name": "original textured bark",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          1,
+          1,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 0.96,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "original textured bark (Base Color)"
+      },
+      {
+        "name": "underplanting foliage cutout",
+        "type": "PBRMaterial",
+        "backFaceCulling": false,
+        "albedo": [
+          1,
+          1,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 0.82,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "underplanting foliage cutout (Base Color)"
+      },
+      {
+        "name": "m006_body",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          1,
+          1,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 0.88,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "m006_body (Base Color)"
+      },
+      {
+        "name": "m006_head",
+        "type": "PBRMaterial",
+        "backFaceCulling": true,
+        "albedo": [
+          1,
+          1,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 0.68,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "m006_head (Base Color)"
+      },
+      {
+        "name": "m006_opacity",
+        "type": "PBRMaterial",
+        "backFaceCulling": false,
+        "albedo": [
+          1,
+          1,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 0.88,
+        "unlit": false,
+        "lightingIntensity": 1,
+        "environmentIntensity": 1,
+        "albedoTexture": "m006_opacity (Base Color)"
+      },
+      {
+        "name": "information marker glyph",
+        "type": "StandardMaterial",
+        "backFaceCulling": false
+      }
+    ],
+    "textures": [
+      {
+        "name": "afternoon sun_shadowMap",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 2048,
+          "height": 2048
+        }
+      },
+      {
+        "name": "original procedural sky reflection",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 128,
+          "height": 128
+        }
+      },
+      {
+        "name": "Poly Haven pedestrian overpass CC0 daylight",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 256,
+          "height": 256
+        }
+      },
+      {
+        "name": "original procedural sky reflection",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 128,
+          "height": 128
+        }
+      },
+      {
+        "name": "data:EnvironmentBRDFTexture0",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 256,
+          "height": 256
+        }
+      },
+      {
+        "name": "honed limestone coping (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "honed limestone coping (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "honed limestone coping (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "oiled timber slats (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "oiled timber slats (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "oiled timber slats (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "sawn basalt bands (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "sawn basalt bands (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "sawn basalt bands (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 0 (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 0 (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 0 (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 4 (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 4 (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 4 (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 8 (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 8 (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 8 (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 3 (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 3 (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 3 (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 7 (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 7 (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 7 (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 2 (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 2 (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 2 (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 6 (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 6 (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 6 (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 1 (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 1 (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 1 (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 5 (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 5 (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone paving batch 5 (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone stair risers (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone stair risers (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "limestone stair risers (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "aggregate asphalt (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "aggregate asphalt (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "aggregate asphalt (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "warm brick architectural skin (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "warm brick architectural skin (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "warm brick architectural skin (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "charcoal stone cladding (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "charcoal stone cladding (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "charcoal stone cladding (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "landscape groundcover (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "landscape groundcover (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "landscape groundcover (Metallic Roughness)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "original CodeVerse wordmark",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 2048,
+          "height": 256
+        }
+      },
+      {
+        "name": "learning city sign",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 2048,
+          "height": 256
+        }
+      },
+      {
+        "name": "entrance wayfinding",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 2048,
+          "height": 256
+        }
+      },
+      {
+        "name": "original textured bark (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "canopy foliage cutout (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 1024,
+          "height": 1024
+        }
+      },
+      {
+        "name": "original textured bark (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "oak foliage cutout (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 1024,
+          "height": 1024
+        }
+      },
+      {
+        "name": "original textured bark (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "blossom foliage cutout (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 1024,
+          "height": 1024
+        }
+      },
+      {
+        "name": "original textured bark (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "name": "underplanting foliage cutout (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 1024,
+          "height": 1024
+        }
+      },
+      {
+        "name": "",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 324,
+          "height": 1
+        }
+      },
+      {
+        "name": "m006_body (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 1024,
+          "height": 1024
+        }
+      },
+      {
+        "name": "m006_body (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 2048,
+          "height": 2048
+        }
+      },
+      {
+        "name": "m006_head (Normal)",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 1024,
+          "height": 1024
+        }
+      },
+      {
+        "name": "m006_head (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 2048,
+          "height": 2048
+        }
+      },
+      {
+        "name": "m006_opacity (Base Color)",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 1024,
+          "height": 1024
+        }
+      },
+      {
+        "name": "actual plaza facade reflection",
+        "ready": true,
+        "gammaSpace": false,
+        "size": {
+          "width": 256,
+          "height": 256
+        }
+      },
+      {
+        "name": "SSAORandomTexture",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 128,
+          "height": 128
+        }
+      },
+      {
+        "name": "gBuffer",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 1280,
+          "height": 800
+        }
+      },
+      {
+        "name": "gBuffer_Depth",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 1280,
+          "height": 800
+        }
+      },
+      {
+        "name": "gBuffer_Normal",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 1280,
+          "height": 800
+        }
+      },
+      {
+        "name": "gBuffer_DepthBuffer",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 1280,
+          "height": 800
+        }
+      },
+      {
+        "name": "information marker glyph",
+        "ready": true,
+        "gammaSpace": true,
+        "size": {
+          "width": 256,
+          "height": 256
+        }
+      }
+    ],
+    "meshes": [
+      {
+        "name": "original cloud skybox",
+        "material": "original cloud sky background",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "constructed site plinth",
+        "material": "original architectural edge",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "rear verge",
+        "material": "original planted verge",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "bounded site landscape context",
+        "material": "original planted verge",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "site coping -23.5",
+        "material": "original architectural edge",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "site coping 23.5",
+        "material": "original architectural edge",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "front:stone",
+        "material": "original pale architectural bands",
+        "vertices": 9216,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "left:stone",
+        "material": "original pale architectural bands",
+        "vertices": 312,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "right:stone",
+        "material": "original pale architectural bands",
+        "vertices": 312,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "rear:stone",
+        "material": "original pale architectural bands",
+        "vertices": 168,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "front:glass",
+        "material": "opaque blue-neutral glazing STUDY",
+        "vertices": 2208,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "front:metal",
+        "material": "neutral structural metal",
+        "vertices": 2376,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "left:glass",
+        "material": "opaque blue-neutral glazing STUDY",
+        "vertices": 1296,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "left:metal",
+        "material": "neutral structural metal",
+        "vertices": 1296,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "right:glass",
+        "material": "opaque blue-neutral glazing STUDY",
+        "vertices": 1296,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "right:metal",
+        "material": "neutral structural metal",
+        "vertices": 1296,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "rear:glass",
+        "material": "opaque blue-neutral glazing STUDY",
+        "vertices": 1728,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "rear:metal",
+        "material": "neutral structural metal",
+        "vertices": 1752,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "entry:stone",
+        "material": "original pale architectural bands",
+        "vertices": 72,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "entry:glass",
+        "material": "opaque blue-neutral glazing STUDY",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "entry:metal",
+        "material": "neutral structural metal",
+        "vertices": 120,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "entry:blue",
+        "material": "blue accent study",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "roof:stone",
+        "material": "original pale architectural bands",
+        "vertices": 468,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "roof:metal",
+        "material": "neutral structural metal",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "plaza:paving",
+        "material": "original pale slab scalar study",
+        "vertices": 9024,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "link:paving",
+        "material": "original pale slab scalar study",
+        "vertices": 508,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "road:asphalt",
+        "material": "original asphalt scalar study",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "road:stone",
+        "material": "original pale architectural bands",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "road:marking",
+        "material": "road marking scalar study",
+        "vertices": 144,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "props:wood",
+        "material": "bench wood scalar study",
+        "vertices": 576,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "props:metal",
+        "material": "neutral structural metal",
+        "vertices": 432,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "props:stone",
+        "material": "original pale architectural bands",
+        "vertices": 360,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "props:soil",
+        "material": "soil scalar study",
+        "vertices": 72,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "slab fascia with drip edge",
+        "material": "honed limestone coping",
+        "vertices": 9216,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "bronze shadow reveal",
+        "material": "brushed bronze mullions",
+        "vertices": 9216,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "interior room floor slabs",
+        "material": "oiled timber slats",
+        "vertices": 1056,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "interior room ceilings",
+        "material": "interior chalk plaster",
+        "vertices": 2208,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "interior room back walls",
+        "material": "recessed interior wall tone 0",
+        "vertices": 552,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "interior partitions",
+        "material": "interior chalk plaster",
+        "vertices": 816,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "transparent glazing cassettes",
+        "material": "neutral low iron glazing 0",
+        "vertices": 160,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "slim curtain wall mullions",
+        "material": "brushed bronze mullions",
+        "vertices": 4584,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "operable transom rail",
+        "material": "brushed bronze mullions",
+        "vertices": 8832,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "recessed bronze insulated spandrel",
+        "material": "champagne rainscreen cassettes",
+        "vertices": 8832,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "jointed travertine facade piers",
+        "material": "honed limestone coping",
+        "vertices": 696,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "recessed ceiling luminaires",
+        "material": "warm soffit light",
+        "vertices": 2208,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "interior room back walls",
+        "material": "recessed interior wall tone 1",
+        "vertices": 552,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "transparent glazing cassettes",
+        "material": "neutral low iron glazing 1",
+        "vertices": 144,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "visible office worktops",
+        "material": "oiled timber slats",
+        "vertices": 1488,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "desk supports",
+        "material": "graphite anodised framing",
+        "vertices": 2976,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "monitor stand",
+        "material": "drain and bollard steel",
+        "vertices": 1488,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "interior monitors",
+        "material": "graphite anodised framing",
+        "vertices": 1488,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "interior room back walls",
+        "material": "recessed interior wall tone 2",
+        "vertices": 552,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "transparent glazing cassettes",
+        "material": "neutral low iron glazing 2",
+        "vertices": 144,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "interior room back walls",
+        "material": "recessed interior wall tone 3",
+        "vertices": 552,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "transparent glazing cassettes",
+        "material": "neutral low iron glazing 3",
+        "vertices": 144,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "transparent glazing cassettes",
+        "material": "neutral low iron glazing 4",
+        "vertices": 144,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "interior room floor slabs",
+        "material": "interior soft floor",
+        "vertices": 1152,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "partial woven office blinds",
+        "material": "woven roller shade",
+        "vertices": 384,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "side wing stone core",
+        "material": "honed limestone coping",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "side window deep recess",
+        "material": "graphite anodised framing",
+        "vertices": 2016,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "side window reveals",
+        "material": "neutral low iron glazing 0",
+        "vertices": 432,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "side window bronze jambs",
+        "material": "brushed bronze mullions",
+        "vertices": 4032,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "side stone joint courses",
+        "material": "graphite anodised framing",
+        "vertices": 2016,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "side window reveals",
+        "material": "neutral low iron glazing 1",
+        "vertices": 432,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "side window reveals",
+        "material": "neutral low iron glazing 2",
+        "vertices": 384,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "side window reveals",
+        "material": "neutral low iron glazing 3",
+        "vertices": 384,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "side window reveals",
+        "material": "neutral low iron glazing 4",
+        "vertices": 384,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "side bronze service panel",
+        "material": "champagne rainscreen cassettes",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "rear architectural service wall",
+        "material": "honed limestone coping",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "rear recessed ribbon windows",
+        "material": "graphite anodised framing",
+        "vertices": 1728,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "stepped roof bronze cornice",
+        "material": "champagne rainscreen cassettes",
+        "vertices": 1536,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "upper travertine parapet",
+        "material": "honed limestone coping",
+        "vertices": 1536,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "roof wing coping",
+        "material": "honed limestone coping",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "curved roof concrete cap",
+        "material": "honed limestone coping",
+        "vertices": 1152,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "rear roof concrete deck",
+        "material": "honed limestone coping",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "roof plant enclosure",
+        "material": "graphite anodised framing",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "roof louvred equipment screen",
+        "material": "champagne rainscreen cassettes",
+        "vertices": 336,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "entrance stone portal",
+        "material": "interior chalk plaster",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "lobby polished floor",
+        "material": "sawn basalt bands",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "lobby reception desk",
+        "material": "oiled timber slats",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "entrance stone jambs",
+        "material": "honed limestone coping",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "entrance glazed door leaves",
+        "material": "neutral low iron glazing 2",
+        "vertices": 96,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "door mullions",
+        "material": "graphite anodised framing",
+        "vertices": 192,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "door top rail",
+        "material": "brushed bronze mullions",
+        "vertices": 96,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "door handles",
+        "material": "brushed bronze mullions",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "entrance floating canopy",
+        "material": "graphite anodised framing",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "canopy stone top",
+        "material": "honed limestone coping",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "soffit timber ribs",
+        "material": "oiled timber slats",
+        "vertices": 1032,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "entrance columns",
+        "material": "brushed bronze mullions",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "canopy warm light lines",
+        "material": "warm soffit light",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "landmark media facade shadow box",
+        "material": "graphite anodised framing",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "media facade raised border",
+        "material": "brushed bronze mullions",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "media facade blue underline",
+        "material": "recessed blue light channel",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "original illuminated open C emblem",
+        "material": "recessed blue light channel",
+        "vertices": 40,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "plaza staggered stone units",
+        "material": "limestone paving batch 0",
+        "vertices": 1080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "plaza staggered stone units",
+        "material": "limestone paving batch 4",
+        "vertices": 1080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "plaza staggered stone units",
+        "material": "limestone paving batch 8",
+        "vertices": 1080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "plaza staggered stone units",
+        "material": "limestone paving batch 3",
+        "vertices": 1080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "plaza staggered stone units",
+        "material": "limestone paving batch 7",
+        "vertices": 1056,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "plaza staggered stone units",
+        "material": "limestone paving batch 2",
+        "vertices": 1056,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "plaza staggered stone units",
+        "material": "limestone paving batch 6",
+        "vertices": 1056,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "plaza staggered stone units",
+        "material": "limestone paving batch 1",
+        "vertices": 1056,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "plaza staggered stone units",
+        "material": "limestone paving batch 5",
+        "vertices": 1056,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "wide basalt route borders",
+        "material": "sawn basalt bands",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "approach stone coursing",
+        "material": "limestone paving batch 4",
+        "vertices": 144,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "approach stone coursing",
+        "material": "limestone paving batch 6",
+        "vertices": 264,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "approach stone coursing",
+        "material": "limestone paving batch 8",
+        "vertices": 144,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "approach stone coursing",
+        "material": "limestone paving batch 0",
+        "vertices": 264,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "approach stone coursing",
+        "material": "limestone paving batch 1",
+        "vertices": 120,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "approach stone coursing",
+        "material": "limestone paving batch 3",
+        "vertices": 240,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "approach stone coursing",
+        "material": "limestone paving batch 5",
+        "vertices": 120,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "approach stone coursing",
+        "material": "limestone paving batch 7",
+        "vertices": 120,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "approach stone coursing",
+        "material": "limestone paving batch 2",
+        "vertices": 120,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "pedestrian link stone edging",
+        "material": "honed limestone coping",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "continuous stone approach ramp",
+        "material": "limestone paving batch 3",
+        "vertices": 4,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "ramp side cheek stones",
+        "material": "honed limestone coping",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "sawn service apron paving",
+        "material": "limestone paving batch 6",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "rear service apron paving",
+        "material": "limestone paving batch 6",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "side entrance terrace steps",
+        "material": "limestone stair risers",
+        "vertices": 124,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "terrace upper coping",
+        "material": "honed limestone coping",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "raised limestone planters",
+        "material": "limestone stair risers",
+        "vertices": 216,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "planter cap lip",
+        "material": "honed limestone coping",
+        "vertices": 216,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "inset planter soil",
+        "material": "rich planting soil",
+        "vertices": 216,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "planter dark recessed base",
+        "material": "graphite anodised framing",
+        "vertices": 216,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "cast bench supports",
+        "material": "graphite anodised framing",
+        "vertices": 144,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "bench support feet",
+        "material": "brushed bronze mullions",
+        "vertices": 144,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "rounded timber seat slats",
+        "material": "oiled timber slats",
+        "vertices": 360,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "timber back slats",
+        "material": "oiled timber slats",
+        "vertices": 216,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "perimeter retaining wall",
+        "material": "limestone stair risers",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "perimeter coping",
+        "material": "honed limestone coping",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "bollard metal body",
+        "material": "graphite anodised framing",
+        "vertices": 1280,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "bollard light collar",
+        "material": "warm soffit light",
+        "vertices": 1280,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "pergola steel uprights",
+        "material": "graphite anodised framing",
+        "vertices": 192,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "pergola timber roof",
+        "material": "oiled timber slats",
+        "vertices": 1152,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "aggregate road wearing course",
+        "material": "aggregate asphalt",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "individual road curb units",
+        "material": "honed limestone coping",
+        "vertices": 9456,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "north sidewalk fields",
+        "material": "limestone paving batch 2",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "south sidewalk",
+        "material": "limestone paving batch 2",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "road centre dashes",
+        "material": "thermoplastic road markings",
+        "vertices": 1224,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "pedestrian crossing bars",
+        "material": "thermoplastic road markings",
+        "vertices": 216,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "storm drain recess",
+        "material": "graphite anodised framing",
+        "vertices": 96,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "drain slots",
+        "material": "drain and bollard steel",
+        "vertices": 768,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "road boundary bollards",
+        "material": "graphite anodised framing",
+        "vertices": 1024,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "road bollard reflector",
+        "material": "thermoplastic road markings",
+        "vertices": 1024,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context north sidewalk",
+        "material": "limestone paving batch 2",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "continuous road edge lines",
+        "material": "thermoplastic road markings",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context cross street",
+        "material": "aggregate asphalt",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context street pavements",
+        "material": "limestone paving batch 2",
+        "vertices": 96,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context lane markings",
+        "material": "thermoplastic road markings",
+        "vertices": 816,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context rear cross street",
+        "material": "aggregate asphalt",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context rear sidewalks",
+        "material": "limestone paving batch 2",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context urban block apron",
+        "material": "limestone paving batch 2",
+        "vertices": 288,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context articulated masonry body",
+        "material": "warm brick architectural skin",
+        "vertices": 96,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context stepped upper volume",
+        "material": "warm brick architectural skin",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context recessed dark window",
+        "material": "graphite anodised framing",
+        "vertices": 29040,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context neutral window glint",
+        "material": "neutral low iron glazing 0",
+        "vertices": 5808,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context window stone sills",
+        "material": "honed limestone coping",
+        "vertices": 29040,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context neutral window glint",
+        "material": "neutral low iron glazing 1",
+        "vertices": 5904,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context neutral window glint",
+        "material": "neutral low iron glazing 2",
+        "vertices": 5760,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context neutral window glint",
+        "material": "neutral low iron glazing 3",
+        "vertices": 5808,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context neutral window glint",
+        "material": "neutral low iron glazing 4",
+        "vertices": 5760,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context side window recess",
+        "material": "graphite anodised framing",
+        "vertices": 29136,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context side window glint",
+        "material": "neutral low iron glazing 0",
+        "vertices": 5856,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context side stone sills",
+        "material": "honed limestone coping",
+        "vertices": 29136,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context side window glint",
+        "material": "neutral low iron glazing 1",
+        "vertices": 6048,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context side window glint",
+        "material": "neutral low iron glazing 2",
+        "vertices": 5808,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context side window glint",
+        "material": "neutral low iron glazing 3",
+        "vertices": 5712,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context side window glint",
+        "material": "neutral low iron glazing 4",
+        "vertices": 5712,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context shop front glazing",
+        "material": "graphite anodised framing",
+        "vertices": 1440,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context ground shop canopy",
+        "material": "oiled timber slats",
+        "vertices": 144,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context cornice caps",
+        "material": "honed limestone coping",
+        "vertices": 288,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context rooftop plant rooms",
+        "material": "graphite anodised framing",
+        "vertices": 288,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context articulated masonry body",
+        "material": "charcoal stone cladding",
+        "vertices": 96,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context projecting balcony slabs",
+        "material": "honed limestone coping",
+        "vertices": 1584,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context ground shop canopy",
+        "material": "brushed bronze mullions",
+        "vertices": 144,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context articulated masonry body",
+        "material": "honed limestone coping",
+        "vertices": 96,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context stepped upper volume",
+        "material": "honed limestone coping",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "context stepped upper volume",
+        "material": "charcoal stone cladding",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "approach garden retaining plinth",
+        "material": "limestone stair risers",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "approach garden coping",
+        "material": "honed limestone coping",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "approach garden growing medium",
+        "material": "rich planting soil",
+        "vertices": 48,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "architectural street light bases",
+        "material": "graphite anodised framing",
+        "vertices": 1024,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "tapered street light shafts",
+        "material": "graphite anodised framing",
+        "vertices": 1024,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "cantilever light arms",
+        "material": "graphite anodised framing",
+        "vertices": 192,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "street light housings",
+        "material": "graphite anodised framing",
+        "vertices": 192,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "street light opal diffusers",
+        "material": "warm soffit light",
+        "vertices": 192,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "public art circular plinth",
+        "material": "limestone stair risers",
+        "vertices": 384,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "public art coping",
+        "material": "honed limestone coping",
+        "vertices": 384,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "public art brushed pedestal",
+        "material": "brushed bronze mullions",
+        "vertices": 256,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "sculpture blue meridians",
+        "material": "recessed blue light channel",
+        "vertices": 9216,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "sculpture blue parallels",
+        "material": "recessed blue light channel",
+        "vertices": 5760,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "layered ornamental grass blades",
+        "material": "landscape groundcover",
+        "vertices": 4224,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "layered ornamental grass backs",
+        "material": "landscape groundcover",
+        "vertices": 4224,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "contoured landscape context",
+        "material": "landscape groundcover",
+        "vertices": 10000,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "original CodeVerse wordmark",
+        "material": "original CodeVerse wordmark",
+        "vertices": 8,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "learning city sign",
+        "material": "learning city sign",
+        "vertices": 8,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "entrance wayfinding",
+        "material": "entrance wayfinding",
+        "vertices": 8,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "entry left accent",
+        "material": "CodeVerse blue",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "entry right accent",
+        "material": "CodeVerse blue",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "front plaza inlay -4.25",
+        "material": "CodeVerse blue",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "front plaza inlay 4.25",
+        "material": "CodeVerse blue",
+        "vertices": 24,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches",
+        "material": "original textured bark",
+        "vertices": 8430,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves",
+        "material": "canopy foliage cutout",
+        "vertices": 22080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-canopy-v3.glb-1",
+        "material": "original textured bark",
+        "vertices": 8430,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-canopy-v3.glb-1",
+        "material": "canopy foliage cutout",
+        "vertices": 22080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-canopy-v3.glb-2",
+        "material": "original textured bark",
+        "vertices": 8430,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-canopy-v3.glb-2",
+        "material": "canopy foliage cutout",
+        "vertices": 22080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-canopy-v3.glb-3",
+        "material": "original textured bark",
+        "vertices": 8430,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-canopy-v3.glb-3",
+        "material": "canopy foliage cutout",
+        "vertices": 22080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-canopy-v3.glb-4",
+        "material": "original textured bark",
+        "vertices": 8430,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-canopy-v3.glb-4",
+        "material": "canopy foliage cutout",
+        "vertices": 22080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-canopy-v3.glb-5",
+        "material": "original textured bark",
+        "vertices": 8430,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-canopy-v3.glb-5",
+        "material": "canopy foliage cutout",
+        "vertices": 22080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-canopy-v3.glb-6",
+        "material": "original textured bark",
+        "vertices": 8430,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-canopy-v3.glb-6",
+        "material": "canopy foliage cutout",
+        "vertices": 22080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-canopy-v3.glb-7",
+        "material": "original textured bark",
+        "vertices": 8430,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-canopy-v3.glb-7",
+        "material": "canopy foliage cutout",
+        "vertices": 22080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-canopy-v3.glb-8",
+        "material": "original textured bark",
+        "vertices": 8430,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-canopy-v3.glb-8",
+        "material": "canopy foliage cutout",
+        "vertices": 22080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-canopy-v3.glb-9",
+        "material": "original textured bark",
+        "vertices": 8430,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-canopy-v3.glb-9",
+        "material": "canopy foliage cutout",
+        "vertices": 22080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-canopy-v3.glb-10",
+        "material": "original textured bark",
+        "vertices": 8430,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-canopy-v3.glb-10",
+        "material": "canopy foliage cutout",
+        "vertices": 22080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-canopy-v3.glb-11",
+        "material": "original textured bark",
+        "vertices": 8430,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-canopy-v3.glb-11",
+        "material": "canopy foliage cutout",
+        "vertices": 22080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-canopy-v3.glb-12",
+        "material": "original textured bark",
+        "vertices": 8430,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-canopy-v3.glb-12",
+        "material": "canopy foliage cutout",
+        "vertices": 22080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-canopy-v3.glb-13",
+        "material": "original textured bark",
+        "vertices": 8430,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-canopy-v3.glb-13",
+        "material": "canopy foliage cutout",
+        "vertices": 22080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-canopy-v3.glb-14",
+        "material": "original textured bark",
+        "vertices": 8430,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-canopy-v3.glb-14",
+        "material": "canopy foliage cutout",
+        "vertices": 22080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-canopy-v3.glb-15",
+        "material": "original textured bark",
+        "vertices": 8430,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-canopy-v3.glb-15",
+        "material": "canopy foliage cutout",
+        "vertices": 22080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches",
+        "material": "original textured bark",
+        "vertices": 4237,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves",
+        "material": "oak foliage cutout",
+        "vertices": 22080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-oak-v3.glb-1",
+        "material": "original textured bark",
+        "vertices": 4237,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-oak-v3.glb-1",
+        "material": "oak foliage cutout",
+        "vertices": 22080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-oak-v3.glb-2",
+        "material": "original textured bark",
+        "vertices": 4237,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-oak-v3.glb-2",
+        "material": "oak foliage cutout",
+        "vertices": 22080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-oak-v3.glb-3",
+        "material": "original textured bark",
+        "vertices": 4237,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-oak-v3.glb-3",
+        "material": "oak foliage cutout",
+        "vertices": 22080,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches",
+        "material": "original textured bark",
+        "vertices": 8430,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves",
+        "material": "blossom foliage cutout",
+        "vertices": 18240,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-1",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-1",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-2",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-2",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-3",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-3",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-4",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-4",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-5",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-5",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-6",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-6",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-7",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-7",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-8",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-8",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-9",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-9",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-10",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-10",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-11",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-11",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-12",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-12",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-13",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-13",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-14",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-14",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-15",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-15",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-16",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-16",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-17",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-17",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-18",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-18",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-19",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-19",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-20",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-20",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-21",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-21",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-22",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-22",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-23",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-23",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-24",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-24",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-25",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-25",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-26",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-26",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-27",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-27",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-28",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-28",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-29",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-29",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-30",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-30",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-31",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-31",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-32",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-32",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-33",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-33",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-34",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-34",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-35",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-35",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-36",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-36",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-37",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-37",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-38",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-38",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-39",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-39",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-40",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-40",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-41",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-41",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-42",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-42",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-43",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-43",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-44",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-44",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-45",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-45",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-46",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-46",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-47",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-47",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-48",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-48",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-49",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-49",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-50",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-50",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-51",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-51",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-52",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-52",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-53",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-53",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-54",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-54",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-55",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-55",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-56",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-56",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-57",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-57",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-58",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-58",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-59",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-59",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-60",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-60",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-61",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-61",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-62",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-62",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-63",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-63",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-64",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-64",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-65",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-65",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-66",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-66",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-67",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-67",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-68",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-68",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-69",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-69",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-70",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-70",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-71",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-71",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-72",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-72",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-73",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-73",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-74",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-74",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-75",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-75",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "branches-underplanting-v3.glb-76",
+        "material": "original textured bark",
+        "vertices": 1736,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "leaves-underplanting-v3.glb-76",
+        "material": "underplanting foliage cutout",
+        "vertices": 4640,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "m006_hipoly_81_bones_opacity_primitive0",
+        "material": "m006_body",
+        "vertices": 3135,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "m006_hipoly_81_bones_opacity_primitive1",
+        "material": "m006_head",
+        "vertices": 1788,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "m006_hipoly_81_bones_opacity_primitive2",
+        "material": "m006_opacity",
+        "vertices": 525,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "entrance information marker",
+        "material": "CodeVerse blue",
+        "vertices": 2401,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      },
+      {
+        "name": "information marker glyph",
+        "material": "information marker glyph",
+        "vertices": 8,
+        "normals": true,
+        "ready": true,
+        "effectError": []
+      }
+    ]
+  }
+}
