@@ -1,0 +1,93 @@
+{
+  "scope": "Real MIT leaf texture/static tree source review; no MPFB, no G1, no accepted foliage or hardware performance",
+  "babylon": "9.38.0",
+  "backend": "WebGL2",
+  "observations": [
+    {
+      "file": "ash_medium-lod0.glb",
+      "triangles": 20000,
+      "meshes": 2,
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "textureSize": {
+        "width": 1024,
+        "height": 1024
+      },
+      "textureReady": true
+    },
+    {
+      "file": "bush_1-lod0.glb",
+      "triangles": 13872,
+      "meshes": 2,
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "textureSize": {
+        "width": 1024,
+        "height": 1024
+      },
+      "textureReady": true
+    },
+    {
+      "file": "ash_medium-lod1.glb",
+      "triangles": 9088,
+      "meshes": 2,
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "textureSize": {
+        "width": 1024,
+        "height": 1024
+      },
+      "textureReady": true
+    },
+    {
+      "file": "bush_1-lod1.glb",
+      "triangles": 6306,
+      "meshes": 2,
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "textureSize": {
+        "width": 1024,
+        "height": 1024
+      },
+      "textureReady": true
+    },
+    {
+      "file": "ash_medium-lod2.glb",
+      "triangles": 5466,
+      "meshes": 2,
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "textureSize": {
+        "width": 1024,
+        "height": 1024
+      },
+      "textureReady": true
+    },
+    {
+      "file": "bush_1-lod2.glb",
+      "triangles": 4236,
+      "meshes": 2,
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "textureSize": {
+        "width": 1024,
+        "height": 1024
+      },
+      "textureReady": true
+    }
+  ],
+  "wind": false,
+  "bark": "scalar diagnostic",
+  "ground": "diagnostic only",
+  "lodSwitching": "none; levels shown side-by-side, no pop/coverage acceptance",
+  "textureObjects": 7,
+  "disposal": {
+    "sceneDisposed": true,
+    "engineScenes": 0
+  },
+  "pageErrors": [],
+  "externalRequests": [],
+  "failedRequests": [],
+  "browser": "158.0.8127.0",
+  "renderer": "Explicit SwiftShader: correctness only, not physical GPU"
+}

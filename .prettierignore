@@ -1,0 +1,13 @@
+node_modules
+dist
+.cache
+playwright-report
+test-results
+coverage
+package-lock.json
+
+# Machine-recorded browser snapshots; do not rewrite historical evidence.
+docs/evidence/g1-visual/**/*.json
+docs/evidence/g1-graphics/**/*.json
+docs/evidence/g1-graphics/**/*.md
+docs/evidence/g2/**/*.json

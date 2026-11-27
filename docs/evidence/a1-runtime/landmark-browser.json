@@ -1,0 +1,106 @@
+{
+  "scope": "A1 full exterior construction only; not art acceptance, physical GPU performance, Windows or WebGPU",
+  "backend": "WebGL2",
+  "babylon": "9.38.0",
+  "compressed": {
+    "meshes": 27,
+    "triangles": 17588,
+    "materials": 9,
+    "skeletons": 0,
+    "animations": 0
+  },
+  "uncompressed": {
+    "meshes": 27,
+    "triangles": 17588,
+    "materials": 9,
+    "skeletons": 0,
+    "animations": 0
+  },
+  "bounds": {
+    "min": [-20.99250030517578, -0.30019761628955377, -24.240790700055342],
+    "max": [20.99250030517578, 24.801059797932353, 31.999572740867336]
+  },
+  "lifecycle": [
+    {
+      "before": {
+        "meshes": 28,
+        "materials": 9,
+        "textures": 2
+      },
+      "after": {
+        "meshes": 28,
+        "materials": 9,
+        "textures": 2
+      }
+    },
+    {
+      "before": {
+        "meshes": 28,
+        "materials": 9,
+        "textures": 2
+      },
+      "after": {
+        "meshes": 28,
+        "materials": 9,
+        "textures": 2
+      }
+    },
+    {
+      "before": {
+        "meshes": 28,
+        "materials": 9,
+        "textures": 2
+      },
+      "after": {
+        "meshes": 28,
+        "materials": 9,
+        "textures": 2
+      }
+    }
+  ],
+  "dimensionsInMeters": true,
+  "scalarMaterialsOnly": true,
+  "noExternalTextures": true,
+  "unresolved": [
+    "hero",
+    "vegetation",
+    "final PBR",
+    "collision/navigation",
+    "production art review"
+  ],
+  "boundsToleranceMeters": 0.002,
+  "screenshots": [
+    "docs/evidence/a1-runtime/landmark-front.png",
+    "docs/evidence/a1-runtime/landmark-rear.png",
+    "docs/evidence/a1-runtime/landmark-site.png"
+  ],
+  "views": {
+    "front": {
+      "position": [-15.389580435962948, 31.059689990217173, 56.270481095977146],
+      "alpha": 1.8207963267948966,
+      "beta": 1.23,
+      "target": [0, 9, -4]
+    },
+    "rear": {
+      "position": [-22.380272977210648, 49.4258390668546, -60.11564898785335],
+      "alpha": -1.9907963267948965,
+      "beta": 0.96,
+      "target": [0, 11, -10]
+    },
+    "site": {
+      "position": [-29.53691147397077, 74.32777159515727, 48.17592614416341],
+      "alpha": 2.1207963267948964,
+      "beta": 0.67,
+      "target": [0, 3, 0]
+    }
+  },
+  "disposal": {
+    "sceneDisposed": true,
+    "engineScenes": 0
+  },
+  "pageErrors": [],
+  "externalNetworkRequests": [],
+  "failedRequests": [],
+  "browser": "158.0.8127.0",
+  "renderer": "Explicit SwiftShader launch; not physical-GPU performance evidence"
+}

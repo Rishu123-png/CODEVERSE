@@ -1,0 +1,11 @@
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+page.waitForFunction: Timeout 120000ms exceeded.
+    at /home/user/CODEVERSE/scripts/g1/capture-graphics.mjs:37:14 {
+  log: [],
+  name: 'TimeoutError'
+}
+
+Node.js v22.22.3

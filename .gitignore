@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.cache/
+playwright-report/
+test-results/
+coverage/
+*.local
+.env
+.env.*
+!.env.example
+.DS_Store
+
+# Packaged, offline-baked HDR reflection asset (not a credentials file).
+!public/assets/g1/daylight-urban.env

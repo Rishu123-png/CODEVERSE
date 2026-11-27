@@ -1,0 +1,114 @@
+{
+  "runtimeBytes": 29394652,
+  "assets": [
+    {
+      "file": "public/assets/g1/landmark-v2.glb",
+      "bytes": 1359360,
+      "sha256": "1f330a91955d4850a02b9c7fb7cfb0959cde7a92fb89e08f1d39bc84609fcc8b",
+      "meshes": 27,
+      "materials": 9,
+      "animationClips": [],
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "public/assets/g1/site-v3.glb",
+      "bytes": 15521448,
+      "sha256": "a6d4057b66e0da70db982be0b752e8c3d1fe25403f354c2d2d7bd5b38728bba1",
+      "meshes": 316,
+      "materials": 45,
+      "animationClips": [],
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "public/assets/g1/hero-urban.glb",
+      "bytes": 6560888,
+      "sha256": "94d5c30e2420cf41ad40df25d962a3be1ca0da9d4d40af97013a6c2a5153b507",
+      "meshes": 1,
+      "materials": 3,
+      "animationClips": [
+        "Idle",
+        "Walk",
+        "Run"
+      ],
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "public/assets/g1/canopy-v3.glb",
+      "bytes": 1461692,
+      "sha256": "fd4e48fe3d9cbf43a1ab369c85071314ba9317dcca5330770d4e14e22e6af258",
+      "meshes": 2,
+      "materials": 2,
+      "animationClips": [],
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "public/assets/g1/oak-v3.glb",
+      "bytes": 1249744,
+      "sha256": "344e9eac85e6ecf74ec972c9092d27c5f7c90e288f92cf71959939e752ca29ad",
+      "meshes": 2,
+      "materials": 2,
+      "animationClips": [],
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "public/assets/g1/blossom-v3.glb",
+      "bytes": 1392056,
+      "sha256": "8e3dd98e15420b894545627cf240d65f09dbd48e4fb5c8d1941408f96436a39a",
+      "meshes": 2,
+      "materials": 2,
+      "animationClips": [],
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "public/assets/g1/underplanting-v3.glb",
+      "bytes": 480016,
+      "sha256": "7faf5f49f80295d2297412e206936a09847601a619f63255b9fe6c6f435565d8",
+      "meshes": 2,
+      "materials": 2,
+      "animationClips": [],
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "public/assets/g1/daylight-urban.env",
+      "bytes": 976232,
+      "sha256": "c4f6ce4caf1fc2274e8e105b541f685701f32899adee86e6966d6f54e312bd95"
+    },
+    {
+      "file": "public/assets/g1/v2-sky-0.rgba",
+      "bytes": 65536,
+      "sha256": "4629d48804cd24fc43e7afb19821e3b972b738a8dce9e4e4b25ae04e0a491899"
+    },
+    {
+      "file": "public/assets/g1/v2-sky-1.rgba",
+      "bytes": 65536,
+      "sha256": "cb38bec86c1eec857b5386342f9f2bf578645d2af27951d6f657e32ff0985088"
+    },
+    {
+      "file": "public/assets/g1/v2-sky-2.rgba",
+      "bytes": 65536,
+      "sha256": "a5d967e4b86c48c3aeb9815136ba4ceee8cc183e668f21d0d07dfed870a4c4a8"
+    },
+    {
+      "file": "public/assets/g1/v2-sky-3.rgba",
+      "bytes": 65536,
+      "sha256": "3ab1181eaf351652993900f75d2ccb7213571d4c340409e15d45145f2ead5401"
+    },
+    {
+      "file": "public/assets/g1/v2-sky-4.rgba",
+      "bytes": 65536,
+      "sha256": "d2f2e506150be5e043b4ca33ebe1ef19904cde3e6996962ff3cdee2d36f6958c"
+    },
+    {
+      "file": "public/assets/g1/v2-sky-5.rgba",
+      "bytes": 65536,
+      "sha256": "00b9f41baf10c7208ea087d0a98ebd2c335fc69297322e9f57f936a852063392"
+    }
+  ]
+}

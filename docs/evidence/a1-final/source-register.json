@@ -1,0 +1,120 @@
+{
+  "reviewedOn": "2026-11-27",
+  "scope": "Bounded publisher/license review and exact local package inspection; no legal opinion or final production selection",
+  "sources": [
+    {
+      "id": "V1",
+      "url": "https://polyhaven.com/license",
+      "kind": "publisher terms",
+      "observed": "All model/texture/HDRI assets CC0; commercial use and redistribution allowed; website logos/renders are separate protected content",
+      "binaryAcquiredThisPass": false
+    },
+    {
+      "id": "V2",
+      "url": "https://polyhaven.com/a/jacaranda_tree",
+      "kind": "publisher asset metadata; previous pass retained",
+      "observed": "Green shade-tree candidate; previously recorded approximately 312K triangles and 24.2m width; not a verified flowering variant",
+      "decision": "Retain conditional high-detail shade candidate; do not retry blocked binary download"
+    },
+    {
+      "id": "V3",
+      "url": "https://polyhaven.com/a/shrub_02",
+      "kind": "publisher metadata",
+      "observed": "CC0, Rico Cilliers, approximately 52K triangles, 5.3m width; LOD tag does not specify the acquired export's LOD structure",
+      "decision": "Retain conditional shrub candidate, not locally package-verified"
+    },
+    {
+      "id": "V4",
+      "url": "https://github.com/dgreenheck/ez-tree/tree/dcf309bd86bd521083d9c70f01f2de45fdc7c457",
+      "kind": "acquired official source",
+      "observed": "MIT code; own license covers demo leaf textures per texture notice; ambientCG bark separately CC0",
+      "decision": "Viable offline editable tree/shrub source; static GLB path exercised; stock presets fail premium fullness/LOD continuity review"
+    },
+    {
+      "id": "V5",
+      "url": "https://registry.npmjs.org/@dgreenheck/ez-tree/-/ez-tree-1.1.0.tgz",
+      "kind": "acquired official npm distribution",
+      "observed": "Four actual 1K alpha leaf PNGs exactly match SHA256 OIDs from pinned GitHub LFS pointer files; see vegetation-inspection.json",
+      "decision": "Retain MIT notice with any reused leaf textures; no assumption that all npm/source versions have identical generator code"
+    },
+    {
+      "id": "V6",
+      "url": "https://sketchfab.com/3d-models/cc0-sakura-cherry-blossom-f5e6f5a985ea4fc2a14ee0b4b37572b5",
+      "kind": "creator asset page",
+      "observed": "ffish.asia/floraZia CC0 flowering Prunus x yedoensis specimen, 1.1M triangles and 799.1K vertices per page; not an acquired urban whole-tree package",
+      "decision": "Potential flower reference/source component only; unsuitable for direct runtime. No account/login/download attempted"
+    },
+    {
+      "id": "M1",
+      "url": "https://quaternius.itch.io/universal-animation-library",
+      "kind": "publisher product page",
+      "observed": "CC0 label and free Standard tier; current features/root-motion and 120+ list apply to product family, not verified free current archive inventory",
+      "decision": "Do not infer all current clips or source BLEND are free"
+    },
+    {
+      "id": "M2",
+      "url": "https://quaternius.com/license.html",
+      "kind": "publisher terms",
+      "observed": "QAL v1.0 last updated 2026-08-28. Section 2 allows incorporating assets into distributed products; section 3 bars standalone asset redistribution, including modified assets; section 7 says changes are non-retroactive",
+      "decision": "Current CC0 product-label/QAL inconsistency is unresolved. Not a blanket game-use ban, not unrestricted raw-asset rights. Hold adoption; do not treat browser obfuscation as rights clearance"
+    },
+    {
+      "id": "M3",
+      "url": "https://github.com/J-Ponzo/gltf-universal-animation-library/tree/e24c23cf2a1323488a3faa226ea7ea21f644b73e",
+      "kind": "acquired third-party historical mirror",
+      "observed": "README claims free Standard downloaded 2025-06-10, names Quaternius; CC0 text present; 46 actual clips including idle/walk/jog/sprint; no publisher archive hash match. README license hyperlink points to unrelated mirror repository",
+      "decision": "Exact-data research copy only, not game adopted; archival claims do not alone resolve current rights/provenance conflict"
+    },
+    {
+      "id": "M4",
+      "url": "https://www.ianxmason.com/100style/",
+      "kind": "researcher dataset publisher",
+      "observed": "CC BY 4.0 original BVH data, 60fps, 28-bone skeleton per publisher, unedited captures with trim metadata. Neutral_ID/FW/FR files individually linked. Commercial creative work credit requested: The 100STYLE Dataset - Ian Mason",
+      "decision": "Preferred independent-license backup motion-data route; not downloaded or retargeted. No 4-million-frame bulk download"
+    },
+    {
+      "id": "M5",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "kind": "license steward summary",
+      "observed": "Commercial sharing/adaptation allowed with credit, license link, changes indication; no added restrictions on licensed material; no warranty of all other rights",
+      "decision": "If 100STYLE used, preserve source/license/credit and modification notes in asset manifest and credits"
+    },
+    {
+      "id": "M6",
+      "url": "https://github.com/ianxmason/local-phases",
+      "kind": "related researcher code",
+      "observed": "Data license distinguished from AI4Animation-derived code research/education/non-commercial restrictions",
+      "decision": "Do not import training/demo code under dataset's CC BY license"
+    },
+    {
+      "id": "M7",
+      "url": "https://github.com/orangeduck/100style-retarget/tree/dd49acf977a2be05f76d56b36f8d3d8324d4c092",
+      "kind": "publisher-linked derivative dataset",
+      "observed": "Motion data described as CC BY 4.0, but Geno mesh explicitly free only for non-commercial research; external data archives not in the small source tree",
+      "decision": "Exclude Geno mesh from CodeVerse and do not conflate its rights with motion-data rights"
+    },
+    {
+      "id": "M8",
+      "url": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+      "kind": "official service FAQ",
+      "observed": "Free with Adobe ID, no Creative Cloud subscription, royalty-free creative/game use, biped humanoids only. FAQ alone does not establish unrestricted raw-file redistribution",
+      "decision": "Secondary hold: account/upload and exact browser-distribution workflow rights not exercised. No owner character uploaded"
+    }
+  ],
+  "unsuccessfulMetadataChecks": [
+    {
+      "url": "https://doc.babylonjs.com/features/featuresDeepDive/animation/retargetingAnimations/",
+      "result": "fetch failed; not used as verified new API evidence"
+    },
+    {
+      "url": "https://api.github.com/repos/ianxmason/100style/git/trees/HEAD?recursive=1",
+      "result": "404; no source repository at this guessed URL; stopped, used publisher page instead"
+    }
+  ],
+  "noRetries": [
+    "Blender startup or dependency work",
+    "previously blocked Poly Haven/ambientCG/MakeHuman/itch binary download paths"
+  ],
+  "noPaidOperations": true,
+  "noG1Implementation": true
+}

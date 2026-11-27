@@ -1,0 +1,122 @@
+{
+  "tool_versions": {
+    "bpy": "4.5.3",
+    "mpfb": "2.0.18",
+    "babylon_core": "9.38.0",
+    "babylon_loaders": "9.38.0",
+    "gltf_transform": "4.5.1 SDK (CLI removed after inspection)",
+    "gltf_validator": "2.0.0-dev.3.10",
+    "meshoptimizer": "1.2.0",
+    "sharp": "0.35.5",
+    "esbuild": "0.28.2"
+  },
+  "hashes": {
+    "tools/package-lock.json": "9bd04869cee2feff87f72da3fb7f2b7c8a8eb26941d66523fdcdccc1cbc97b3a",
+    "sources/mpfb2-v2.0.18.zip": "ada7c4ff11e79cf6ed9b441bccabc52c9359f2848b988f66e89c14c30b21fed7",
+    "results/bpy-install.log": "c2ee649a2587ca8a12bf027f242782eb7052825ee983c6d6c36d76d99e47c76e",
+    "results/npm-install.log": "9c5f54f438a2464c6014ac27971672b1ef0503fd353dd0e52467253f5e363c7d",
+    "results/ktx2-attempt.log": "3e441394ee8f7cef805ba55d648ad0ba77b813117df8ff7f3dfe3adb13988626"
+  },
+  "blender_import": "FAILED: ImportError: libXrender.so.1: cannot open shared object file: No such file or directory",
+  "ldd_missing": [
+    "libXrender.so.1",
+    "libXfixes.so.3",
+    "libXi.so.6",
+    "libxkbcommon.so.0",
+    "libSM.so.6",
+    "libICE.so.6",
+    "libGL.so.1"
+  ],
+  "network_probes": {
+    "method": "curl -I --max-time 15",
+    "unreachable_with_exit_35": [
+      "https://api.polyhaven.com/info/jacaranda_tree",
+      "https://ambientcg.com/get?file=Concrete034_1K-JPG.zip",
+      "https://files.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip",
+      "https://quaternius.itch.io/universal-animation-library",
+      "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/shrub_02/shrub_02_1k.gltf"
+    ],
+    "limitation": "Sandbox outbound host restriction; public-page research tool can retrieve text but this is not a binary download path."
+  },
+  "root_project_dependencies_changed": false,
+  "initial_toolchain_lock_sha256": "386b1458c83ebf51f5b7f339b5f6459836284ec6895797ee5219263a51909878",
+  "ktx2_attempt": {
+    "exitCode": 1,
+    "actualFailure": "Command failed: command -v ktx 2>/dev/null && { echo >&1 ktx; exit 0; }",
+    "status": "not encoded; this CLI version checks ktx, not only legacy toktx"
+  },
+  "dependency_audit": {
+    "initial": {
+      "info": 0,
+      "low": 0,
+      "moderate": 4,
+      "high": 0,
+      "critical": 0,
+      "total": 4
+    },
+    "remediation": "Removed @gltf-transform/cli and its vulnerable glob/caporal/minimatch chain; pinned only needed SDK packages directly. No forced downgrade and no application dependency change.",
+    "final": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "limit": "Registry advisory snapshot, not a security guarantee"
+  },
+  "environment": {
+    "os": "Linux-6.1.158+-x86_64-with-glibc2.36",
+    "python": "3.11.2",
+    "node": "22.22.3"
+  },
+  "installed_package_licenses": {
+    "@babylonjs/core": {
+      "version": "9.38.0",
+      "license": "Apache-2.0",
+      "author": null
+    },
+    "@babylonjs/loaders": {
+      "version": "9.38.0",
+      "license": "Apache-2.0",
+      "author": null
+    },
+    "@gltf-transform/core": {
+      "version": "4.5.1",
+      "license": "MIT",
+      "author": "Don McCurdy <dm@donmccurdy.com>"
+    },
+    "@gltf-transform/extensions": {
+      "version": "4.5.1",
+      "license": "MIT",
+      "author": "Don McCurdy <dm@donmccurdy.com>"
+    },
+    "@gltf-transform/functions": {
+      "version": "4.5.1",
+      "license": "MIT",
+      "author": "Don McCurdy <dm@donmccurdy.com>"
+    },
+    "gltf-validator": {
+      "version": "2.0.0-dev.3.10",
+      "license": "Apache-2.0",
+      "author": {
+        "name": "The Khronos Group Inc."
+      }
+    },
+    "meshoptimizer": {
+      "version": "1.2.0",
+      "license": "MIT",
+      "author": "Arseny Kapoulkine"
+    },
+    "sharp": {
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "author": "Lovell Fuller <npm@lovell.info>"
+    },
+    "esbuild": {
+      "version": "0.28.2",
+      "license": "MIT",
+      "author": null
+    }
+  }
+}

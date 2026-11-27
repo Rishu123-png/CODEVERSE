@@ -1,0 +1,14 @@
+[
+  {
+    "file": "before-vulkan/production-webgpu.png",
+    "meanLuminance": 0,
+    "blackFraction": 1,
+    "region": "20%-80% width, 66%-77% height: central paving, excludes UI and player"
+  },
+  {
+    "file": "after/production-webgpu.png",
+    "meanLuminance": 192.92649490209993,
+    "blackFraction": 0,
+    "region": "20%-80% width, 66%-77% height: central paving, excludes UI and player"
+  }
+]

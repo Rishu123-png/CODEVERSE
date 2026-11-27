@@ -1,0 +1,1 @@
+production-webgl2 {"backend":"WebGL2","pavingPixels":{"meanLuminance":102.18541327633447,"blackFraction":0.0006878930817610062},"logs":[{"type":"log","text":"BJS - [18:01:25]: Babylon.js v9.38.0 - WebGL2"}],"errors":[],"failed":[],"httpErrors":[]}

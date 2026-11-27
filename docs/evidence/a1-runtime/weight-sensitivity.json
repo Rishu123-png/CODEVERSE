@@ -1,0 +1,67 @@
+{
+  "scope": "mathematical source-weight sensitivity, NOT an MPFB/Blender export or actual rig anatomical pose test",
+  "source_tag": "v2.0.18",
+  "weights_sha256": "9f4a773e74ce5ba08415b4f30070338e9f75bae5971b5075b10cd6b9caa58473",
+  "numpy": "1.26.4",
+  "body_vertices": 13380,
+  "source_scale_assumption": "raw OBJ multiplied by 0.1; distance units interpreted as meters from MPFB default scale; no macro/feet transform applied",
+  "max_discarded_normalized_weight_mass": 0.033599998050928157,
+  "vertices_losing_weight_mass": 608,
+  "probes": {
+    "identity": {
+      "arbitrary_world_z_degrees": {},
+      "max_difference_mm": 2.2377932840100812e-13,
+      "mean_difference_mm": 1.9225149266885442e-15,
+      "p95_difference_mm": 0.0,
+      "vertices_difference_over_0_1_mm": 0
+    },
+    "world_axis_arm_stress": {
+      "arbitrary_world_z_degrees": {
+        "upperarm_l": 45,
+        "lowerarm_l": -70,
+        "hand_l": 25
+      },
+      "max_difference_mm": 2.8349327169100755,
+      "mean_difference_mm": 0.0031979741643947675,
+      "p95_difference_mm": 0.0,
+      "vertices_difference_over_0_1_mm": 53
+    },
+    "world_axis_knee_stress": {
+      "arbitrary_world_z_degrees": {
+        "thigh_l": -35,
+        "calf_l": 80,
+        "foot_l": -20
+      },
+      "max_difference_mm": 2.2916674743094325,
+      "mean_difference_mm": 0.0024419616232496024,
+      "p95_difference_mm": 0.0,
+      "vertices_difference_over_0_1_mm": 63
+    },
+    "world_axis_torso_stress": {
+      "arbitrary_world_z_degrees": {
+        "spine_01": 15,
+        "spine_02": -20,
+        "neck_01": 30
+      },
+      "max_difference_mm": 1.0517932618469514,
+      "mean_difference_mm": 0.003546954522190802,
+      "p95_difference_mm": 0.0,
+      "vertices_difference_over_0_1_mm": 143
+    }
+  },
+  "checks": {
+    "identity_preserved": true,
+    "both_weight_sets_normalized": true,
+    "four_influence_limit": true,
+    "bone_parent_graph_acyclic": true
+  },
+  "not_verified": [
+    "Blender bone-roll orientation",
+    "macro-targeted body",
+    "runtime bind pose",
+    "actual glTF exporter influence handling",
+    "anatomical deformation quality",
+    "garment fit",
+    "acceptable four-versus-six policy"
+  ]
+}

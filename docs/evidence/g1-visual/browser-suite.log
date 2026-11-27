@@ -1,0 +1,21 @@
+
+> codeverse@0.0.0 test:e2e
+> playwright test
+
+
+Running 9 tests using 1 worker
+
+  ✓  1 tests/foundation.spec.ts:12:1 › forced WebGL2 initializes under StrictMode, resizes and restarts cleanly (2.2m)
+  ✓  2 tests/foundation.spec.ts:44:1 › automatic mode reports fallback when WebGPU is unavailable (57.3s)
+  ✓  3 tests/foundation.spec.ts:56:1 › forced WebGPU fails visibly and never falls back (1.2m)
+  ✓  4 tests/foundation.spec.ts:70:1 › invalid explicit renderer is not silently ignored (589ms)
+  ✓  5 tests/foundation.spec.ts:76:1 › both unavailable backends produce an actionable failure (1.7s)
+  ✓  6 tests/foundation.spec.ts:98:1 › loading state is branded and makes no gameplay promises (1.7s)
+  ✓  7 tests/foundation.spec.ts:120:1 › WebGL context loss surfaces a failure instead of remaining ready (23.0s)
+Actual automatic backend: WebGL2
+  ✓  8 tests/foundation.spec.ts:139:1 › unmodified automatic selection initializes an available real backend (8.6s)
+  ✓  9 tests/playable.spec.ts:5:1 › G1 actual keyboard traversal, collision, entrance information, pause and reset (9.4m)
+
+  Slow test file: tests/playable.spec.ts (9.4m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  9 passed (14.9m)

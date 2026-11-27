@@ -1,0 +1,121 @@
+{
+  "scope": "Planning arithmetic using measured source counts; NOT measured FPS, VRAM, draw calls, Windows/WebGPU or HP Victus results",
+  "hardware": {
+    "known": "User says HP Victus",
+    "unknown": [
+      "exact model/product number",
+      "CPU",
+      "integrated/discrete GPU",
+      "dedicated VRAM",
+      "system RAM/channel configuration",
+      "GPU driver",
+      "OS/browser version",
+      "display/backing resolution and DPR",
+      "power/thermal mode"
+    ],
+    "decision": "No SKU inferred from product family; no guaranteed FPS or automatic tier selected"
+  },
+  "texture": [
+    {
+      "size": 1024,
+      "rgba8FullMipChainMiB": 5.333333333333333,
+      "bc7OrEtc2RgbaFullMipChainMiB": 1.3333333333333333,
+      "notes": "Idealized full-chain arithmetic. RGBA8 uncompressed vs 8 bits/texel block compression; alignment/driver overhead excluded. No KTX2 encoding/device format support proven."
+    },
+    {
+      "size": 2048,
+      "rgba8FullMipChainMiB": 21.333333333333332,
+      "bc7OrEtc2RgbaFullMipChainMiB": 5.333333333333333,
+      "notes": "Idealized full-chain arithmetic. RGBA8 uncompressed vs 8 bits/texel block compression; alignment/driver overhead excluded. No KTX2 encoding/device format support proven."
+    },
+    {
+      "size": 4096,
+      "rgba8FullMipChainMiB": 85.33333333333333,
+      "bc7OrEtc2RgbaFullMipChainMiB": 21.333333333333332,
+      "notes": "Idealized full-chain arithmetic. RGBA8 uncompressed vs 8 bits/texel block compression; alignment/driver overhead excluded. No KTX2 encoding/device format support proven."
+    }
+  ],
+  "geometry": [
+    {
+      "file": "ash_medium-lod0.glb",
+      "triangles": 20000,
+      "vertices": 28399,
+      "estimatedRawPositionNormalUvAndU32IndexMiB": 1.095550537109375,
+      "measuredGlbBytes": 1332708
+    },
+    {
+      "file": "ash_medium-lod1.glb",
+      "triangles": 9088,
+      "vertices": 14121,
+      "estimatedRawPositionNormalUvAndU32IndexMiB": 0.534942626953125,
+      "measuredGlbBytes": 744868
+    },
+    {
+      "file": "ash_medium-lod2.glb",
+      "triangles": 5466,
+      "vertices": 8104,
+      "estimatedRawPositionNormalUvAndU32IndexMiB": 0.30986785888671875,
+      "measuredGlbBytes": 508852
+    },
+    {
+      "file": "bush_1-lod0.glb",
+      "triangles": 13872,
+      "vertices": 16315,
+      "estimatedRawPositionNormalUvAndU32IndexMiB": 0.656646728515625,
+      "measuredGlbBytes": 872496
+    },
+    {
+      "file": "bush_1-lod1.glb",
+      "triangles": 6306,
+      "vertices": 8080,
+      "estimatedRawPositionNormalUvAndU32IndexMiB": 0.31874847412109375,
+      "measuredGlbBytes": 518196
+    },
+    {
+      "file": "bush_1-lod2.glb",
+      "triangles": 4236,
+      "vertices": 5036,
+      "estimatedRawPositionNormalUvAndU32IndexMiB": 0.2021636962890625,
+      "measuredGlbBytes": 395948
+    }
+  ],
+  "constructedSubset": {
+    "assumption": "2 EZ-Tree LOD0 shade trees + 3 LOD0 shrubs + existing scalar landmark/plaza only. No flowering tree, hero, extra PBR, surroundings or reflection geometry. NOT a complete G1 scene.",
+    "triangles": 99204,
+    "uninstancedBaseBatches": 37,
+    "notes": "Triangles and per-asset meshes from generated geometry; scene sum is an estimate, not a rendered combination. Shadow/depth/reflection passes add work. Instancing/merging not implemented."
+  },
+  "publisherSubset": {
+    "assumption": "Published approximate 312K Jacaranda ×2 + 52K Shrub02 ×3 + measured construction study; not acquired source counts, not all final assets",
+    "approximateTriangles": 797588
+  },
+  "projection": {
+    "assumption": "Pinhole upright extent centered perpendicular to view, 1080px backing height, 55deg vertical FOV. Approximation; no perceptual quality threshold or frame-time result.",
+    "verticalFocalPixels": 1037.3303485644296,
+    "tree8mAt20mPixels": 414.9321394257719,
+    "tree8mAt40mPixels": 207.46606971288594,
+    "hero1_8mAt4mPixels": 466.79865685399335
+  },
+  "frameTimeReference": {
+    "fps60Milliseconds": 16.666666666666668,
+    "fps30Milliseconds": 33.333333333333336,
+    "scope": "reciprocal arithmetic, not targets passed"
+  },
+  "criticalUnknowns": [
+    "physical-GPU fill-rate for overlapping masked leaves",
+    "leaf/canopy shadow cost",
+    "premium glass/reflection cost",
+    "texture residency/decode peak",
+    "actual hero skin/motion cost",
+    "CPU submission/culling/React isolation under workload",
+    "Windows WebGPU and WebGL2 parity",
+    "thermal sustained behavior"
+  ],
+  "notDone": [
+    "No G1 scene built",
+    "No owner device benchmark",
+    "No FPS derived from triangles or SwiftShader",
+    "No KTX2 benefit assumed",
+    "No VRAM obtained from compressed file sizes"
+  ]
+}

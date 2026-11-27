@@ -1,0 +1,239 @@
+{
+  "points": [
+    {
+      "x": -4.99389185016228e-16,
+      "z": 9.844355689102807,
+      "speed": 4.099999999915056,
+      "near": false,
+      "interacting": false,
+      "paused": false,
+      "motion": "Run",
+      "playerY": 0,
+      "cameraAlpha": 1.5707963267948966,
+      "cameraRadius": 5.799999999999982,
+      "meshes": 504,
+      "skeletons": 1,
+      "animationGroups": 3,
+      "triangles": 1016210
+    },
+    {
+      "x": 5.124999999994836,
+      "z": 9.844355689102807,
+      "speed": 4.100000000000001,
+      "near": false,
+      "interacting": false,
+      "paused": false,
+      "motion": "Run",
+      "playerY": 0,
+      "cameraAlpha": 1.5707963267948966,
+      "cameraRadius": 5.799999999999982,
+      "meshes": 504,
+      "skeletons": 1,
+      "animationGroups": 3,
+      "triangles": 1016210
+    },
+    {
+      "x": 5.124999999994836,
+      "z": 11.894355689102808,
+      "speed": 4.100000000000001,
+      "near": false,
+      "interacting": false,
+      "paused": false,
+      "motion": "Run",
+      "playerY": 0,
+      "cameraAlpha": 1.5707963267948966,
+      "cameraRadius": 5.799999999999977,
+      "meshes": 504,
+      "skeletons": 1,
+      "animationGroups": 3,
+      "triangles": 1016210
+    },
+    {
+      "x": 20.089999999994735,
+      "z": 11.894355689102808,
+      "speed": 4.099999999999895,
+      "near": false,
+      "interacting": false,
+      "paused": false,
+      "motion": "Run",
+      "playerY": 0,
+      "cameraAlpha": 1.5707963267948966,
+      "cameraRadius": 5.799999999999971,
+      "meshes": 504,
+      "skeletons": 1,
+      "animationGroups": 3,
+      "triangles": 1016210
+    },
+    {
+      "x": 20.089999999994735,
+      "z": 3.899355689102805,
+      "speed": 4.100000000000001,
+      "near": false,
+      "interacting": false,
+      "paused": false,
+      "motion": "Run",
+      "playerY": 0,
+      "cameraAlpha": 1.5707963267948966,
+      "cameraRadius": 5.799999999999971,
+      "meshes": 504,
+      "skeletons": 1,
+      "animationGroups": 3,
+      "triangles": 1016210
+    },
+    {
+      "x": 20.089999999994735,
+      "z": -26.192718630230615,
+      "speed": 4.099999999999895,
+      "near": false,
+      "interacting": false,
+      "paused": false,
+      "motion": "Run",
+      "playerY": 0,
+      "cameraAlpha": 1.5707963267948966,
+      "cameraRadius": 2.366811628882499,
+      "meshes": 504,
+      "skeletons": 1,
+      "animationGroups": 3,
+      "triangles": 1016210
+    },
+    {
+      "x": -20.090000000005066,
+      "z": -26.192718630230615,
+      "speed": 4.099999999999895,
+      "near": false,
+      "interacting": false,
+      "paused": false,
+      "motion": "Run",
+      "playerY": 0,
+      "cameraAlpha": 1.5707963267948966,
+      "cameraRadius": 1.6739063891254211,
+      "meshes": 504,
+      "skeletons": 1,
+      "animationGroups": 3,
+      "triangles": 1016210
+    },
+    {
+      "x": -20.090000000005066,
+      "z": 11.937281369769131,
+      "speed": 4.100000000000001,
+      "near": false,
+      "interacting": false,
+      "paused": false,
+      "motion": "Run",
+      "playerY": 0,
+      "cameraAlpha": 1.5707963267948966,
+      "cameraRadius": 2.3882003871923305,
+      "meshes": 504,
+      "skeletons": 1,
+      "animationGroups": 3,
+      "triangles": 1016210
+    },
+    {
+      "x": 0.20499999999483565,
+      "z": 11.937281369769131,
+      "speed": 4.099999999999999,
+      "near": false,
+      "interacting": false,
+      "paused": false,
+      "motion": "Run",
+      "playerY": 0,
+      "cameraAlpha": 1.5707963267948966,
+      "cameraRadius": 2.458871220917131,
+      "meshes": 504,
+      "skeletons": 1,
+      "animationGroups": 3,
+      "triangles": 1016210
+    },
+    {
+      "x": 0.20499999999483565,
+      "z": 31.822281369768728,
+      "speed": 4.099999999999895,
+      "near": false,
+      "interacting": false,
+      "paused": false,
+      "motion": "Run",
+      "playerY": -0.15,
+      "cameraAlpha": 1.5707963267948966,
+      "cameraRadius": 2.484869567734916,
+      "meshes": 504,
+      "skeletons": 1,
+      "animationGroups": 3,
+      "triangles": 1016210
+    }
+  ],
+  "poses": [
+    {
+      "state": {
+        "x": -3.431922014808277e-17,
+        "z": 17.43952460134665,
+        "speed": 1.636420917369179,
+        "near": false,
+        "interacting": false,
+        "paused": false,
+        "motion": "Walk",
+        "playerY": 0,
+        "cameraAlpha": 1.5707963267948966,
+        "cameraRadius": 5.799999999999998,
+        "meshes": 504,
+        "skeletons": 1,
+        "animationGroups": 3,
+        "triangles": 1016210
+      },
+      "clips": [
+        {
+          "name": "Idle",
+          "playing": false,
+          "speed": 1
+        },
+        {
+          "name": "Walk",
+          "playing": true,
+          "frame": 37.70407351257836,
+          "speed": 1.6170167167679634
+        },
+        {
+          "name": "Run",
+          "speed": 0.5682017074198539
+        }
+      ]
+    },
+    {
+      "state": {
+        "x": -1.1315069692595523e-16,
+        "z": 16.152108885521358,
+        "speed": 4.063057210613152,
+        "near": false,
+        "interacting": false,
+        "paused": false,
+        "motion": "Run",
+        "playerY": 0,
+        "cameraAlpha": 1.5707963267948966,
+        "cameraRadius": 5.799999999999998,
+        "meshes": 504,
+        "skeletons": 1,
+        "animationGroups": 3,
+        "triangles": 1016210
+      },
+      "clips": [
+        {
+          "name": "Idle",
+          "playing": false,
+          "speed": 1
+        },
+        {
+          "name": "Walk",
+          "playing": false,
+          "speed": 4.014878666613787
+        },
+        {
+          "name": "Run",
+          "playing": true,
+          "frame": 12.864932698643315,
+          "speed": 1.4107837536851224
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "method": "Actual keyboard perimeter/approach/road traversal using existing collision controller, with up to 24 extra unchanged controller updates between drawn frames to accelerate slow software execution. No position assignment/teleport, no graphics setting reduction. Not real-time/performance or gait acceptance."
+}

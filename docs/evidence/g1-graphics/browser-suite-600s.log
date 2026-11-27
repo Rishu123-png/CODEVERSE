@@ -1,0 +1,50 @@
+
+> codeverse@0.0.0 test:e2e
+> playwright test
+
+
+Running 9 tests using 1 worker
+
+  ✓  1 tests/foundation.spec.ts:12:1 › forced WebGL2 initializes under StrictMode, resizes and restarts cleanly (2.9m)
+  ✓  2 tests/foundation.spec.ts:44:1 › automatic mode reports fallback when WebGPU is unavailable (40.5s)
+  ✓  3 tests/foundation.spec.ts:56:1 › forced WebGPU fails visibly and never falls back (1.2m)
+  ✓  4 tests/foundation.spec.ts:70:1 › invalid explicit renderer is not silently ignored (536ms)
+  ✓  5 tests/foundation.spec.ts:76:1 › both unavailable backends produce an actionable failure (1.7s)
+  ✓  6 tests/foundation.spec.ts:98:1 › loading state is branded and makes no gameplay promises (1.6s)
+  ✓  7 tests/foundation.spec.ts:120:1 › WebGL context loss surfaces a failure instead of remaining ready (35.2s)
+Actual automatic backend: WebGL2
+  ✓  8 tests/foundation.spec.ts:139:1 › unmodified automatic selection initializes an available real backend (11.4s)
+  ✘  9 tests/playable.spec.ts:7:1 › G1 actual keyboard traversal, collision, entrance information, pause and reset (10.1m)
+
+
+  1) tests/playable.spec.ts:7:1 › G1 actual keyboard traversal, collision, entrance information, pause and reset 
+
+    Test timeout of 600000ms exceeded.
+
+    Error: mouse.move: Test timeout of 600000ms exceeded.
+
+      103 |   await page.mouse.move(550, 280);
+      104 |   await page.mouse.down();
+    > 105 |   await page.mouse.move(760, 320, { steps: 8 });
+          |                    ^
+      106 |   await page.mouse.up();
+      107 |   await page.mouse.wheel(0, 180);
+      108 |   await page.waitForFunction(
+        at /home/user/CODEVERSE/tests/playable.spec.ts:105:20
+
+    Error Context: test-results/playable-G1-actual-keyboar-08a47-information-pause-and-reset/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/playable-G1-actual-keyboar-08a47-information-pause-and-reset/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/playable-G1-actual-keyboar-08a47-information-pause-and-reset/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Slow test file: tests/playable.spec.ts (10.1m)
+  Slow test file: tests/foundation.spec.ts (5.7m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  1 failed
+    tests/playable.spec.ts:7:1 › G1 actual keyboard traversal, collision, entrance information, pause and reset 
+  8 passed (16.3m)

@@ -1,0 +1,14 @@
+[
+  {
+    "type": "log",
+    "text": "BJS - [14:31:14]: Babylon.js v9.38.0 - WebGPU1 engine"
+  },
+  {
+    "type": "warning",
+    "text": "BJS - [14:31:15]: [Frame 3] WebGPU uncaptured error (1): [object GPUValidationError] - Destroyed texture [Texture (unlabeled 960x600 px, TextureFormat::RGBA8Unorm)] used in a submit.\n - While calling [Queue].Submit([[CommandBuffer from CommandEncoder \"[0|0] - UploadEncoder\"], [CommandBuffer from CommandEncoder \"[0|0] - RenderEncoder\"]])\n"
+  },
+  {
+    "type": "warning",
+    "text": "Destroyed texture [Texture (unlabeled 960x600 px, TextureFormat::RGBA8Unorm)] used in a submit.\n - While calling [Queue].Submit([[CommandBuffer from CommandEncoder \"[0|0] - UploadEncoder\"], [CommandBuffer from CommandEncoder \"[0|0] - RenderEncoder\"]])\n"
+  }
+]

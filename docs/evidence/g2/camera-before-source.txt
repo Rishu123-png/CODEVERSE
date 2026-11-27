@@ -1,0 +1,88 @@
+Read-only excerpts from the inspected pre-change createGame.ts, saved before edits.
+The complete original scene snapshot was scratch-only; these are evidence, not runtime code.
+
+44:     scene.imageProcessingConfiguration.exposure = 1.05;
+45:     scene.imageProcessingConfiguration.contrast = 1.05;
+46:     const oldCamera = scene.activeCamera;
+47:     const camera = new B.ArcRotateCamera(
+48:       'third-person',
+49:       Math.PI / 2,
+50:       1.65,
+51:       5.8,
+52:       new B.Vector3(SPAWN.x, 1.8, SPAWN.z),
+53:       scene,
+54:     );
+55:     scene.activeCamera = camera;
+56:     oldCamera?.dispose();
+57:     camera.fov = (64 * Math.PI) / 180;
+58:     camera.minZ = 0.08;
+59:     camera.maxZ = 600;
+60:     camera.lowerRadiusLimit = 2.5;
+61:     camera.upperRadiusLimit = 18;
+62:     camera.lowerBetaLimit = 0.5;
+63:     camera.upperBetaLimit = 1.67;
+64:     camera.wheelPrecision = 30;
+65:     camera.panningSensibility = 0;
+66:     camera.inputs.removeByType('ArcRotateCameraKeyboardMoveInput');
+67:     camera.attachControl(canvas, true);
+68:     canvas.tabIndex = 0;
+69:     canvas.setAttribute('aria-label', 'CodeVerse playable third-person world');
+
+620:       publish();
+621:     });
+622:     const update = () => {
+623:       if (disposed) return;
+624:       const dt = Math.min(scene.getEngine().getDeltaTime() / 1000, 0.05);
+625:       phase += dt;
+626:       let inputX = 0,
+627:         inputZ = 0;
+
+680:                 ? Math.max(0.2, actual / 2.88)
+681:                 : 1;
+682:       camera.setTarget(
+683:         B.Vector3.Lerp(
+684:           camera.target,
+685:           playerRoot.position.add(new B.Vector3(0, 1.8, 0)),
+686:           1 - Math.exp(-dt * 12),
+687:         ),
+688:         false,
+689:         false,
+690:         true,
+691:       );
+692:       // Shorten the camera arm before it enters the landmark/props. Restore on next frame.
+693:       restoreRadius = camera.radius;
+694:       const targetPoint = camera.target;
+695:       camera.getViewMatrix(true);
+696:       const delta = camera.position.subtract(targetPoint),
+697:         length = delta.length();
+698:       let allowed = canopyClearance(targetPoint, camera.position, crowns);
+699:       // Three parallel rays give the camera a small clearance volume, not a
+700:       // zero-width arm that can clip corners. Foliage uses bounds above.
+701:       const direction = delta.normalize();
+702:       for (const offset of [
+703:         new B.Vector3(0, 0, 0),
+704:         new B.Vector3(0.22, 0.18, 0),
+705:         new B.Vector3(-0.22, 0.18, 0),
+706:       ]) {
+707:         const pick = scene.pickWithRay(
+708:           new B.Ray(targetPoint.add(offset), direction, length),
+709:           (m) => m.isPickable && m.isEnabled() && m.getTotalVertices() > 0,
+710:         );
+711:         if (pick?.hit)
+712:           allowed = Math.min(allowed, Math.max(1.1, pick.distance - 0.3));
+713:       }
+714:       clearanceRadius = Math.min(
+715:         allowed,
+716:         B.Scalar.Lerp(clearanceRadius, restoreRadius, 1 - Math.exp(-dt * 5)),
+717:       );
+718:       camera.radius = Math.max(1.1, clearanceRadius);
+719:       camera.getViewMatrix(true);
+
+748:     };
+749:     const observer = scene.onBeforeRenderObservable.add(update);
+750:     listeners.push(() => scene.onBeforeRenderObservable.remove(observer));
+751:     const restore = scene.onAfterRenderObservable.add(() => {
+752:       camera.radius = restoreRadius;
+753:     });
+754:     listeners.push(() => scene.onAfterRenderObservable.remove(restore));
+755:     checkAborted(signal);

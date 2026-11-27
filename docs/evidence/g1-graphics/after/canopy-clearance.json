@@ -1,0 +1,9 @@
+{
+  "samples": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "requestedRadius": 8,
+  "method": "Player reached tree by actual keyboard/collision route. Camera-only diagnostic orbit, actual runtime shortening. No player teleport."
+}

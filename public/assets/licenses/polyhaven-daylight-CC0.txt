@@ -1,0 +1,10 @@
+Pedestrian Overpass HDRI — Greg Zaal / Poly Haven
+Asset: https://polyhaven.com/a/pedestrian_overpass
+License policy: https://polyhaven.com/license
+CC0 1.0 Universal: https://creativecommons.org/publicdomain/zero/1.0/
+
+Poly Haven publishes its HDRIs, textures and models under CC0 (public-domain dedication).
+CodeVerse uses the 1K HDR asset and an offline-filtered .env derivative, not the
+separately licensed Poly Haven Blender add-on. Attribution is retained voluntarily.
+Source mirror: mrdoob/three.js examples/textures/equirectangular/pedestrian_overpass_1k.hdr
+Pinned Git blob: 4d119b90c784cafd83c0cf0bdb226f8a285d1380

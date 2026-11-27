@@ -1,0 +1,44 @@
+
+Running 9 tests using 1 worker
+
+  ✓  1 tests/foundation.spec.ts:13:1 › forced WebGL2 initializes under StrictMode, resizes and restarts cleanly (2.8m)
+  ✓  2 tests/foundation.spec.ts:45:1 › automatic mode reports fallback when WebGPU is unavailable (24.6s)
+  ✓  3 tests/foundation.spec.ts:57:1 › forced WebGPU fails visibly and never falls back (1.4m)
+  ✓  4 tests/foundation.spec.ts:71:1 › invalid explicit renderer is not silently ignored (468ms)
+  ✓  5 tests/foundation.spec.ts:77:1 › both unavailable backends produce an actionable failure (2.3s)
+  ✓  6 tests/foundation.spec.ts:99:1 › loading state is branded and makes no gameplay promises (1.8s)
+  ✓  7 tests/foundation.spec.ts:121:1 › WebGL context loss surfaces a failure instead of remaining ready (53.0s)
+Actual automatic backend: WebGL2
+  ✓  8 tests/foundation.spec.ts:140:1 › unmodified automatic selection initializes an available real backend (13.4s)
+  ✘  9 tests/playable.spec.ts:8:1 › G1 actual keyboard traversal, collision, entrance information, pause and reset (5.5m)
+
+
+  1) tests/playable.spec.ts:8:1 › G1 actual keyboard traversal, collision, entrance information, pause and reset 
+
+    TimeoutError: page.waitForFunction: Timeout 120000ms exceeded.
+
+      103 |   const road = await page.evaluate(() => window.__CODEVERSE__);
+      104 |   expect(road!.playerY).toBeCloseTo(-0.15);
+    > 105 |   await page.waitForFunction(
+          |              ^
+      106 |     () => window.__CODEVERSE__!.z > 73.4,
+      107 |     {},
+      108 |     { timeout: 120_000 },
+        at /home/user/CODEVERSE/tests/playable.spec.ts:105:14
+
+    Error Context: test-results/playable-G1-actual-keyboar-08a47-information-pause-and-reset/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/playable-G1-actual-keyboar-08a47-information-pause-and-reset/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/playable-G1-actual-keyboar-08a47-information-pause-and-reset/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Slow test file: tests/foundation.spec.ts (5.8m)
+  Slow test file: tests/playable.spec.ts (5.5m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  1 failed
+    tests/playable.spec.ts:8:1 › G1 actual keyboard traversal, collision, entrance information, pause and reset 
+  8 passed (11.8m)

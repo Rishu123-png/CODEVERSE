@@ -1,0 +1,25 @@
+
+> codeverse@0.0.0 test
+> vitest run
+
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.1.2 [39m[90m/home/user/CODEVERSE[39m
+
+ [32m✓[39m src/graphics/createRenderer.test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 159[2mms[22m[39m
+ [32m✓[39m src/game/movement.test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 133[2mms[22m[39m
+[90mstdout[2m | src/graphics/createScene.test.ts[2m > [22m[2mcreates only the required non-interactive camera and empty clear surface
+[22m[39mBJS - [18:57:29]: Babylon.js v9.38.0 - Null engine
+
+ [32m✓[39m src/graphics/createScene.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 26[2mms[22m[39m
+ [32m✓[39m src/graphics/rendererPolicy.test.ts [2m([22m[2m13 tests[22m[2m)[22m[32m 26[2mms[22m[39m
+ [32m✓[39m src/game/stableCamera.test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32m✓[39m src/game/cameraClearance.test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m6 passed[39m[22m[90m (6)[39m
+[2m      Tests [22m [1m[32m43 passed[39m[22m[90m (43)[39m
+[2m   Start at [22m 18:57:28
+[2m   Duration [22m 1.87s[2m (tests 48%, import 35%, transform 13%, worker 4%)[22m
+
+[2m    Isolate [22m [33m6 workers spawned[39m[2m · ~171ms startup each (spawn + environment, per file)[22m
+[2m            [22m [2mat least ~857ms faster with [22m[33misolate: false[39m[2m — reuses workers across files instead of one per file[22m
+

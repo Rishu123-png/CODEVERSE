@@ -1,0 +1,182 @@
+{
+  "uri": "hero.glb",
+  "mimeType": "model/gltf-binary",
+  "validatorVersion": "2.0.0-dev.3.10",
+  "issues": {
+    "numErrors": 0,
+    "numWarnings": 0,
+    "numInfos": 24,
+    "numHints": 0,
+    "messages": [
+      {
+        "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+        "message": "Indices accessor contains 18 degenerate triangles (out of 360).",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/6/indices"
+      },
+      {
+        "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+        "message": "Indices accessor contains 18 degenerate triangles (out of 360).",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/7/indices"
+      },
+      {
+        "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+        "message": "Indices accessor contains 36 degenerate triangles (out of 360).",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/8/indices"
+      },
+      {
+        "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+        "message": "Indices accessor contains 36 degenerate triangles (out of 360).",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/9/indices"
+      },
+      {
+        "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+        "message": "Indices accessor contains 36 degenerate triangles (out of 360).",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/10/indices"
+      },
+      {
+        "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+        "message": "Indices accessor contains 36 degenerate triangles (out of 360).",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/11/indices"
+      },
+      {
+        "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+        "message": "Indices accessor contains 36 degenerate triangles (out of 360).",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/12/indices"
+      },
+      {
+        "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+        "message": "Indices accessor contains 36 degenerate triangles (out of 360).",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/13/indices"
+      },
+      {
+        "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+        "message": "Indices accessor contains 36 degenerate triangles (out of 360).",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/14/indices"
+      },
+      {
+        "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+        "message": "Indices accessor contains 36 degenerate triangles (out of 360).",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/15/indices"
+      },
+      {
+        "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+        "message": "Indices accessor contains 36 degenerate triangles (out of 360).",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/16/indices"
+      },
+      {
+        "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+        "message": "Indices accessor contains 36 degenerate triangles (out of 360).",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/17/indices"
+      },
+      {
+        "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+        "message": "Indices accessor contains 36 degenerate triangles (out of 360).",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/18/indices"
+      },
+      {
+        "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+        "message": "Indices accessor contains 18 degenerate triangles (out of 360).",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/19/indices"
+      },
+      {
+        "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+        "message": "Indices accessor contains 36 degenerate triangles (out of 360).",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/24/indices"
+      },
+      {
+        "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+        "message": "Indices accessor contains 36 degenerate triangles (out of 360).",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/25/indices"
+      },
+      {
+        "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+        "message": "Indices accessor contains 36 degenerate triangles (out of 360).",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/28/indices"
+      },
+      {
+        "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+        "message": "Indices accessor contains 36 degenerate triangles (out of 360).",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/29/indices"
+      },
+      {
+        "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+        "message": "Indices accessor contains 36 degenerate triangles (out of 360).",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/30/indices"
+      },
+      {
+        "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+        "message": "Indices accessor contains 36 degenerate triangles (out of 360).",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/31/indices"
+      },
+      {
+        "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+        "message": "Indices accessor contains 36 degenerate triangles (out of 360).",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/32/indices"
+      },
+      {
+        "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+        "message": "Indices accessor contains 36 degenerate triangles (out of 360).",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/33/indices"
+      },
+      {
+        "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+        "message": "Indices accessor contains 36 degenerate triangles (out of 360).",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/34/indices"
+      },
+      {
+        "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+        "message": "Indices accessor contains 36 degenerate triangles (out of 360).",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/35/indices"
+      }
+    ],
+    "truncated": false
+  },
+  "info": {
+    "version": "2.0",
+    "generator": "glTF-Transform v4.5.1",
+    "resources": [
+      {
+        "pointer": "/buffers/0",
+        "mimeType": "application/gltf-buffer",
+        "storage": "glb",
+        "byteLength": 1535516
+      }
+    ],
+    "animationCount": 3,
+    "materialCount": 10,
+    "hasMorphTargets": false,
+    "hasSkins": true,
+    "hasTextures": false,
+    "hasDefaultScene": true,
+    "drawCallCount": 36,
+    "totalVertexCount": 18115,
+    "totalTriangleCount": 35924,
+    "maxUVs": 0,
+    "maxInfluences": 8,
+    "maxAttributes": 6
+  }
+}

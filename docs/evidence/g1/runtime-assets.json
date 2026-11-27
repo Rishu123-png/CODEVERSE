@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-27",
+  "files": [
+    {
+      "path": "public/assets/g1/hero-provenance.json",
+      "bytes": 786,
+      "sha256": "7287f06b125cda724ffb61c013c1af85bb8fdd27a61d262bf902f4c50fd53e37"
+    },
+    {
+      "path": "public/assets/g1/hero.glb",
+      "bytes": 1585552,
+      "sha256": "1de2dfc57c33c1093cfbe123249786bd83b8fda178ea7677dfa71a17c6fb9357"
+    },
+    {
+      "path": "public/assets/g1/landmark.glb",
+      "bytes": 1359360,
+      "sha256": "5e598c9416b34e52cbb104dcef1732f6fa7f1f543fe10f887aa16e89a55524c3"
+    },
+    {
+      "path": "public/assets/g1/paving-color.jpg",
+      "bytes": 23888,
+      "sha256": "8110d469fa0626d5f0ec839a1097332509086d3063314a9ce7d5d9006daa6681"
+    },
+    {
+      "path": "public/assets/g1/paving-normal.png",
+      "bytes": 224078,
+      "sha256": "f8b0cc7a8c36f856c4660a708e848684ca1f7636afa22a5a341dc7ba6e008139"
+    },
+    {
+      "path": "public/assets/g1/shade-tree.glb",
+      "bytes": 1332708,
+      "sha256": "f7ac509da330cd7af07120e2340fad64fd5e4e36dd1094dd986f31853f378300"
+    },
+    {
+      "path": "public/assets/g1/shrub.glb",
+      "bytes": 872496,
+      "sha256": "aeccc51232dfe5f929eb5f1a0ccf8546ce150c063a60c72442fc14194597daad"
+    }
+  ],
+  "totalBytes": 5398868
+}

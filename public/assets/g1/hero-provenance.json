@@ -1,0 +1,14 @@
+{
+  "scope": "CC0 base graphics, original CodeVerse fitted-shell garment and motion authoring input; not MPFB/Blender exported",
+  "sourceArchiveSha256": "ada7c4ff11e79cf6ed9b441bccabc52c9359f2848b988f66e89c14c30b21fed7",
+  "outputSha256": "a813f25546b34960b7389c8ff82d23705754b3408b50a897044e4bed036953c7",
+  "outputBytes": 4513024,
+  "skin": "53 source-position joints, identity global bind axes; normalized original weights including >4",
+  "animation": "Original authored joint cycles, not Quaternius, 100STYLE, mocap or MPFB retarget",
+  "limitations": [
+    "Early garment shells, not production tailoring",
+    "Hand-authored initial gait, no foot IK/stride acceptance",
+    "No macro targets or Blender bone-roll equivalence",
+    "Premium character quality not accepted"
+  ]
+}

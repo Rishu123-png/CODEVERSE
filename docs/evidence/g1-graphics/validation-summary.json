@@ -1,0 +1,58 @@
+[
+  {
+    "file": "landmark-v2.glb",
+    "bytes": 1359360,
+    "sha256": "1f330a91955d4850a02b9c7fb7cfb0959cde7a92fb89e08f1d39bc84609fcc8b",
+    "errors": 0,
+    "warnings": 0,
+    "infos": 27
+  },
+  {
+    "file": "site-v3.glb",
+    "bytes": 14741572,
+    "sha256": "753644935404b567ba05381715f3c9c2f438bb868a4a1c6f6c86c7d445499aff",
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0
+  },
+  {
+    "file": "hero-urban.glb",
+    "bytes": 6560888,
+    "sha256": "94d5c30e2420cf41ad40df25d962a3be1ca0da9d4d40af97013a6c2a5153b507",
+    "errors": 0,
+    "warnings": 0,
+    "infos": 10
+  },
+  {
+    "file": "canopy-v3.glb",
+    "bytes": 1461692,
+    "sha256": "fd4e48fe3d9cbf43a1ab369c85071314ba9317dcca5330770d4e14e22e6af258",
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0
+  },
+  {
+    "file": "oak-v3.glb",
+    "bytes": 1249744,
+    "sha256": "344e9eac85e6ecf74ec972c9092d27c5f7c90e288f92cf71959939e752ca29ad",
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0
+  },
+  {
+    "file": "blossom-v3.glb",
+    "bytes": 1392056,
+    "sha256": "8e3dd98e15420b894545627cf240d65f09dbd48e4fb5c8d1941408f96436a39a",
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0
+  },
+  {
+    "file": "underplanting-v3.glb",
+    "bytes": 480016,
+    "sha256": "7faf5f49f80295d2297412e206936a09847601a619f63255b9fe6c6f435565d8",
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0
+  }
+]

@@ -1,0 +1,1 @@
+Incomplete run. Spawn/character inspection exposed diagonal shadow acne after distant context widened the sun projection. The capture log also recorded a 120-second screenshot timeout; the process was stopped, not accepted as a clean run. Corrected with a bounded sun projection and context/ground caster exclusion. See completed pass-5.

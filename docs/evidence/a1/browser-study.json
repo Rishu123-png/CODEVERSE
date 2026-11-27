@@ -1,0 +1,103 @@
+{
+  "backend": "WebGL2",
+  "babylon": "9.38.0",
+  "softwareRenderingNotHardwareEvidence": true,
+  "imports": [
+    {
+      "name": "architecture",
+      "compressedStructureMatchesOriginal": true,
+      "triangles": 834,
+      "meshes": 21,
+      "materials": 4,
+      "textures": 0,
+      "skeletons": 0,
+      "animationGroups": 0,
+      "vertices": 1668
+    },
+    {
+      "name": "foliage",
+      "compressedStructureMatchesOriginal": true,
+      "triangles": 4,
+      "meshes": 2,
+      "materials": 1,
+      "textures": 1,
+      "skeletons": 0,
+      "animationGroups": 0,
+      "vertices": 8
+    },
+    {
+      "name": "skin",
+      "compressedStructureMatchesOriginal": true,
+      "triangles": 8,
+      "meshes": 2,
+      "materials": 1,
+      "textures": 0,
+      "skeletons": 1,
+      "animationGroups": 1,
+      "vertices": 10
+    }
+  ],
+  "cycles": [
+    {
+      "meshes": 25,
+      "materials": 6,
+      "textures": 3,
+      "skeletons": 1,
+      "animationGroups": 1,
+      "transformNodes": 3
+    },
+    {
+      "meshes": 25,
+      "materials": 6,
+      "textures": 3,
+      "skeletons": 1,
+      "animationGroups": 1,
+      "transformNodes": 3
+    },
+    {
+      "meshes": 25,
+      "materials": 6,
+      "textures": 3,
+      "skeletons": 1,
+      "animationGroups": 1,
+      "transformNodes": 3
+    }
+  ],
+  "foliageMaterial": {
+    "alphaCutOff": 0.5,
+    "transparencyMode": 1,
+    "backFaceCulling": false,
+    "hasAlpha": true
+  },
+  "animation": {
+    "clip": "diagnostic-bend",
+    "from": 0,
+    "to": 60,
+    "q0": [0, 0, 0, 1],
+    "q1": [0, 0, 0.382671594619751, 0.9238868355751038],
+    "changed": true
+  },
+  "baseline": {
+    "meshes": 25,
+    "materials": 6,
+    "textures": 3,
+    "skeletons": 1,
+    "animationGroups": 1,
+    "transformNodes": 3
+  },
+  "missingFileRejected": true,
+  "gpu": {
+    "vendor": "Google Inc. (Google)",
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+  },
+  "browser": "158.0.8127.0",
+  "externalNetworkRequests": [],
+  "pageErrors": [],
+  "failedRequests": [],
+  "fullDisposal": {
+    "sceneDisposed": true,
+    "engineScenes": 0
+  },
+  "scope": "Isolated A1 WebGL2/SwiftShader diagnostic, not Windows/physical GPU/WebGPU or final asset/visual acceptance"
+}
